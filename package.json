@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "watch:web": "npx tailwindcss -c tailwind.config.web.js -i ./web/assets/css/inputDesk.css -o ./web/assets/css/outputDesk.css --watch",
+    "watch:mobile":"npx tailwindcss -c tailwind.config.mobile.js -i ./mobile/assets/css/inputMobile-v3.css -o ./mobile/assets/css/outputMobile.css --watch"
+  }
+}
