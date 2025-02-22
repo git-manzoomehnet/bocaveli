@@ -55,7 +55,8 @@ module.exports = {
        'dark2':'#1A1C24',
        'placeholder':'#222222',
        'grayMatn':'#A8A8A8',
-       'gray':'#6A6A6A'
+       'gray':'#6A6A6A',
+       'graylight':'#919191'
         
     },
 
@@ -75,6 +76,10 @@ module.exports = {
       'OpenSans800': ['OpenSans800', 'OpenSans800'],
       'OpenSans900': ['OpenSans900', 'OpenSans900'], 
       'KozGoPr6N400': ['KozGoPr6N400', 'KozGoPr6N400'], 
+      'MyriadArabic300': ['MyriadArabic300', 'MyriadArabic300'], 
+      'MyriadArabic400': ['MyriadArabic400', 'MyriadArabic400'], 
+      'MyriadArabic800': ['MyriadArabic800', 'MyriadArabic800'], 
+      'Saint400': ['Saint400', 'Saint400'], 
       
       
 
@@ -130,7 +135,10 @@ module.exports = {
          '19.8':'19.8px',
          '21.94':'21.94px',
          '15.85':'15.85px',
+         '17.07':'17.07px',
          '18.29':'18.29px',
+         '14.86':'14.86px',
+         '35.87':'35.87px',
        
 
       },

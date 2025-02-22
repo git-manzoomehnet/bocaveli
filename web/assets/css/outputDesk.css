@@ -948,8 +948,16 @@ video {
   width: 1px;
 }
 
+.w-\[318px\] {
+  width: 318px;
+}
+
 .w-\[454px\] {
   width: 454px;
+}
+
+.w-\[492px\] {
+  width: 492px;
 }
 
 .w-\[50px\] {
@@ -991,10 +999,6 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[318px\] {
-  width: 318px;
 }
 
 .min-w-\[454px\] {
@@ -1591,6 +1595,10 @@ video {
   justify-items: stretch;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1639,8 +1647,16 @@ video {
   gap: 2.5em;
 }
 
+.gap-\[2\.8em\] {
+  gap: 2.8em;
+}
+
 .gap-\[4em\] {
   gap: 4em;
+}
+
+.gap-\[5em\] {
+  gap: 5em;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2269,12 +2285,24 @@ video {
   padding-left: 10em;
 }
 
+.pl-\[5em\] {
+  padding-left: 5em;
+}
+
 .pr-\[3em\] {
   padding-right: 3em;
 }
 
 .pr-\[8em\] {
   padding-right: 8em;
+}
+
+.pr-\[5em\] {
+  padding-right: 5em;
+}
+
+.pr-\[10em\] {
+  padding-right: 10em;
 }
 
 .text-left {
@@ -2345,6 +2373,10 @@ video {
   font-family: Montserrat400, Montserrat400;
 }
 
+.font-Montserrat500 {
+  font-family: Montserrat500, Montserrat500;
+}
+
 .font-Montserrat600 {
   font-family: Montserrat600, Montserrat600;
 }
@@ -2353,8 +2385,16 @@ video {
   font-family: Montserrat700, Montserrat700;
 }
 
+.font-MyriadArabic400 {
+  font-family: MyriadArabic400, MyriadArabic400;
+}
+
 .font-OpenSans300 {
   font-family: OpenSans300, OpenSans300;
+}
+
+.font-Saint400 {
+  font-family: Saint400, Saint400;
 }
 
 .text-2xl {
@@ -2370,8 +2410,16 @@ video {
   font-size: 15px;
 }
 
+.text-\[30px\] {
+  font-size: 30px;
+}
+
 .text-\[32px\] {
   font-size: 32px;
+}
+
+.text-\[38px\] {
+  font-size: 38px;
 }
 
 .text-\[48px\] {
@@ -2408,6 +2456,10 @@ video {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
@@ -2490,6 +2542,10 @@ video {
   line-height: 14.06px;
 }
 
+.leading-14\.86 {
+  line-height: 14.86px;
+}
+
 .leading-15\.85 {
   line-height: 15.85px;
 }
@@ -2518,6 +2574,10 @@ video {
   line-height: 32.01px;
 }
 
+.leading-35\.87 {
+  line-height: 35.87px;
+}
+
 .leading-58\.51 {
   line-height: 58.51px;
 }
@@ -2538,12 +2598,24 @@ video {
   line-height: 29.26px;
 }
 
+.leading-\[36\.57px\] {
+  line-height: 36.57px;
+}
+
 .leading-\[39\.01px\] {
   line-height: 39.01px;
 }
 
 .leading-\[39\.02px\] {
   line-height: 39.02px;
+}
+
+.leading-\[46\.32px\] {
+  line-height: 46.32px;
+}
+
+.leading-\[58\.51px\] {
+  line-height: 58.51px;
 }
 
 .tracking-\[3px\] {
@@ -2572,6 +2644,11 @@ video {
 .text-grayMatn {
   --tw-text-opacity: 1;
   color: rgb(168 168 168 / var(--tw-text-opacity, 1));
+}
+
+.text-graylight {
+  --tw-text-opacity: 1;
+  color: rgb(145 145 145 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
@@ -2998,6 +3075,60 @@ video {
 
 .forced-color-adjust-none {
   forced-color-adjust: none;
+}
+
+@font-face {
+  font-family: "MyriadArabic300";
+
+  src: url("../fonts/MyriadArabic-It.otf") format("otf"),
+  url("../fonts/MyriadArabic-It.ttf") format("truetype"),
+  url("../fonts/MyriadArabic-It.woff") format("woff");
+
+  font-weight: 300;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saint400";
+
+  src: url("../fonts/Saint-AndrewsQueen.ttf") format("truetype");
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MyriadArabic400";
+
+  src: url("../fonts/MyriadArabic-Regular.otf") format("otf"),
+  url("../fonts/MyriadArabic-Regular.ttf") format("truetype"),
+  url("../fonts/MyriadArabic-Regular.woff") format("woff");
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MyriadArabic800";
+
+  src: url("../fonts/MyriadArabic-Bold.otf") format("otf"),
+    url("../fonts/MyriadArabic-Bold.ttf") format("truetype"),
+  url("../fonts/MyriadArabic-Bold.woff") format("woff");
+
+  font-weight: 800;
+
+  font-style: normal;
+
+  font-display: swap;
 }
 
 @font-face {
@@ -3463,6 +3594,10 @@ footer{
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.last\:pr-\[5em\]:last-child {
+  padding-right: 5em;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -3507,11 +3642,6 @@ footer{
   order: 3;
 }
 
-.group\/item:nth-child(odd) .group-odd\/item\:translate-y-\[1\.5em\] {
-  --tw-translate-y: 1.5em;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .group\/item:nth-child(odd) .group-odd\/item\:translate-y-\[3em\] {
   --tw-translate-y: 3em;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3527,21 +3657,6 @@ footer{
 
 .group\/item:nth-child(even) .group-even\/item\:order-3 {
   order: 3;
-}
-
-.group\/item:nth-child(even) .group-even\/item\:translate-y-\[1\.5em\] {
-  --tw-translate-y: 1.5em;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group\/item:nth-child(even) .group-even\/item\:translate-y-\[-1\.5em\] {
-  --tw-translate-y: -1.5em;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group\/item:nth-child(even) .group-even\/item\:translate-y-\[-em\] {
-  --tw-translate-y: -em;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group\/item:nth-child(even) .group-even\/item\:translate-y-\[-3em\] {
@@ -3644,27 +3759,22 @@ footer{
   pointer-events: auto;
 }
 
-.\[\&\.appear\]\:translate-x-\[0\].appear {
-  --tw-translate-x: 0;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.\[\&\.appear\]\:translate-y-\[0\].appear {
-  --tw-translate-y: 0;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .\[\&\.appear\]\:\!translate-y-\[0\].appear {
   --tw-translate-y: 0 !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
-.\[\&\.appear\]\:opacity-\[1\].appear {
-  opacity: 1;
+.\[\&\.appear\]\:translate-x-\[0\].appear {
+  --tw-translate-x: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\[\&\.appear\]\:\!opacity-\[1\].appear {
   opacity: 1 !important;
+}
+
+.\[\&\.appear\]\:opacity-\[1\].appear {
+  opacity: 1;
 }
 
 .\[\&\:first-child\]\:border-l-white:first-child {
