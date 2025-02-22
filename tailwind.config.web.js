@@ -56,7 +56,8 @@ module.exports = {
        'placeholder':'#222222',
        'grayMatn':'#A8A8A8',
        'gray':'#6A6A6A',
-       'graylight':'#919191'
+       'graylight':'#919191',
+       'red2':'#FF4A4A'
         
     },
 

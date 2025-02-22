@@ -793,8 +793,16 @@ video {
   margin-right: auto;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-\[2em\] {
+  margin-top: 2em;
 }
 
 .box-border {
@@ -999,6 +1007,10 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-\[566px\] {
+  width: 566px;
 }
 
 .min-w-\[454px\] {
@@ -1639,6 +1651,10 @@ video {
   gap: 1.5em;
 }
 
+.gap-\[1\.8em\] {
+  gap: 1.8em;
+}
+
 .gap-\[1em\] {
   gap: 1em;
 }
@@ -1657,6 +1673,28 @@ video {
 
 .gap-\[5em\] {
   gap: 5em;
+}
+
+.gap-\[2em\] {
+  gap: 2em;
+}
+
+.gap-\[30\.em\] {
+  gap: 30.em;
+}
+
+.gap-\[3\.5em\] {
+  gap: 3.5em;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2281,6 +2319,11 @@ video {
   padding-bottom: 5em;
 }
 
+.px-\[3em\] {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
 .pl-\[10em\] {
   padding-left: 10em;
 }
@@ -2295,14 +2338,6 @@ video {
 
 .pr-\[8em\] {
   padding-right: 8em;
-}
-
-.pr-\[5em\] {
-  padding-right: 5em;
-}
-
-.pr-\[10em\] {
-  padding-right: 10em;
 }
 
 .text-left {
@@ -2445,9 +2480,18 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
 }
 
 .font-bold {
@@ -2594,12 +2638,24 @@ video {
   line-height: 17.07px;
 }
 
+.leading-\[20\.43px\] {
+  line-height: 20.43px;
+}
+
 .leading-\[29\.26px\] {
   line-height: 29.26px;
 }
 
+.leading-\[35px\] {
+  line-height: 35px;
+}
+
 .leading-\[36\.57px\] {
   line-height: 36.57px;
+}
+
+.leading-\[37\.57px\] {
+  line-height: 37.57px;
 }
 
 .leading-\[39\.01px\] {
@@ -2616,6 +2672,14 @@ video {
 
 .leading-\[58\.51px\] {
   line-height: 58.51px;
+}
+
+.leading-\[18\.29px\] {
+  line-height: 18.29px;
+}
+
+.leading-\[40px\] {
+  line-height: 40px;
 }
 
 .tracking-\[3px\] {
@@ -2649,6 +2713,11 @@ video {
 .text-graylight {
   --tw-text-opacity: 1;
   color: rgb(145 145 145 / var(--tw-text-opacity, 1));
+}
+
+.text-red2 {
+  --tw-text-opacity: 1;
+  color: rgb(255 74 74 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
@@ -3594,6 +3663,10 @@ footer{
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.first\:ml-\[5em\]:first-child {
+  margin-left: 5em;
+}
+
 .last\:pr-\[5em\]:last-child {
   padding-right: 5em;
 }
@@ -3783,5 +3856,9 @@ footer{
 
 .\[\&\:not\(\:first-child\)\]\:border-x-\[1px\]:not(:first-child) {
   border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.\[\&\:not\(\:last-child\)\]\:border-r-\[1px\]:not(:last-child) {
   border-right-width: 1px;
 }
