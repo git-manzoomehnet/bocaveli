@@ -989,6 +989,22 @@ video {
   height: 100vh;
 }
 
+.h-\[88\%\] {
+  height: 88%;
+}
+
+.h-\[86\%\] {
+  height: 86%;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
+.max-h-\[340px\] {
+  max-height: 340px;
+}
+
 .max-h-\[540px\] {
   max-height: 540px;
 }
@@ -999,6 +1015,10 @@ video {
 
 .max-h-\[90\%\] {
   max-height: 90%;
+}
+
+.max-h-\[470px\] {
+  max-height: 470px;
 }
 
 .w-85p {
@@ -1023,6 +1043,10 @@ video {
 
 .w-\[454px\] {
   width: 454px;
+}
+
+.w-\[470px\] {
+  width: 470px;
 }
 
 .w-\[484px\] {
@@ -1078,12 +1102,24 @@ video {
   width: max-content;
 }
 
+.w-\[10px\] {
+  width: 10px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
 .min-w-\[454px\] {
   min-width: 454px;
 }
 
 .min-w-\[464px\] {
   min-width: 464px;
+}
+
+.min-w-\[470px\] {
+  min-width: 470px;
 }
 
 .min-w-\[472px\] {
@@ -1100,6 +1136,10 @@ video {
 
 .min-w-\[480px\] {
   min-width: 480px;
+}
+
+.min-w-\[492px\] {
+  min-width: 492px;
 }
 
 .min-w-\[500px\] {
@@ -1138,6 +1178,10 @@ video {
   max-width: 467x;
 }
 
+.max-w-\[470px\] {
+  max-width: 470px;
+}
+
 .max-w-\[472px\] {
   max-width: 472px;
 }
@@ -1152,6 +1196,10 @@ video {
 
 .max-w-\[480px\] {
   max-width: 480px;
+}
+
+.max-w-\[492px\] {
+  max-width: 492px;
 }
 
 .max-w-\[500px\] {
@@ -1753,6 +1801,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-\[\.4em\] {
   gap: .4em;
 }
@@ -1799,10 +1851,6 @@ video {
 
 .gap-\[5em\] {
   gap: 5em;
-}
-
-.gap-8 {
-  gap: 2rem;
 }
 
 .gap-x-20 {
@@ -2235,6 +2283,10 @@ video {
   border-top-width: 1px;
 }
 
+.border-l-\[1px\] {
+  border-left-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -2271,6 +2323,10 @@ video {
 
 .border-white {
   border-color: #ffff;
+}
+
+.border-l-white {
+  border-left-color: #ffff;
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2453,6 +2509,10 @@ video {
   padding-left: 8em;
 }
 
+.pr-\[1em\] {
+  padding-right: 1em;
+}
+
 .pr-\[2em\] {
   padding-right: 2em;
 }
@@ -2461,24 +2521,16 @@ video {
   padding-right: 3em;
 }
 
+.pr-\[6em\] {
+  padding-right: 6em;
+}
+
 .pr-\[7em\] {
   padding-right: 7em;
 }
 
 .pr-\[8em\] {
   padding-right: 8em;
-}
-
-.pl-\[em\] {
-  padding-left: em;
-}
-
-.pr-\[6em\] {
-  padding-right: 6em;
-}
-
-.pr-\[1em\] {
-  padding-right: 1em;
 }
 
 .text-left {
@@ -2537,6 +2589,10 @@ video {
   vertical-align: super;
 }
 
+.font-Inter400 {
+  font-family: Inter400, Inter400;
+}
+
 .font-KozGoPr6N400 {
   font-family: KozGoPr6N400, KozGoPr6N400;
 }
@@ -2571,10 +2627,6 @@ video {
 
 .font-Saint400 {
   font-family: Saint400, Saint400;
-}
-
-.font-Inter400 {
-  font-family: Inter400, Inter400;
 }
 
 .text-2xl {
@@ -2823,6 +2875,10 @@ video {
   line-height: 37.57px;
 }
 
+.leading-\[38\.73px\] {
+  line-height: 38.73px;
+}
+
 .leading-\[39\.01px\] {
   line-height: 39.01px;
 }
@@ -2835,24 +2891,24 @@ video {
   line-height: 40px;
 }
 
-.leading-\[46\.32px\] {
-  line-height: 46.32px;
+.leading-\[45\.93px\] {
+  line-height: 45.93px;
 }
 
-.leading-\[46\.73px\] {
-  line-height: 46.73px;
+.leading-\[46\.32px\] {
+  line-height: 46.32px;
 }
 
 .leading-\[58\.51px\] {
   line-height: 58.51px;
 }
 
-.leading-\[38\.73px\] {
-  line-height: 38.73px;
+.leading-\[19\.5px\] {
+  line-height: 19.5px;
 }
 
-.leading-\[45\.93px\] {
-  line-height: 45.93px;
+.leading-\[15\.85px\] {
+  line-height: 15.85px;
 }
 
 .tracking-\[3px\] {
@@ -4077,6 +4133,22 @@ footer{
     height: 80%;
   }
 
+  .lg\:h-\[50\%\] {
+    height: 50%;
+  }
+
+  .lg\:h-\[40\%\] {
+    height: 40%;
+  }
+
+  .lg\:h-\[47\%\] {
+    height: 47%;
+  }
+
+  .lg\:h-\[55\%\] {
+    height: 55%;
+  }
+
   .lg\:w-max {
     width: -moz-max-content;
     width: max-content;
@@ -4122,12 +4194,40 @@ footer{
   .base\:h-90p {
     height: 90%;
   }
+
+  .base\:h-\[60\%\] {
+    height: 60%;
+  }
+
+  .base\:h-\[50\%\] {
+    height: 50%;
+  }
+
+  .base\:h-\[54\%\] {
+    height: 54%;
+  }
 }
 
 @media (min-width: 2000px) {
+  .xxl\:h-80p {
+    height: 80%;
+  }
+
   .xxl\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .xxl\:h-\[70\] {
+    height: 70;
+  }
+
+  .xxl\:h-\[70\%\] {
+    height: 70%;
+  }
+
+  .xxl\:h-\[60\%\] {
+    height: 60%;
   }
 }
 
