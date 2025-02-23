@@ -26,7 +26,7 @@
                 </span>
             </div>
             <div class="Bottom w-full flex flex-col gap-2 justify-center items-center">
-                <span class="SearchIcon">
+                <span class="SearchIcon hover:cursor-pointer">
                     <img src="/web/assets/images/searchIcon.svg" alt="">
                 </span>
                 <span class="lang">
@@ -145,6 +145,7 @@
                 </div>
             </div>
         </div>
+    
     </header>
       <!-- MAIN CONTAINER -->
       <div class="AboutUsHistory-Sec container-Sec" >
@@ -506,6 +507,80 @@ We prioritize precision, creativity, and attention to detail, ensuring that each
             </div>
         </section>
     </div>
+    <div class="searchContainer overflow-y-auto flex-col fixed z-[98] top-0 left-0 w-screen 
+    translate-x-[-100%] opacity-0 pointer-events-none duration-[.8s] [&.OpenSearch]:opacity-[1]
+    [&.OpenSearch]:translate-x-[0] [&.OpenSearch]:pointer-events-auto
+    h-screen bg-black flex justify-start items-start">
+       <span class="CloseSerch hover:cursor-pointer absolute right-[5%] top-3 z-[98]">
+         <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M30.0846 10.1492L27.8521 7.91666L19.0013 16.7675L10.1505 7.91666L7.91797 10.1492L16.7688 19L7.91797 27.8508L10.1505 30.0833L19.0013 21.2325L27.8521 30.0833L30.0846 27.8508L21.2338 19L30.0846 10.1492Z" fill="#FFFFFF"/>
+           </svg>
+           
+       </span>
+       <div class="inputBox mt-[44vh] relative w-80p mx-auto flex justify-center  items-center">
+         <input class="w-full bg-black h-[74px] py-[.5em]  outline-none px-[.5em] placeholder:font-Montserrat400 placeholder:font-normal
+         placeholder:text-lg placeholder:leading-21.94 placeholder:text-white
+          font-Montserrat400 text-lg font-normal leading-21.94 text-white
+          border-b-[1px] border-white" type="search" name="q" id="search" placeholder="Search ... ">
+         <span class="SearchIconHeader absolute z-[99] right-[1em]">
+             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M13.92 13.92L17 17M16.111 8.581C16.111 12.768 12.728 16.162 8.556 16.162C4.383 16.162 1 12.768 1 8.582C1 4.393 4.383 1 8.555 1C12.728 1 16.111 4.394 16.111 8.581Z" stroke="#F9F2EA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg>
+         </span> 
+      </div>
+      <div class="ResultC flex-col w-full flex justify-center items-center 
+        mt-[4em]">
+      <div class="Noresult font-Montserrat300 font-light text-xl leading-[35px] text-white text-center">
+       <p>
+           Sorry, nothing was found . Search for another word 
+       </p>
+      </div>
+           <div class="Results mt-[4em] w-80p mx-auto flex flex-col">
+               <div class="Box w-full flex flex-col">
+                   <div class="title font-Montserrat400 capitalize font-normal text-xl leading-[35px] text-white">
+                       <p>
+                           search result in project
+                       </p>
+                   </div>
+                   <div class="res Projects w-full flex flex-col pb-[1em] ">
+                        <a href="" class="Project py-[3em] border-b-[1px] border-white flex gap-3">
+                           <div class="Image w-[475px] h-[605px] flex">
+                               <img src="/web/assets/images/22.png" alt="" class="w-full h-full object-cover">
+                           </div>
+                           <div class="Title-proj w-auto uppercase flex font-Montserrat700 font-bold text-lg leading-21.94 text-white">
+                               <p>
+                                   SAAD ABAD
+                               </p>
+                           </div>
+                        </a>
+                   </div>
+               </div>
+               <div class="Box w-full flex flex-col">
+                   <div class="title font-Montserrat400 capitalize font-normal text-xl leading-[35px] text-white">
+                       <p>
+                           search result in news
+                       </p>
+                   </div>
+                   <div class="res News w-full flex flex-col pb-[1em] ">
+                        <a href="" class="Project py-[3em] border-b-[1px] border-white flex gap-3">
+                           <div class="Image w-[475px] h-[605px] flex">
+                               <img src="/web/assets/images/22.png" alt="" class="w-full h-full object-cover">
+                           </div>
+                           <div class="Title-news flex-col w-auto uppercase flex font-Montserrat700 font-bold text-lg leading-21.94 text-white">
+                               <p class="font-Montserrat700 font-bold text-lg leading-21.94">
+                                   DUZZI 
+                                 
+                               </p>
+                               <p class="font-Montserrat400 font-normal text-lg leading-21.94">
+                                   COLABORATION WITH MANDUZZI HOME
+                               </p>
+                           </div>
+                        </a>
+                   </div>
+               </div>
+           </div>
+      </div>
+      </div>
     <!-- MAIN CONTAINER -->
     <script src="/web/assets/js/gsap.js"></script>
     <script src="/web/assets/js/scrollTrigger.js"></script>
