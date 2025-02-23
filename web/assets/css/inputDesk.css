@@ -303,7 +303,7 @@ transform: translate(0);
   font-family: "OpenSans500";
   text-align: justify;
 }
-.Items .Text p{
+.Items .Item .Text p{
   text-align: justify;
     display: -webkit-box !important;
     -webkit-line-clamp: 3;
@@ -330,4 +330,30 @@ footer{
 .footerDesk .Details{
   box-shadow: 0px 3px 6.9px 0px #00000040;
 
+}
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+  max-height: 54px; /* بسته به سایز فونت تنظیم شود */
+}
+
+.hidden-span {
+  visibility: hidden;
+  display: inline-block;
+  width: 30px; /* این مقدار را بسته به نیاز تغییر دهید */
+}
+
+.toggleButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  padding-left: 5px;
+}
+.IMG-first{
+  transition: all 1.8s cubic-bezier(.19,1,.22,1);
+  transition-delay: 0 !important;
 }
