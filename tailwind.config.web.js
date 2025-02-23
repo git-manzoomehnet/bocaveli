@@ -82,6 +82,13 @@ module.exports = {
       'MyriadArabic400': ['MyriadArabic400', 'MyriadArabic400'], 
       'MyriadArabic800': ['MyriadArabic800', 'MyriadArabic800'], 
       'Saint400': ['Saint400', 'Saint400'], 
+      'Inter300': ['Inter300', 'Inter300'], 
+      'Inter400': ['Inter400', 'Inter400'], 
+      'Inter500': ['Inter500', 'Inter500'], 
+      'Inter600': ['Inter600', 'Inter600'], 
+      'Inter700': ['Inter700', 'Inter700'], 
+      'Inter800': ['Inter800', 'Inter800'], 
+      'Inter900': ['Inter900', 'Inter900'], 
       
       
 

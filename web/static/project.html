@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="/web/assets/css/outputDesk.css">
+</head>
+<body class="Project-c horizontal">
+    <header class="Horizontal-header fixed z-[99] left-0 group/header flex DesktopHeader w-[82px] h-screen overflow-hidden bg-black">
+        <div class="innerHeader h-[90%] my-auto flex-col w-full flex justify-between items-center">
+            <div class="Logo w-full flex justify-center items-center">
+                <a href="">
+                    <img src="/web/assets/images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="MenuIcon w-auto flex justify-center items-center">
+                <span class="toggleItems w-auto h-[28px] flex gap-[.4em]  group/toggleItems hover:cursor-pointer">
+                    <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
+                    <span
+                        class="toggleItem w-[1px] h-[28px] bg-white 
+                        group-hover/toggleItems:translate-y-[10px] group-[&.Open]/header:translate-y-[10px]
+                         group-[&.Open]/header:opacity-0
+                         duration-[900ms]"></span>
+                    <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
+                </span>
+            </div>
+            <div class="Bottom w-full flex flex-col gap-2 justify-center items-center">
+                <span class="SearchIcon">
+                    <img src="/web/assets/images/searchIcon.svg" alt="">
+                </span>
+                <span class="lang">
+                    <a href="" class="font-Montserrat400 text-sm leading-17.07 text-white">
+                        FA
+                    </a>
+                </span>
+            </div>
+            <div class="Menu-Container fixed right-0 top-0  w-[94.7vw] 
+                bottom-0 h-screen overflow-hidden z-[20]  pointer-events-none group/menu 
+                 [&.Open]:pointer-events-auto
+                flex justify-between  duration-[.8s] ">
+                <div class="right relative  bg-black translate-x-[-100%] duration-[700ms] group-[&.Open]/menu:translate-x-[0]  z-[11] w-[550px] min-w-[550px] 
+                flex flex-col h-full">
+                    <div class="Menu w-85p mx-auto h-[90%] flex justify-start items-center">
+                        <ul class="Menus w-full h-[80%] flex-col flex justify-center items-start gap-5">
+                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.2s]
+                            items-start overflow-hidden">
+                                <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
+                                font-normal text-[32px]  leading-32.01 text-white 
+                                    hover:text-grayMatn duration-[.4s] text-right">
+                                    homepage
+                                </a>
+                            </li>
+                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.3s]
+                            items-start overflow-hidden">
+                                <a href="/" title="projects" alt="projects" class="Menu-link font-Montserrat400 
+                                font-normal text-[32px]  leading-32.01 text-white 
+                                    hover:text-grayMatn duration-[.4s] text-right">
+                                    projects & experiences
+                                <sub class="font-Montserrat400  text-xs leading-14.06 text-white bottom-[unset] 
+                                relative top-[-18px]">(12)</sub>
+                                </a>
+                            </li>
+                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.4s]
+                            items-start overflow-hidden">
+                                <a href="/" title="productions" alt="productions" class="Menu-link font-Montserrat400 
+                                font-normal text-[32px]  leading-32.01 text-white 
+                                    hover:text-grayMatn duration-[.4s] text-right">
+                                    collections & productions
+
+                                </a>
+                            </li>
+                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.5s]
+                            items-start overflow-hidden">
+                                <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                                font-normal text-[32px]  leading-32.01 text-white 
+                                    hover:text-grayMatn duration-[.4s] text-right">
+                                    privet
+                                </a>
+                            </li>
+                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.6s]
+                            items-start overflow-hidden">
+                                <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
+                                font-normal text-[32px]  leading-32.01 text-white 
+                                    hover:text-grayMatn duration-[.4s] text-right">
+                                    news & articles
+                                    <sub class="font-Montserrat400  text-xs leading-14.06 text-white bottom-[unset] 
+                                    relative top-[-18px]">(12)</sub>
+                                    </a>
+                                </a>
+                            </li>
+                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.7s]
+                            items-start overflow-hidden">
+                                <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                                font-normal text-[32px]  leading-32.01 text-white 
+                                    hover:text-grayMatn duration-[.4s] text-right">
+                                    about & history
+
+                                </a>
+                            </li>
+                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.8s]
+                            items-start overflow-hidden">
+                                <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                                font-normal text-[32px]  leading-32.01 text-white 
+                                    hover:text-grayMatn duration-[.4s] text-right">
+                                    contact us & upload
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Box w-85p mx-auto h-[10%] border-t-[1px] border-grayMatn flex justify-between items-center">
+                        <div class="Socials flex  w-full justify-between items-center">
+                            <span class="Social-item flex justify-center items-center">
+                                <a href="tel:" class="flex justify-center items-center hover:text-[#989898] duration-[.4s]
+                                 font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                                    instagram
+                                </a>
+                            </span>
+                            <span class="Social-item flex justify-center items-center">
+                                <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
+                                 font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                                 email
+                                </a>
+                            </span>
+                            <span class="Social-item flex justify-center items-center">
+                                <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
+                                 font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                                 whatsapp 
+                                </a>
+                            </span>
+                      
+                        </div>
+                    </div>
+                </div>
+                <div class=" pointer-events-none opacity-0 left relative z-[11] w-auto flex flex-col h-full group-[&.Open]/menu:translate-x-[0] translate-x-[100%] duration-[700ms]">
+                    <img src="http://cdn.basiscore.net/hha117.undertest.ir/images/menu.jpg" alt="ramandJelvePardis"
+                        class="h-full object-cover" title="ramandJelvePardis">
+                </div>
+            </div>
+        </div>
+    </header>
+      <!-- MAIN CONTAINER -->
+      <div class="Project-Sec container-Sec" >
+        <section id="PinSection">
+            <div class="Pin-Wrapp">
+                <div class="Section-1 ml-[82px] pl-[6em] pr-[6em] sec  h-90p flex flex-col justify-center items-center">
+                    <div class="Banner w-max overflow-hidden flex max-h-[90%]">
+                       <div class="IMG-first [&.appear]:translate-x-[0]
+                       [&.appear]:opacity-[1]  
+                       translate-x-[-2.5rem] opacity-0  my-auto">
+                           <img src="/web/assets/images/Rectangle 3 (1).png" alt=""
+                           class="object-cover ">
+                       </div>
+                    </div>
+                </div>
+                 <div class="Section-2 sec h-80p flex  flex-col justify-between items-center">
+                    <div class="DetailBox mt-8 max-w-[536px] min-w-[536px] flex justify-between">
+                        <div class="left textBox translate-x-[1.5em] duration-[.8s] opacity-0  gap-5 w-auto flex flex-col">
+                            <div class="Title w-auto flex justify-start items-start text-left">
+                                <h1 class="font-Montserrat700 text-[38px] leading-[46.32px] text-black flex flex-col">
+                                    YASIN
+                                </h1>
+                            </div>
+                            <div class="schamas w-auto flex flex-col">
+                                <div class="schemabox flex font-KozGoPr6N400 text-xs leading-24 text-gray">
+                                    <span class="name">
+                                        Architect: 
+                                    </span>
+                                    <span class="answer">
+                                        M.REZA NIKBAKHT
+                                    </span>
+                                </div>
+                                <div class="schemabox flex font-KozGoPr6N400 text-xs leading-24 text-gray">
+                                    <span class="name">
+                                        Location: 
+                                    </span>
+                                    <span class="answer">
+                                        PASDARAN
+                                    </span>
+                                </div>
+                                <div class="schemabox flex font-KozGoPr6N400 text-xs leading-24 text-gray">
+                                    <span class="name">
+                                        Style: 
+                                    </span>
+                                    <span class="answer">
+                                        CONTEMPO
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right w-auto flex flex-col gap-2 justify-center items-center">
+                            <div class="IMG userIMG [&.appear]:translate-x-[0]
+                            [&.appear]:opacity-[1] translate-x-[-2.5rem] opacity-0   w-[220px] h-[220px]">
+                                <img src="/web/assets/images/Rectangle 4.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="sign textBox translate-x-[1.5em] duration-[.8s] opacity-0 font-Saint400 text-lg leading-[26.9px] font-normal text-black">
+                                M.REZA NIKBAKHT
+                              </div>
+                        </div>
+                    </div>
+                    <div class="textBox Box w-auto translate-x-[1.5em] duration-[.8s] opacity-0 
+                    flex flex-col gap-6 max-w-[536px] min-w-[536px]">
+                
+                     <div class="Text font-OpenSans300 font-light text-[13px] text-gray leading-17.07">
+                         <p class="font-OpenSans300 font-light text-[13px] leading-17.07">
+                            Bocaveli and Duzzi have collaborated to create an exquisite kitchen that elevates home decor. Showroom Duzzi, known for its exceptional interior design offerings, teamed up with Bocaveli to bring a modern and functional kitchen to life. This partnership showcases innovative design solutions, combining style and practicality. The newly designed kitchen not only enhances the aesthetics of the space but also provides a comfortable and efficient environment for cooking and entertaining. Experience the perfect blend of craftsmanship and elegance!
+                        </p>
+                     </div>
+                    </div>
+                 </div>
+                 <div class="Section-3 pl-[6em] sec h-90p flex flex-col justify-center items-center">
+                    <div class="IMG [&.appear]:translate-x-[0]
+                    [&.appear]:opacity-[1]  max-w-[480px] min-w-[480px]
+                    translate-x-[-2.5rem] opacity-0 ">
+                        <img src="/web/assets/images/Rectangle 5.png" alt="" class="w-full object-cover">
+                    </div>
+                 </div>
+                 <div class="Section-4  pl-[6em] sec h-85p flex flex-col justify-between items-center">
+                    <div class="IMG [&.appear]:translate-x-[0]
+                    [&.appear]:opacity-[1]  max-w-[472px] min-w-[472px]
+                    translate-x-[-2.5rem] opacity-0 ">
+                        <img src="/web/assets/images/fsfsff 2 (1).png" alt="" class="w-full object-cover">
+                    </div>
+                    <div class="textBox Box w-full translate-x-[1.5em]  duration-[.8s] opacity-0 flex 
+                    flex-col gap-1 max-w-[472px] min-w-[472px]">
+                     <div class="Text font-OpenSans300 font-light text-[13px] text-gray leading-17.07">
+                         <p class="font-OpenSans300 font-light text-[13px] leading-17.07">
+                            The driving force behind the creation of these high-end kitchens is the passion of the Zarrin family, the clients behind the Yasin Project. Their commitment to delivering the highest quality service to their project users is evident in every decision made throughout the construction process. From selecting materials to ensuring functionality and 
+                            aesthetics align seamlessly, the Zarrin family leaves no stone unturned in their pursuit of excellence. Their dedication to quality and attention to detail serve as the guiding 
+                            principles behind the creation of these exceptional kitchens.
+                            Under the meticulous guidance of Mr. M. Nikbakht and the expertise of Zandigan 
+                            Architects, Bocaveli has succeeded in bringing the vision of the Zarrin family to life. Through collaborative efforts and a shared commitment to excellence, the Yasin Project kitchens have become a testament to the power of passion and dedication in 
+                            construction. As a result of the collaborative efforts and shared commitment to 
+                            excellence, the Yasin Project kitchens have become a symbol of luxury and sophistication, setting new standards for high-end construction projects.
+                            
+                            
+                        </p>
+                     </div>
+                    </div>
+                 
+                 </div>
+                 <div class="Section-5 pl-[6em] sec h-90p flex flex-col justify-center items-center">
+                    <div class="IMG [&.appear]:translate-x-[0]
+                    [&.appear]:opacity-[1]  max-w-[480px] min-w-[480px]
+                    translate-x-[-2.5rem] opacity-0 ">
+                        <img src="/web/assets/images/Rectangle 6.png" alt="" class="w-full object-cover">
+                    </div>
+                 </div>
+                 <div class="Section-6 mt-[2em] gap-8 pl-[6em] sec h-80p flex flex-col justify-end items-start">      
+              
+                    <div class="textBox gap-8 Box w-full translate-x-[1.5em] duration-[.8s] opacity-0 flex 
+                    flex-col max-w-[472px] min-w-[472px]">
+                    <div class="Title w-auto flex justify-start items-start text-left">
+                        <h2 class="font-Montserrat700 flex text-[38px] leading-[46.32px] text-black justify-center items-center gap-2">
+                           <span class="font-Montserrat700 text-[38px] leading-[46.32px] text-black">
+                            Design 
+                           </span>
+                           <span class="font-Inter400 text-[32px] leading-[38.73px] text-black">
+                             Story
+                           </span>
+                        </h2>
+                    </div>
+                     <div class="Text font-OpenSans300 font-light text-[13px] text-gray leading-17.07">
+                         <p class="font-OpenSans300 font-light text-[13px] leading-17.07">
+                            In conclusion, the Yasin Project kitchens represent the epitome of luxury and sophistication in construction. With their extraordinary color combinations, meticulous attention to detail, and unwavering commitment to quality, they stand as a testament to the collective passion and dedication of all involved. From the architects and designers to the clients themselves, each individual has played a vital role in bringing this vision to life. The result is a space that not only exceeds expectations but also serves as a true reflection of the values and aspirations of the Zarrin family.
+
+                        </p>
+                     </div>
+                    </div>
+                    <div class="IMG [&.appear]:translate-x-[0]
+                    [&.appear]:opacity-[1]  max-w-[472px] min-w-[472px]
+                    translate-x-[-2.5rem] opacity-0">
+                        <img src="/web/assets/images/fsfsff 3.png" alt="" class="w-full object-cover">
+                    </div>
+                 </div>
+                 <div class="Section-7 pl-[6em] sec h-90p flex flex-col justify-center items-center">
+                    <div class="IMG [&.appear]:translate-x-[0]
+                    [&.appear]:opacity-[1]  max-w-[920px] min-w-[920px]
+                    translate-x-[-2.5rem] opacity-0 my-auto">
+                        <img src="/web/assets/images/Layer 26 1.png" alt="" class="w-full object-cover">
+                    </div>
+                 </div>
+                 <div class="Section-8 pl-[6em] sec h-90p flex flex-col justify-center items-center">
+                    <div class="IMG [&.appear]:translate-x-[0]
+                    [&.appear]:opacity-[1]  max-w-[480px] min-w-[480px]
+                    translate-x-[-2.5rem] opacity-0 ">
+                        <img src="/web/assets/images/Rectangle 6.png" alt="" class="w-full object-cover">
+                    </div>
+                 </div>
+                 <div class="Section-9 mt-[2em] gap-8 pl-[6em] sec h-90p flex flex-col justify-center items-center">      
+              
+                    <div class="textBox gap-6 Box w-full translate-x-[1.5em] duration-[.8s] opacity-0 flex 
+                    flex-col max-w-[472px] min-w-[472px]">
+                    <div class="Title w-auto flex justify-start items-start flex-col text-left">
+                        <h2 class="font-Montserrat700 flex text-[38px] leading-[46.32px] text-black  flex-col justify-start
+                         items-center">
+                           <span class="font-Montserrat700 text-[38px] leading-[46.32px] text-black">
+                            Architecture
+
+                           </span>
+                           <span class="font-Inter400 text-[38px] leading-[45.93px] text-black">
+                            Characteristics 
+                           </span>
+                        </h2>
+                    </div>
+                     <div class="Text font-OpenSans300 font-light text-[15px] text-grayMatn leading-20.43">
+                         <p class="font-OpenSans300 font-light text-[15px] text-grayMatn leading-20.43">
+                            The seamless integration of modern technology and innovative design features further enhances the functionality and practicality of the Yasin Project kitchens. Smart appliances, hidden storage solutions, and ergonomic layouts not only enhance the user experience but also showcase a forward-thinking approach to kitchen design. This marriage of form and function ensures that these kitchens not only look stunning but are also highly 
+                            efficient and practical for everyday use.
+                            In addition, the Yasin Project kitchens serve as a reflection of timeless elegance and 
+                            sophistication, standing as a testament to enduring craftsmanship and design excellence. The attention to detail in every aspect, from the choice of materials to the precision of the installations, demonstrates a deep commitment to creating spaces that will stand the test of time. The enduring appeal of these kitchens lies not only in their beauty and luxury but also in their ability to elevate the overall living experience for the residents of the Yasin Project.
+                            
+                        </p>
+                     </div>
+                    </div>
+            
+                 </div>
+                 <div class="Section-10 pr-[1em] pl-[6em] sec h-90p flex flex-col justify-center items-center">
+                    <div class="IMG [&.appear]:translate-x-[0]
+                    [&.appear]:opacity-[1]  max-w-[480px] min-w-[480px]
+                    translate-x-[-2.5rem] opacity-0 ">
+                        <img src="/web/assets/images/Rectangle 6.png" alt="" class="w-full object-cover">
+                    </div>
+                 </div>
+                 <div class="Section-footer before:contents-[''] before:absolute before:left-[29.2%] before:top-0
+                 before:w-[1px] before:h-full before:bg-black before:z-[1] relative h-90p my-auto sec flex justify-start items-center">
+                    <div class="footerDesk e relative z-10
+                      px-[8em] flex flex-col justify-center h-full">
+                          <div class="TopSec h-90p flex flex-col justify-center items-center " >
+                            <div class="Details bg-white flex gap-[2.5em] px-[5em] py-[5em]">
+                                <ul class="MenuFooter w-auto flex flex-col items-center justify-between">
+                                    <li class="Menu-item textBox translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                                    opacity-0">
+                                        <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                           <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                            text-lg font-Montserrat700 leading-21.94 text-black">
+                                            About
+                                           </span>
+                                           <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                            & History 
+                                           </span>
+                                        </a>
+                                    </li>
+                                    <li class="Menu-item textBox translate-x-[1.5em] delay-[.3s] duration-[.8s]
+                                    opacity-0">
+                                        <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                           <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                            text-lg font-Montserrat700 leading-21.94 text-black">
+                                            Projects
+                                           </span>
+                                           <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                            & Experiences
+                                           </span>
+                                        </a>
+                                    </li>
+                                    <li class="Menu-item textBox translate-x-[1.5em] delay-[.4s] duration-[.8s]
+                                    opacity-0">
+                                        <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                           <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                            text-lg font-Montserrat700 leading-21.94 text-black">
+                                            Collections
+                                           </span>
+                                           <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                            & Products
+                                           </span>
+                                        </a>
+                                    </li>
+                                    <li class="Menu-item textBox translate-x-[1.5em] delay-[.5s] duration-[.8s]
+                                    opacity-0">
+                                        <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                           <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                            text-lg font-Montserrat700 leading-21.94 text-black">
+                                            News 
+                                           
+                                           </span>
+                                           <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                            & Arcticles
+                                           </span>
+                                        </a>
+                                    </li>
+                                    <li class="Menu-item textBox translate-x-[1.5em] delay-[.6s] duration-[.8s]
+                                    opacity-0">
+                                        <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                           <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                            text-lg font-Montserrat700 leading-21.94 text-black">
+                                            Contact Us
+                                            
+                                           </span>
+                                           <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                            & Uploads
+                                           </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="Texts translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                                opacity-0 textBox gap-3 w-auto flex flex-col">
+                                   <div class="Title w-auto mr-auto flex flex-col">
+                                    <p class="font-Montserrat700 font-bold tracking-[3px] text-lg leading-21.94 text-black">
+                                        BOCAVELI
+                                      
+                                    </p>
+                                    <p class="font-Montserrat300 font-light text-lg leading-21.94 text-black">
+                                        KITCEHNS & MORE
+                                    </p>
+                                   </div>
+                                   <div class="Text flex w-[318px] flex-col gap-[1em] font-Montserrat300 font-light max-w-[318px]
+                                   text-[13px] leading-17.07 text-grayMatn text-left">
+                                    <p>
+                                        we offer specialized design services with a focus on kitchens, wardrobes, and more. Our professional team of architects, with extensive experience in kitchen and wardrobe design, brings expertise gained from working with high-end international brands.
+
+We prioritize precision, creativity, and attention to detail, ensuring that each space we design is both unique and functional. Bocaveli not only delivers beautiful, high-quality products but also provides an exceptional experience in design and project execution, tailored to meet the highest standards and the unique needs of our clients.
+
+
+
+                                    </p>
+                                    <p>
+                                        +98-91007733    
+                                    </p>
+                                   </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="BottomSec  h-[10%] flex justify-start items-end">
+                            <div class="socials-footer ml-[3%] flex gap-[1.5em] justify-start items-center">
+                                <span class="social-item shopping">
+                                    <a href="" target="_blank">
+                                        <img src="/web/assets/images/shopping.svg" alt="">
+                                    </a>
+                                </span>
+                                <span class="social-item instagramF">
+                                    <a href="" target="_blank">
+                                        <img src="/web/assets/images/instagramF.svg" alt="">
+                                    </a>
+                                </span>
+                                <span class="social-item emailF">
+                                    <a href="" target="_blank">
+                                        <img src="/web/assets/images/emailF.svg" alt="">
+                                    </a>
+                                </span>
+                                <span class="social-item whatsappF">
+                                    <a href="" target="_blank">
+                                        <img src="/web/assets/images/whatsappF.svg" alt="">
+                                    </a>
+                                </span>
+                                <span class="social-item imagesF">
+                                    <a href="" target="_blank">
+                                        <img src="/web/assets/images/imagesF.svg" alt="">
+                                    </a>
+                                </span>
+                            </div>
+                          </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+    </div>
+    <!-- MAIN CONTAINER -->
+    <script src="/web/assets/js/gsap.js"></script>
+    <script src="/web/assets/js/scrollTrigger.js"></script>
+    <script src="/web/assets/js/swiper.js"></script>
+    <script src="/web/assets/js/jQuery.js"></script>
+    <script src="/web/assets/js/imageLoaded.js"></script>
+    <script src="/web/assets/js/locoScroll.js"></script>
+    <script src="/web/assets/js/configDesk.js"></script>
+    <script src="/web/assets/js/project.js"></script>
+</body>
+</html>

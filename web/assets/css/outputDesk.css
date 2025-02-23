@@ -815,6 +815,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-\[2em\] {
   margin-top: 2em;
 }
@@ -937,12 +941,24 @@ video {
   height: 70% !important;
 }
 
+.h-80p {
+  height: 80%;
+}
+
+.h-85p {
+  height: 85%;
+}
+
 .h-90p {
   height: 90%;
 }
 
 .h-\[10\%\] {
   height: 10%;
+}
+
+.h-\[220px\] {
+  height: 220px;
 }
 
 .h-\[28px\] {
@@ -977,12 +993,12 @@ video {
   max-height: 540px;
 }
 
-.max-h-\[90\%\] {
-  max-height: 90%;
-}
-
 .max-h-\[572px\] {
   max-height: 572px;
+}
+
+.max-h-\[90\%\] {
+  max-height: 90%;
 }
 
 .w-85p {
@@ -993,8 +1009,16 @@ video {
   width: 1px;
 }
 
+.w-\[220px\] {
+  width: 220px;
+}
+
 .w-\[318px\] {
   width: 318px;
+}
+
+.w-\[450px\] {
+  width: 450px;
 }
 
 .w-\[454px\] {
@@ -1054,10 +1078,6 @@ video {
   width: max-content;
 }
 
-.w-\[450px\] {
-  width: 450px;
-}
-
 .min-w-\[454px\] {
   min-width: 454px;
 }
@@ -1078,6 +1098,14 @@ video {
   min-width: 476px;
 }
 
+.min-w-\[480px\] {
+  min-width: 480px;
+}
+
+.min-w-\[500px\] {
+  min-width: 500px;
+}
+
 .min-w-\[536px\] {
   min-width: 536px;
 }
@@ -1090,12 +1118,12 @@ video {
   min-width: 920px;
 }
 
-.min-w-\[500px\] {
-  min-width: 500px;
-}
-
 .max-w-\[318px\] {
   max-width: 318px;
+}
+
+.max-w-\[450px\] {
+  max-width: 450px;
 }
 
 .max-w-\[454px\] {
@@ -1122,6 +1150,14 @@ video {
   max-width: 476px;
 }
 
+.max-w-\[480px\] {
+  max-width: 480px;
+}
+
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+
 .max-w-\[536px\] {
   max-width: 536px;
 }
@@ -1137,14 +1173,6 @@ video {
 .max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
-}
-
-.max-w-\[500px\] {
-  max-width: 500px;
-}
-
-.max-w-\[450px\] {
-  max-width: 450px;
 }
 
 .flex-shrink {
@@ -1771,6 +1799,10 @@ video {
 
 .gap-\[5em\] {
   gap: 5em;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-x-20 {
@@ -2437,6 +2469,18 @@ video {
   padding-right: 8em;
 }
 
+.pl-\[em\] {
+  padding-left: em;
+}
+
+.pr-\[6em\] {
+  padding-right: 6em;
+}
+
+.pr-\[1em\] {
+  padding-right: 1em;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2527,6 +2571,10 @@ video {
 
 .font-Saint400 {
   font-family: Saint400, Saint400;
+}
+
+.font-Inter400 {
+  font-family: Inter400, Inter400;
 }
 
 .text-2xl {
@@ -2711,6 +2759,10 @@ video {
   line-height: 21.94px;
 }
 
+.leading-24 {
+  line-height: 24px;
+}
+
 .leading-28 {
   line-height: 28px;
 }
@@ -2751,6 +2803,10 @@ video {
   line-height: 20.43px;
 }
 
+.leading-\[26\.9px\] {
+  line-height: 26.9px;
+}
+
 .leading-\[29\.26px\] {
   line-height: 29.26px;
 }
@@ -2783,8 +2839,20 @@ video {
   line-height: 46.32px;
 }
 
+.leading-\[46\.73px\] {
+  line-height: 46.73px;
+}
+
 .leading-\[58\.51px\] {
   line-height: 58.51px;
+}
+
+.leading-\[38\.73px\] {
+  line-height: 38.73px;
+}
+
+.leading-\[45\.93px\] {
+  line-height: 45.93px;
 }
 
 .tracking-\[3px\] {
@@ -3489,6 +3557,90 @@ video {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Inter300";
+
+  src: url("../fonts/Inter_18pt-Light.ttf") format("truetype");
+
+  font-weight: 300;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter400";
+
+  src: url("../fonts/Inter_18pt-Medium.ttf") format("truetype");
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter500";
+
+  src: url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter600";
+
+  src: url("../fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+
+  font-weight: 600;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter700";
+
+  src: url("../fonts/Inter_24pt-Bold.ttf") format("truetype");
+
+  font-weight: 700;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter800";
+
+  src: url("../fonts/Inter_24pt-ExtraBold.ttf") format("truetype");
+
+  font-weight: 800;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter900";
+
+  src: url("../fonts/Inter_18pt-Black.ttf") format("truetype");
+
+  font-weight: 900;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
 html.lenis,
 html.lenis body {
   height: auto;
@@ -3945,16 +4097,16 @@ footer{
 }
 
 @media (min-width: 1200px) {
+  .xl\:h-70p {
+    height: 70%;
+  }
+
   .xl\:h-80p {
     height: 80%;
   }
 
   .xl\:h-full {
     height: 100%;
-  }
-
-  .xl\:h-70p {
-    height: 70%;
   }
 
   .xl\:w-screen {
@@ -4005,16 +4157,8 @@ footer{
   border-left-width: 1px;
 }
 
-.\[\&\:first-child\]\:border-r-\[1px\]:first-child {
-  border-right-width: 1px;
-}
-
 .\[\&\:first-child\]\:border-l-white:first-child {
   border-left-color: #ffff;
-}
-
-.\[\&\:first-child\]\:border-r-white:first-child {
-  border-right-color: #ffff;
 }
 
 .\[\&\:not\(\:first-child\)\]\:border-x-\[1px\]:not(:first-child) {
