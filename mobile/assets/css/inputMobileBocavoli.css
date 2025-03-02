@@ -255,15 +255,17 @@ h6 {
   padding: 0;
   margin: 0;
 }
-
+header.Open .toggleItems{
+transform: translateX(10px);
+}
 header.Open .toggleItem:nth-child(1){
-  transform: rotate(27deg);
-  transform-origin: 0px 16px;
+  transform: rotate(42deg);
+  transform-origin: 0px -7px;
 }
 
 header.Open .toggleItem:nth-child(3){
-  transform: rotate(-27deg);
-  transform-origin: -7px 42px;
+  transform: rotate(-42deg);
+  transform-origin: 3px 10px;
 }
 img,
 .IMG,

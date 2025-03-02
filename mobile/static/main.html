@@ -8,456 +8,432 @@
     <link rel="stylesheet" href="/mobile/assets/css/outputMobileBocavoli.css">
 </head>
 
-<body class="Home-mobile overflow-hidden">
-    <header class="MobileHeader fixed z-[99] left-0 group/header flex  w-screen overflow-hidden bg-black">
-        <div class="innerHeader py-[.5em] mx-auto w-90p  flex justify-between items-center">
-            <div class="Logo w-[25px] h-[50px] flex justify-center items-center">
-                <a href="">
-                    <img src="/web/assets/images/logo.svg" alt="">
-                </a>
-            </div>
-           
-            <div class="right  flex flex-col gap-2 justify-center items-center">
-                <div class="MenuIcon w-auto flex justify-center items-center">
-                    <span class="toggleItems w-auto h-[28px] flex gap-[.4em]  group/toggleItems hover:cursor-pointer">
-                        <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
-                        <span
-                            class="toggleItem w-[1px] h-[28px] bg-white 
-                            group-hover/toggleItems:translate-y-[10px] group-[&.Open]/header:translate-y-[10px]
-                             group-[&.Open]/header:opacity-0
-                             duration-[900ms]"></span>
-                        <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
-                    </span>
+<body>
+    <main class="Home-mobile flex flex-col pb-8">
+        <header class="MobileHeader fixed z-[99] left-0 group/header flex  w-screen overflow-hidden bg-black">
+            <div class="innerHeader py-[.5em] mx-auto w-90p  flex justify-between items-center">
+                <div class="Logo w-[25px] h-[50px] flex justify-center items-center">
+                    <a href="">
+                        <img src="/web/assets/images/logo.svg" alt="">
+                    </a>
                 </div>
-                <span class="SearchIcon hover:cursor-pointer">
-                    <img src="/web/assets/images/searchIcon.svg" alt="">
-                </span>
-                <span class="lang">
-                    <a href="" class="font-Montserrat400 text-sm leading-17.07 text-white">
-                        FA
-                    </a>
-                </span>
+               
+                <div class="right flex gap-6 justify-center items-center">
+                    <span class="lang">
+                        <a href="" class="font-Montserrat400 text-sm leading-17.07 text-white">
+                            FA
+                        </a>
+                    </span>
+                    <span class="SearchIcon hover:cursor-pointer">
+                        <img src="/web/assets/images/searchIcon.svg" alt="">
+                    </span>
+                  
+                    <div class="MenuIcon w-auto flex justify-center items-center">
+                        <span class="toggleItems w-[28px] h-auto flex-col flex gap-[5px]  group/toggleItems hover:cursor-pointer">
+                            <span class="toggleItem h-[1px] w-[28px] bg-white duration-[900ms]"></span>
+                            <span
+                                class="toggleItem h-[1px] w-[28px] bg-white 
+                               
+                                 group-[&.Open]/header:opacity-0
+                                 duration-[900ms]"></span>
+                            <span class="toggleItem h-[1px] w-[28px] bg-white duration-[900ms]"></span>
+                        </span>
+                    </div>
+                </div>
+             
             </div>
-         
-        </div>
-    
-    </header>
-    <div class="Menu-Container fixed  w-full 
-    bottom-0 h-[100svh] overflow-hidden z-[20]  pointer-events-none group/menu 
-     [&.Open]:pointer-events-auto
-    flex justify-between  duration-[.8s] ">
-    <div class="right relative  bg-black translate-x-[-100%] duration-[700ms] group-[&.Open]/menu:translate-x-[0]  z-[11] w-[550px] min-w-[550px] 
-    flex flex-col h-full">
-        <div class="Menu w-85p mx-auto h-[90%] flex justify-start items-center">
-            <ul class="Menus w-full h-[80%] flex-col flex justify-center items-start gap-5">
-                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.2s]
-                items-start overflow-hidden">
-                    <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
-                    font-normal text-[32px]  leading-32.01 text-white 
-                        hover:text-grayMatn duration-[.4s] text-right">
-                        homepage
-                    </a>
-                </li>
-                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.3s]
-                items-start overflow-hidden">
-                    <a href="/" title="projects" alt="projects" class="Menu-link font-Montserrat400 
-                    font-normal text-[32px]  leading-32.01 text-white 
-                        hover:text-grayMatn duration-[.4s] text-right">
-                        projects & experiences
-                    <sub class="font-Montserrat400  text-xs leading-14.06 text-white bottom-[unset] 
-                    relative top-[-18px]">(12)</sub>
-                    </a>
-                </li>
-                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.4s]
-                items-start overflow-hidden">
-                    <a href="/" title="productions" alt="productions" class="Menu-link font-Montserrat400 
-                    font-normal text-[32px]  leading-32.01 text-white 
-                        hover:text-grayMatn duration-[.4s] text-right">
-                        collections & productions
-
-                    </a>
-                </li>
-                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.5s]
-                items-start overflow-hidden">
-                    <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
-                    font-normal text-[32px]  leading-32.01 text-white 
-                        hover:text-grayMatn duration-[.4s] text-right">
-                        privet
-                    </a>
-                </li>
-                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.6s]
-                items-start overflow-hidden">
-                    <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
-                    font-normal text-[32px]  leading-32.01 text-white 
-                        hover:text-grayMatn duration-[.4s] text-right">
-                        news & articles
+        
+        </header>
+        <div class="Menu-Container fixed  w-screen top-0 left-0 right-0
+        bottom-0 h-[100svh] overflow-hidden z-[20]  pointer-events-none group/menu 
+         [&.Open]:pointer-events-auto 
+        flex justify-between  duration-[1.2s] ">
+        <div class="right relative  bg-black translate-x-[-120%] duration-[700ms] group-[&.Open]/menu:translate-x-[0] 
+         z-[11] w-full ml-auto
+        flex flex-col h-full">
+            <div class="Menu w-85p mx-auto h-[90%] flex justify-start items-center">
+                <ul class="Menus w-full h-[80%] flex-col flex justify-center items-start gap-8">
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.2s]
+                    items-start overflow-hidden">
+                        <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            homepage
+                        </a>
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.3s]
+                    items-start overflow-hidden">
+                        <a href="/" title="projects" alt="projects" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            projects & experiences
                         <sub class="font-Montserrat400  text-xs leading-14.06 text-white bottom-[unset] 
                         relative top-[-18px]">(12)</sub>
                         </a>
-                    </a>
-                </li>
-                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.7s]
-                items-start overflow-hidden">
-                    <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
-                    font-normal text-[32px]  leading-32.01 text-white 
-                        hover:text-grayMatn duration-[.4s] text-right">
-                        about & history
-
-                    </a>
-                </li>
-                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.8s]
-                items-start overflow-hidden">
-                    <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
-                    font-normal text-[32px]  leading-32.01 text-white 
-                        hover:text-grayMatn duration-[.4s] text-right">
-                        contact us & upload
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="Box w-85p mx-auto h-[10%] border-t-[1px] border-grayMatn flex justify-between items-center">
-            <div class="Socials flex  w-full justify-between items-center">
-                <span class="Social-item flex justify-center items-center">
-                    <a href="tel:" class="flex justify-center items-center hover:text-[#989898] duration-[.4s]
-                     font-Montserrat400 text-sm leading-17.07 text-grayMatn">
-                        instagram
-                    </a>
-                </span>
-                <span class="Social-item flex justify-center items-center">
-                    <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
-                     font-Montserrat400 text-sm leading-17.07 text-grayMatn">
-                     email
-                    </a>
-                </span>
-                <span class="Social-item flex justify-center items-center">
-                    <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
-                     font-Montserrat400 text-sm leading-17.07 text-grayMatn">
-                     whatsapp 
-                    </a>
-                </span>
-          
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.4s]
+                    items-start overflow-hidden">
+                        <a href="/" title="productions" alt="productions" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            collections & productions
+    
+                        </a>
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.5s]
+                    items-start overflow-hidden">
+                        <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            privet
+                        </a>
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.6s]
+                    items-start overflow-hidden">
+                        <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            news & articles
+                            <sub class="font-Montserrat400  text-xs leading-14.06 text-white bottom-[unset] 
+                            relative top-[-18px]">(12)</sub>
+                            </a>
+                        </a>
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.7s]
+                    items-start overflow-hidden">
+                        <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            about & history
+    
+                        </a>
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.8s]
+                    items-start overflow-hidden">
+                        <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            contact us & upload
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Box w-85p mx-auto h-[10%] border-t-[1px] border-grayMatn flex justify-between items-center">
+                <div class="Socials flex  w-full justify-between items-center">
+                    <span class="Social-item flex justify-center items-center">
+                        <a href="tel:" class="flex justify-center items-center hover:text-[#989898] duration-[.4s]
+                         font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                            instagram
+                        </a>
+                    </span>
+                    <span class="Social-item flex justify-center items-center">
+                        <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
+                         font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                         email
+                        </a>
+                    </span>
+                    <span class="Social-item flex justify-center items-center">
+                        <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
+                         font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                         whatsapp 
+                        </a>
+                    </span>
+              
+                </div>
             </div>
         </div>
-    </div>
-    <div class=" pointer-events-none opacity-0 left relative z-[11] w-auto flex flex-col h-full group-[&.Open]/menu:translate-x-[0] translate-x-[100%] duration-[700ms]">
-        <img src="http://cdn.basiscore.net/hha117.undertest.ir/images/menu.jpg" alt="ramandJelvePardis"
-            class="h-full object-cover" title="ramandJelvePardis">
-    </div>
-</div>
-                <div class="Section-1 ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
-                   <div class="Box textBox w-auto translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                    opacity-0 flex flex-col gap-6 max-w-[536px] min-w-[536px]">
-                    <div class="Title w-auto flex-col flex justify-start items-start text-left">
-                        <h1 class="font-Montserrat300 font-light text-[48px] leading-58.51 text-black">
-                           THE
-                        </h1>
-                        <h2 class="font-Montserrat400 font-normal text-[48px] leading-58.51 text-black">
-                            KITCHEN
-                        </h2>
-                        <h3 class="font-Montserrat600 font-semibold text-[48px] leading-58.51 text-black">
-                            ARCHITECTURE 
-                        </h3>
-                    </div>
-                  
-                   </div>
-                </div>
-                <div class="Section-2 w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
-                    <div class="IMG  max-h-[90%] h-full flex justify-center items-center [&.appear]:translate-x-[0]
-                     [&.appear]:opacity-[1]  
-                     translate-x-[-1.5em] opacity-0 my-auto">
-                        <img src="/web/assets/images/gettyimages-1351100447-2048x2048 1.png" alt="" class=" h-auto max-h-[90%] 
-                        object-cover">
-                    </div>
-              
-                 </div>
-                 <div class="Section-3 ml-[5em] px-[8em] h-90p my-auto border-x-[1px] border-black sec  flex flex-col justify-center items-center">
-                    <div class="Box textBox gap-[1.3em] w-auto translate-x-[1.5em] delay-[.2s] duration-[.8s] opacity-0 flex flex-col 
-                    max-w-[474px] min-w-[474px]">
-                     <div class="Title w-auto flex-col flex justify-start items-start text-left">
-                         <h4 class="font-Montserrat400 flex flex-col font-normal text-base leading-19.5 text-left text-black">
-                            <span>
-                                BEGAN WITH A DREAM 
-                            </span>
-                            <span>
-                                TO TRANSFORM LIVING SPACES
-                            </span>
-                            <span>
-                                INTO A WORD OF ART.
-                            </span>
-                         </h4>
+      
+        </div>
+        <div class="Section-1 pt-[10em] sec flex flex-col justify-center items-center">
+                       <div class="Box textBox w-90p mx-auto translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                        opacity-0 flex flex-col gap-6">
+                        <div class="Title w-auto flex-col flex justify-start items-start text-left">
+                            <h1 class="font-Montserrat300 font-light text-[20px] leading-[24.38px] text-black">
+                               THE
+                            </h1>
+                            <h2 class="font-Montserrat400 font-normal text-[20px] leading-[24.38px] text-black">
+                                KITCHEN
+                            </h2>
+                            <h3 class="font-Montserrat600 font-semibold text-[20px] leading-[24.38px] text-black">
+                                ARCHITECTURE 
+                            </h3>
+                        </div>
                       
+                       </div>
+        </div>
+        <div class="Section-2 mt-4 w-90p mx-auto sec flex flex-col justify-center items-center">
+                        <div class="IMG flex justify-center items-center my-auto translate-y-[2.5rem] opacity-0
+                        [&.appear]:translate-y-[0] [&.appear]:opacity-[1]">
+                            <img src="/web/assets/images/gettyimages-1351100447-2048x2048 1.png" alt="" class=" w-full
+                            object-cover">
+                        </div>
+                  
+        </div>
+        <div class="Section-3 mx-auto  mt-9 sec  flex flex-col justify-center items-center">
+                        <div class="Box textBox  border-black border-b-[1px]  pb-[2em]  gap-[1.1em] mx-auto w-90p translate-x-[1.5em] delay-[.2s]
+                         duration-[.8s] opacity-0 flex flex-col ">
+                         <div class="Title w-auto flex-col flex justify-start items-start text-left">
+                             <h4 class="font-Montserrat400 flex flex-col font-normal text-base leading-19.5 text-left text-black">
+                                <span>
+                                    BEGAN WITH A DREAM 
+                                </span>
+                                <span>
+                                    TO TRANSFORM LIVING SPACES
+                                </span>
+                                <span>
+                                    INTO A WORD OF ART.
+                                </span>
+                             </h4>
+                          
+                         </div>
+                         <div class="text w-auto flex-col flex justify-start items-start 
+                         font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
+                         
+                             <p>
+                                 Architects worldwide understand the profound impact that the quality of a space has on life and strive to enhance it. True quality, however, is something that can only be created when it has been experienced, seen, or felt.This is what we have cultivated over years of collaboration with discerning clients, renowned global brands, and perfectionist architects. These experiences have taught us how to bring tangible, heartfelt quality to life in every design and execution.Bocaveli’s architects, who have worked extensively with top global brands such as Lualdi and Poggenpohl, deeply understand and embody this level of quality. This profound awareness shines through in every design and project we undertake.Each project at Bocaveli is crafted through the synergy of creative architects and skilled artisans, working with passion and precision to create something truly unique.We believe that great design is not only beautiful but also evokes emotions and enriches life.Bocaveli can be likened to a bonsai tree—small in size yet mature, refined, and deeply valuable. Like a bonsai, every detail is meticulously cultivated, embodying both artistry and growth, and reflecting a dedication to perfection that transcends size.Today, Bocaveli stands as a symbol of quality and luxury design in Iran. We don’t just build cabinetry; we create spaces that invite you to experience a luxurious and enduring way of living.
+    
+                             </p>
+                         </div>
+                       
+                        </div>
+        </div>
+        <div class="Section-4 mt-9 w-full sec flex justify-start items-center">
+                     <div class="Items w-90p mx-auto gap-6 flex flex-col justify-start items-start">
+                        <div class="Item IMG translate-y-[2.5rem] opacity-0
+                        [&.appear]:translate-y-[0] [&.appear]:opacity-[1] w-full overflow-hidden 
+                        h-full gap-5 border-b-[1px]
+                        [&:first-child]:border-l-white pb-[2em]
+                          my-auto  border-black flex flex-col justify-center items-center">
+                          <div class="IMG w-full flex justify-center items-center my-auto ">
+                                <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
+                                <img src="/web/assets/images/Layer 28 copy 1.png" alt="" class="w-full  h-full object-cover">
+                                </a>
+                            </div>
+                            <div class="Title w-full flex justify-start text-left text-black
+                            font-Montserrat700 font-bold text-base leading-19.5">
+                                <a href="">
+                                    ABOUT & HISTORY
+                                </a>
+                            </div>
+                            <div class="Text w-full flex-col flex justify-start items-start 
+                            font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
+                                <p>
+                                    Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Item IMG translate-y-[2.5rem] opacity-0
+                        [&.appear]:translate-y-[0] [&.appear]:opacity-[1] w-full overflow-hidden 
+                        h-full gap-5 border-b-[1px]
+                        [&:first-child]:border-l-white pb-[2em]
+                          my-auto  border-black flex flex-col justify-center items-center">
+                          <div class="IMG w-full flex justify-center items-center my-auto ">
+                                <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
+                                <img src="/web/assets/images/Layer 28 copy 1.png" alt="" class="w-full  h-full object-cover">
+                                </a>
+                            </div>
+                            <div class="Title w-full flex justify-start text-left text-black
+                            font-Montserrat700 font-bold text-base leading-19.5">
+                                <a href="">
+                                    ABOUT & HISTORY
+                                </a>
+                            </div>
+                            <div class="Text w-full flex-col flex justify-start items-start 
+                            font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
+                                <p>
+                                    Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Item IMG translate-y-[2.5rem] opacity-0
+                        [&.appear]:translate-y-[0] [&.appear]:opacity-[1] w-full overflow-hidden 
+                        h-full gap-5 border-b-[1px]
+                        [&:first-child]:border-l-white pb-[2em]
+                          my-auto  border-black flex flex-col justify-center items-center">
+                          <div class="IMG w-full flex justify-center items-center my-auto ">
+                                <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
+                                <img src="/web/assets/images/Layer 28 copy 1.png" alt="" class="w-full  h-full object-cover">
+                                </a>
+                            </div>
+                            <div class="Title w-full flex justify-start text-left text-black
+                            font-Montserrat700 font-bold text-base leading-19.5">
+                                <a href="">
+                                    ABOUT & HISTORY
+                                </a>
+                            </div>
+                            <div class="Text w-full flex-col flex justify-start items-start 
+                            font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
+                                <p>
+                                    Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Item IMG translate-y-[2.5rem] opacity-0
+                        [&.appear]:translate-y-[0] [&.appear]:opacity-[1] w-full overflow-hidden 
+                        h-full gap-5 border-b-[1px]
+                        [&:first-child]:border-l-white pb-[2em]
+                          my-auto  border-black flex flex-col justify-center items-center">
+                          <div class="IMG w-full flex justify-center items-center my-auto ">
+                                <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
+                                <img src="/web/assets/images/Layer 28 copy 1.png" alt="" class="w-full  h-full object-cover">
+                                </a>
+                            </div>
+                            <div class="Title w-full flex justify-start text-left text-black
+                            font-Montserrat700 font-bold text-base leading-19.5">
+                                <a href="">
+                                    ABOUT & HISTORY
+                                </a>
+                            </div>
+                            <div class="Text w-full flex-col flex justify-start items-start 
+                            font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
+                                <p>
+                                    Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
+                                </p>
+                            </div>
+                        </div>
                      </div>
-                     <div class="text w-auto flex-col flex justify-start items-start 
-                     font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
-                     
-                         <p>
-                             Architects worldwide understand the profound impact that the quality of a space has on life and strive to enhance it. True quality, however, is something that can only be created when it has been experienced, seen, or felt.This is what we have cultivated over years of collaboration with discerning clients, renowned global brands, and perfectionist architects. These experiences have taught us how to bring tangible, heartfelt quality to life in every design and execution.Bocaveli’s architects, who have worked extensively with top global brands such as Lualdi and Poggenpohl, deeply understand and embody this level of quality. This profound awareness shines through in every design and project we undertake.Each project at Bocaveli is crafted through the synergy of creative architects and skilled artisans, working with passion and precision to create something truly unique.We believe that great design is not only beautiful but also evokes emotions and enriches life.Bocaveli can be likened to a bonsai tree—small in size yet mature, refined, and deeply valuable. Like a bonsai, every detail is meticulously cultivated, embodying both artistry and growth, and reflecting a dedication to perfection that transcends size.Today, Bocaveli stands as a symbol of quality and luxury design in Iran. We don’t just build cabinetry; we create spaces that invite you to experience a luxurious and enduring way of living.
-
-                         </p>
-                     </div>
-                   
-                    </div>
-                 </div>
-                 <div class="Section-4 h-90p my-auto sec flex justify-start items-center">
-                 <div class="Items flex justify-start h-full items-start">
-                    <div class="Item min-w-[454px] overflow-hidden h-full gap-3 [&:not(:first-child)]:border-x-[1px]
-                    [&:first-child]:border-l-white
-                     px-[8em] my-auto  border-black flex flex-col justify-center items-center">
-                     <div class="IMG lg:h-80p xl:h-full group/img  [&.appear]:translate-x-[0] [&.appear]:opacity-[1] translate-x-[-1.5em] opacity-0
-                     hover:cursor-pointer] duration-[.4s] w-[454px] max-w-[567px]">
-                            <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
-                            <img src="/web/assets/images/Layer 28 copy 1.png" alt="" class="w-full  h-full object-cover">
-                            </a>
-                        </div>
-                        <div class="Title textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                        opacity-0 mr-auto w-auto flex justify-start text-left text-black
-                        font-Montserrat700 font-bold text-base leading-19.5">
-                            <a href="">
-                                ABOUT & HISTORY
-                            </a>
-                        </div>
-                        <div class="Text textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                        opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
-                        font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
-                            <p>
-                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="Item min-w-[454px] overflow-hidden h-full gap-3 [&:not(:first-child)]:border-x-[1px]
-                    [&:first-child]:border-l-white
-                     px-[8em] my-auto  border-black flex flex-col justify-center items-center">
-                     <div class="IMG lg:h-80p xl:h-full group/img  [&.appear]:translate-x-[0] [&.appear]:opacity-[1] translate-x-[-1.5em] opacity-0
-                     hover:cursor-pointer] duration-[.4s] w-[454px] max-w-[567px]">
-                            <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
-                            <img src="/web/assets/images/Layer 28 copy 1.png" alt="" class="w-full  h-full object-cover">
-                            </a>
-                        </div>
-                        <div class="Title textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                        opacity-0 mr-auto w-auto flex justify-start text-left text-black
-                        font-Montserrat700 font-bold text-base leading-19.5">
-                            <a href="">
-                                ABOUT & HISTORY
-                            </a>
-                        </div>
-                        <div class="Text textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                        opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
-                        font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
-                            <p>
-                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="Item min-w-[454px] overflow-hidden h-full gap-3 [&:not(:first-child)]:border-x-[1px]
-                    [&:first-child]:border-l-white
-                     px-[8em] my-auto  border-black flex flex-col justify-center items-center">
-                     <div class="IMG lg:h-80p xl:h-full group/img  [&.appear]:translate-x-[0] [&.appear]:opacity-[1] translate-x-[-1.5em] opacity-0
-                     hover:cursor-pointer] duration-[.4s] w-[454px] max-w-[567px]">
-                            <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
-                            <img src="/web/assets/images/2.png" alt="" class="w-full  h-full object-cover">
-                            </a>
-                        </div>
-                        <div class="Title textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                        opacity-0 mr-auto w-auto flex justify-start text-left text-black
-                        font-Montserrat700 font-bold text-base leading-19.5">
-                            <a href="">
-                                ABOUT & HISTORY
-                            </a>
-                        </div>
-                        <div class="Text textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                        opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
-                        font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
-                            <p>
-                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="Item min-w-[454px] overflow-hidden h-full gap-3 [&:not(:first-child)]:border-x-[1px]
-                    [&:first-child]:border-l-white
-                     px-[8em] my-auto  border-black flex flex-col justify-center items-center">
-                     <div class="IMG lg:h-80p xl:h-full group/img  [&.appear]:translate-x-[0] [&.appear]:opacity-[1] translate-x-[-1.5em] opacity-0
-                     hover:cursor-pointer] duration-[.4s] w-[454px] max-w-[567px]">
-                            <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
-                            <img src="/web/assets/images/3.png" alt="" class="w-full  h-full object-cover">
-                            </a>
-                        </div>
-                        <div class="Title textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                        opacity-0 mr-auto w-auto flex justify-start text-left text-black
-                        font-Montserrat700 font-bold text-base leading-19.5">
-                            <a href="">
-                                ABOUT & HISTORY
-                            </a>
-                        </div>
-                        <div class="Text textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                        opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
-                        font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
-                            <p>
-                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="Item min-w-[454px] overflow-hidden h-full gap-3 [&:not(:first-child)]:border-x-[1px]
-                    [&:first-child]:border-l-white
-                     px-[8em] my-auto  border-black flex flex-col justify-center items-center">
-                     <div class="IMG lg:h-80p xl:h-full group/img  [&.appear]:translate-x-[0] [&.appear]:opacity-[1] translate-x-[-1.5em] opacity-0
-                     hover:cursor-pointer] duration-[.4s] w-[454px] max-w-[567px]">
-                            <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
-                            <img src="/web/assets/images/4.png" alt="" class="w-full  h-full object-cover">
-                            </a>
-                        </div>
-                        <div class="Title textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                        opacity-0 mr-auto w-auto flex justify-start text-left text-black
-                        font-Montserrat700 font-bold text-base leading-19.5">
-                            <a href="">
-                                ABOUT & HISTORY
-                            </a>
-                        </div>
-                        <div class="Text textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                        opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
-                        font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
-                            <p>
-                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
-                            </p>
-                        </div>
-                    </div>
-                 </div>
-                 </div>
-                 <div class="Section-footer before:contents-[''] before:absolute before:left-[29.2%] before:top-0
-                 before:w-[1px] before:h-full before:bg-black before:z-[1] relative h-90p my-auto sec flex justify-start items-center">
-                    <div class="footerDesk e relative z-10
-                      px-[8em] flex flex-col justify-center h-full">
-                          <div class="TopSec h-90p flex flex-col justify-center items-center " >
-                            <div class="Details bg-white flex gap-[2.5em] px-[5em] py-[5em]">
-                                <ul class="MenuFooter w-auto flex flex-col items-center justify-between">
-                                    <li class="Menu-item textBox translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                                    opacity-0">
-                                        <a href="" class="Menu-link group/footeritem flex flex-col text-center">
-                                           <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
-                                            text-lg font-Montserrat700 leading-21.94 text-black">
-                                            About
-                                           </span>
-                                           <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
-                                            & History 
-                                           </span>
-                                        </a>
-                                    </li>
-                                    <li class="Menu-item textBox translate-x-[1.5em] delay-[.3s] duration-[.8s]
-                                    opacity-0">
-                                        <a href="" class="Menu-link group/footeritem flex flex-col text-center">
-                                           <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
-                                            text-lg font-Montserrat700 leading-21.94 text-black">
-                                            Projects
-                                           </span>
-                                           <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
-                                            & Experiences
-                                           </span>
-                                        </a>
-                                    </li>
-                                    <li class="Menu-item textBox translate-x-[1.5em] delay-[.4s] duration-[.8s]
-                                    opacity-0">
-                                        <a href="" class="Menu-link group/footeritem flex flex-col text-center">
-                                           <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
-                                            text-lg font-Montserrat700 leading-21.94 text-black">
-                                            Collections
-                                           </span>
-                                           <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
-                                            & Products
-                                           </span>
-                                        </a>
-                                    </li>
-                                    <li class="Menu-item textBox translate-x-[1.5em] delay-[.5s] duration-[.8s]
-                                    opacity-0">
-                                        <a href="" class="Menu-link group/footeritem flex flex-col text-center">
-                                           <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
-                                            text-lg font-Montserrat700 leading-21.94 text-black">
-                                            News 
-                                           
-                                           </span>
-                                           <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
-                                            & Arcticles
-                                           </span>
-                                        </a>
-                                    </li>
-                                    <li class="Menu-item textBox translate-x-[1.5em] delay-[.6s] duration-[.8s]
-                                    opacity-0">
-                                        <a href="" class="Menu-link group/footeritem flex flex-col text-center">
-                                           <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
-                                            text-lg font-Montserrat700 leading-21.94 text-black">
-                                            Contact Us
-                                            
-                                           </span>
-                                           <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
-                                            & Uploads
-                                           </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="Texts translate-x-[1.5em] delay-[.2s] duration-[.8s]
-                                opacity-0 textBox gap-3 w-auto flex flex-col">
-                                   <div class="Title w-auto mr-auto flex flex-col">
-                                    <p class="font-Montserrat700 font-bold tracking-[3px] text-lg leading-21.94 text-black">
-                                        BOCAVELI
-                                      
-                                    </p>
-                                    <p class="font-Montserrat300 font-light text-lg leading-21.94 text-black">
-                                        KITCEHNS & MORE
-                                    </p>
-                                   </div>
-                                   <div class="Text flex w-[318px] flex-col gap-[1em] font-Montserrat300 font-light max-w-[318px]
-                                   text-[13px] leading-17.07 text-grayMatn text-left">
-                                    <p>
-                                        we offer specialized design services with a focus on kitchens, wardrobes, and more. Our professional team of architects, with extensive experience in kitchen and wardrobe design, brings expertise gained from working with high-end international brands.
-
-We prioritize precision, creativity, and attention to detail, ensuring that each space we design is both unique and functional. Bocaveli not only delivers beautiful, high-quality products but also provides an exceptional experience in design and project execution, tailored to meet the highest standards and the unique needs of our clients.
-
-
-
-                                    </p>
-                                    <p>
-                                        +98-91007733    
-                                    </p>
-                                   </div>
+        </div>
+        <div class="Section-footer mt-6 py-[2em] before:contents-[''] 
+                     before:absolute before:right-0 before:mx-auto before:left-0 before:top-0
+                     before:w-[1px] before:h-full before:bg-black before:z-[1]
+                      relative my-auto sec w-full mx-auto flex justify-start items-center">
+                        <div class="footerDesk mx-auto w-90p relative z-10
+                          flex flex-col justify-center">
+                              <div class="TopSec  mx-auto flex flex-col justify-center items-center " >
+                                <div class="Details bg-white flex-col flex gap-[2em] py-[2em]">
+                                    <div class="Texts w-90p mx-auto translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                                    opacity-0 textBox gap-3 flex flex-col">
+                                       <div class="Title w-full  flex justify-center items-center flex-col">
+                                        <p class="font-Montserrat700 font-bold tracking-[3px] text-lg leading-21.94 text-black">
+                                            BOCAVELI
+                                          
+                                        </p>
+                                        <p class="font-Montserrat300 font-light text-lg leading-21.94 text-black">
+                                            KITCEHNS & MORE
+                                        </p>
+                                       </div>
+                                       <div class="Text flex w-full flex-col gap-[1em] font-Montserrat300 font-light 
+                                       text-[13px] leading-17.07 text-grayMatn text-center">
+                                        <p>
+                                            we offer specialized design services with a focus on kitchens, wardrobes, and more. Our professional team of architects, with extensive experience in kitchen and wardrobe design, brings expertise gained from working with high-end international brands.
+    
+    We prioritize precision, creativity, and attention to detail, ensuring that each space we design is both unique and functional. Bocaveli not only delivers beautiful, high-quality products but also provides an exceptional experience in design and project execution, tailored to meet the highest standards and the unique needs of our clients.
+    
+    
+    
+                                        </p>
+                                        <p>
+                                            +98-91007733    
+                                        </p>
+                                       </div>
+                                    </div>
+                                    <ul class="MenuFooter w-auto flex flex-col items-center justify-between">
+                                        <li class="Menu-item textBox translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                                        opacity-0">
+                                            <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                               <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                                text-lg font-Montserrat700 leading-[19.5px] text-black">
+                                                About
+                                               </span>
+                                               <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                                & History 
+                                               </span>
+                                            </a>
+                                        </li>
+                                        <li class="Menu-item textBox translate-x-[1.5em] delay-[.3s] duration-[.8s]
+                                        opacity-0">
+                                            <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                               <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                                text-lg font-Montserrat700 leading-[19.5px] text-black">
+                                                Projects
+                                               </span>
+                                               <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                                & Experiences
+                                               </span>
+                                            </a>
+                                        </li>
+                                        <li class="Menu-item textBox translate-x-[1.5em] delay-[.4s] duration-[.8s]
+                                        opacity-0">
+                                            <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                               <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                                text-lg font-Montserrat700 leading-[19.5px] text-black">
+                                                Collections
+                                               </span>
+                                               <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                                & Products
+                                               </span>
+                                            </a>
+                                        </li>
+                                        <li class="Menu-item textBox translate-x-[1.5em] delay-[.5s] duration-[.8s]
+                                        opacity-0">
+                                            <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                               <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                                text-lg font-Montserrat700 leading-[19.5px] text-black">
+                                                News 
+                                               
+                                               </span>
+                                               <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                                & Arcticles
+                                               </span>
+                                            </a>
+                                        </li>
+                                        <li class="Menu-item textBox translate-x-[1.5em] delay-[.6s] duration-[.8s]
+                                        opacity-0">
+                                            <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                               <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                                text-lg font-Montserrat700 leading-[19.5px] text-black">
+                                                Contact Us
+                                                
+                                               </span>
+                                               <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                                & Uploads
+                                               </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                   
                                 </div>
-                            </div>
-                          </div>
-                          <div class="BottomSec  h-[10%] flex justify-start items-end">
-                            <div class="socials-footer ml-[3%] flex gap-[1.5em] justify-start items-center">
-                                <span class="social-item shopping">
-                                    <a href="" target="_blank">
-                                        <img src="/web/assets/images/shopping.svg" alt="">
-                                    </a>
-                                </span>
-                                <span class="social-item instagramF">
-                                    <a href="" target="_blank">
-                                        <img src="/web/assets/images/instagramF.svg" alt="">
-                                    </a>
-                                </span>
-                                <span class="social-item emailF">
-                                    <a href="" target="_blank">
-                                        <img src="/web/assets/images/emailF.svg" alt="">
-                                    </a>
-                                </span>
-                                <span class="social-item whatsappF">
-                                    <a href="" target="_blank">
-                                        <img src="/web/assets/images/whatsappF.svg" alt="">
-                                    </a>
-                                </span>
-                                <span class="social-item imagesF">
-                                    <a href="" target="_blank">
-                                        <img src="/web/assets/images/imagesF.svg" alt="">
-                                    </a>
-                                </span>
-                            </div>
-                          </div>
-                    </div>
-                 </div>
+                              </div>
+                              <div class="BottomSec pt-[3.5em] w-full flex justify-center items-center">
+                                <div class="socials-footer flex gap-[1.5em] justify-start items-center">
+                                    <span class="social-item shopping">
+                                        <a href="" target="_blank">
+                                            <img src="/web/assets/images/shopping.svg" alt="">
+                                        </a>
+                                    </span>
+                                    <span class="social-item instagramF">
+                                        <a href="" target="_blank">
+                                            <img src="/web/assets/images/instagramF.svg" alt="">
+                                        </a>
+                                    </span>
+                                    <span class="social-item emailF">
+                                        <a href="" target="_blank">
+                                            <img src="/web/assets/images/emailF.svg" alt="">
+                                        </a>
+                                    </span>
+                                    <span class="social-item whatsappF">
+                                        <a href="" target="_blank">
+                                            <img src="/web/assets/images/whatsappF.svg" alt="">
+                                        </a>
+                                    </span>
+                                    <span class="social-item imagesF">
+                                        <a href="" target="_blank">
+                                            <img src="/web/assets/images/imagesF.svg" alt="">
+                                        </a>
+                                    </span>
+                                </div>
+                              </div>
+                        </div>
+        </div>
+    </main>
+  
  
     <div class="searchContainer overflow-y-auto flex-col fixed z-[98] top-0 left-0 w-screen 
     translate-x-[-100%] opacity-0 pointer-events-none duration-[.8s] [&.OpenSearch]:opacity-[1]
@@ -535,7 +511,7 @@ We prioritize precision, creativity, and attention to detail, ensuring that each
       </div>
     <!-- MAIN CONTAINER -->
     <script src="/mobile/assets/js/lenisScroll.js"></script>
-    <script src="/mobile/assets/js/configMobile.js"></script>
+    <script src="/mobile/assets/js/config-mobile.js"></script>
     <script src="/mobile/assets/js/default-mobile.js"></script>
 </body>
 

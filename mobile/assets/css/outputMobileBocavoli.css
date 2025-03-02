@@ -879,6 +879,10 @@ video {
   margin-left: 82px;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .mr-\[5em\] {
   margin-right: 5em;
 }
@@ -929,6 +933,30 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .box-border {
@@ -1071,6 +1099,10 @@ video {
 
 .h-\[100svh\] {
   height: 100svh;
+}
+
+.h-\[1px\] {
+  height: 1px;
 }
 
 .h-\[220px\] {
@@ -1229,6 +1261,14 @@ video {
   width: 237px;
 }
 
+.w-\[25px\] {
+  width: 25px;
+}
+
+.w-\[28px\] {
+  width: 28px;
+}
+
 .w-\[296px\] {
   width: 296px;
 }
@@ -1316,10 +1356,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[25px\] {
-  width: 25px;
 }
 
 .min-w-\[450px\] {
@@ -1561,6 +1597,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-x-\[-120\%\] {
+  --tw-translate-x: -120%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-x-\[-2\.5rem\] {
   --tw-translate-x: -2.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1588,6 +1629,31 @@ video {
 
 .translate-y-\[3px\] {
   --tw-translate-y: 3px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-2\.5rem\] {
+  --tw-translate-y: -2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[2\.5rem\] {
+  --tw-translate-y: 2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-100 {
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[70\%\] {
+  --tw-translate-y: 70%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-70\%\] {
+  --tw-translate-y: -70%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2226,8 +2292,20 @@ video {
   gap: 5em;
 }
 
+.gap-\[5px\] {
+  gap: 5px;
+}
+
 .gap-\[8em\] {
   gap: 8em;
+}
+
+.gap-\[1\.1em\] {
+  gap: 1.1em;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .gap-x-20 {
@@ -3000,9 +3078,14 @@ video {
   padding-bottom: 5em;
 }
 
-.py-\[1em\] {
-  padding-top: 1em;
-  padding-bottom: 1em;
+.py-\[2em\] {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.py-\[4em\] {
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .pb-\[1em\] {
@@ -3051,6 +3134,38 @@ video {
 
 .pr-\[8em\] {
   padding-right: 8em;
+}
+
+.pt-\[10em\] {
+  padding-top: 10em;
+}
+
+.pb-\[2em\] {
+  padding-bottom: 2em;
+}
+
+.pb-\[1\.5em\] {
+  padding-bottom: 1.5em;
+}
+
+.pt-\[4em\] {
+  padding-top: 4em;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pt-\[3\.5em\] {
+  padding-top: 3.5em;
 }
 
 .text-left {
@@ -3164,6 +3279,10 @@ video {
 
 .text-\[15px\] {
   font-size: 15px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .text-\[28px\] {
@@ -3903,6 +4022,10 @@ video {
   transition-duration: .8s;
 }
 
+.duration-\[1\.2s\] {
+  transition-duration: 1.2s;
+}
+
 .duration-\[1s\] {
   transition-duration: 1s;
 }
@@ -4388,14 +4511,18 @@ h6 {
   margin: 0;
 }
 
+header.Open .toggleItems{
+  transform: translateX(10px);
+}
+
 header.Open .toggleItem:nth-child(1){
-  transform: rotate(27deg);
-  transform-origin: 0px 16px;
+  transform: rotate(42deg);
+  transform-origin: 0px -7px;
 }
 
 header.Open .toggleItem:nth-child(3){
-  transform: rotate(-27deg);
-  transform-origin: -7px 42px;
+  transform: rotate(-42deg);
+  transform-origin: 3px 10px;
 }
 
 img,
@@ -4669,14 +4796,35 @@ footer{
   top: 0px;
 }
 
+.before\:left-0::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.before\:right-0::before {
+  content: var(--tw-content);
+  right: 0px;
+}
+
 .before\:z-\[1\]::before {
   content: var(--tw-content);
   z-index: 1;
 }
 
+.before\:mx-auto::before {
+  content: var(--tw-content);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .before\:h-full::before {
   content: var(--tw-content);
   height: 100%;
+}
+
+.before\:h-\[96\%\]::before {
+  content: var(--tw-content);
+  height: 96%;
 }
 
 .before\:w-\[1px\]::before {
@@ -4949,6 +5097,11 @@ footer{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.\[\&\.appear\]\:translate-y-\[0\].appear {
+  --tw-translate-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .\[\&\.appear\]\:\!opacity-\[1\].appear {
   opacity: 1 !important;
 }
@@ -4996,6 +5149,10 @@ footer{
 
 .\[\&\:not\(\:first-child\)\]\:border-r-\[1px\]:not(:first-child) {
   border-right-width: 1px;
+}
+
+.\[\&\:not\(\:first-child\)\]\:border-b-\[1px\]:not(:first-child) {
+  border-bottom-width: 1px;
 }
 
 .\[\&\:not\(\:last-child\)\]\:border-r-\[1px\]:not(:last-child) {

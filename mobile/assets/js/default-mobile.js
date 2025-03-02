@@ -1,28 +1,18 @@
 document.addEventListener('DOMContentLoaded',()=>{
-  setTimeout(() => {
-      let Box =document.querySelector('.Section-1 .Box')
-  Box.classList.add('appear-top')    
-  }, 800);
-  let projects =[...document.querySelectorAll('.Project:not(:first-child)')]
-  let blacks =[...document.querySelectorAll('.blackSec')]
+    let textBoxs =[...document.querySelectorAll('.textBox')]
+    let IMGS = [...document.querySelectorAll('.IMG')]
+    textBoxs[0].classList.add('appear')
+    textBoxs[1].classList.add('appear')
+    IMGS[0].classList.add('appear')
   document.addEventListener('scroll',(e)=>{
-      projects.map(pro=>{
+    textBoxs.map(pro=>{
           animate(pro)
           })
-   
-     const docHeight = document.documentElement.scrollHeight
-     const viewportHeight = window.innerHeight
-     const scrollPosition = window.scrollY || document.documentElement.scrollTop
-     if(scrollPosition + viewportHeight >= docHeight - 1){
-      console.log('arrive end of page !');
-      blacks.map(b=>{
-          b.classList.add('appear')
+    IMGS.map(pro=>{
+        animate(pro)
       })
-     }
-     
   })
 })
-document.querySelector('.Project:first-child').classList.add('appear')
 const animate = (elem)=>{
   let fadeElement = elem
   let positionElement = fadeElement.getBoundingClientRect().top;
