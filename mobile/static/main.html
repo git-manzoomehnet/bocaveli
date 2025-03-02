@@ -5,158 +5,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/web/assets/css/outputDesktop.css">
+    <link rel="stylesheet" href="/mobile/assets/css/outputMobileBocavoli.css">
 </head>
 
-<body class="Home horizontal">
-
-      <!-- MAIN CONTAINER -->
-      <div class="Home-Sec container-Sec" >
-        <section id="PinSection">
-            <div class="Pin-Wrapp">
-                <header class="Horizontal-header  [&.fixedMenu]:fixed z-[99] left-0 group/header flex DesktopHeader w-[82px] h-screen overflow-hidden bg-black">
-                    <div class="innerHeader h-[90%] my-auto flex-col w-full flex justify-between items-center">
-                        <div class="Logo w-full flex justify-center items-center">
-                            <a href="">
-                                <img src="/web/assets/images/logo.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="MenuIcon w-auto flex justify-center items-center">
-                            <span class="toggleItems w-auto h-[28px] flex gap-[.4em]  group/toggleItems hover:cursor-pointer">
-                                <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
-                                <span
-                                    class="toggleItem w-[1px] h-[28px] bg-white 
-                                    group-hover/toggleItems:translate-y-[10px] group-[&.Open]/header:translate-y-[10px]
-                                     group-[&.Open]/header:opacity-0
-                                     duration-[900ms]"></span>
-                                <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
-                            </span>
-                        </div>
-                        <div class="Bottom w-full flex flex-col gap-2 justify-center items-center">
-                            <span class="SearchIcon hover:cursor-pointer">
-                                <img src="/web/assets/images/searchIcon.svg" alt="">
-                            </span>
-                            <span class="lang">
-                                <a href="" class="font-Montserrat400 text-sm leading-17.07 text-white">
-                                    FA
-                                </a>
-                            </span>
-                        </div>
-                     
-                    </div>
-                
-                </header>
-                <div class="Menu-Container  w-0 [&.fixedMenu]:fixed [&.fixedMenu]:ml-[82px] [&.fixedMenu]:left-0 [&.fixedMenu]:top-0
-                [&.fixedMenu]:z-50
-                bottom-0 h-screen overflow-hidden z-[20]  pointer-events-none group/menu 
-                 [&.Open]:pointer-events-auto [&.Open]:w-[550px]
-                flex justify-between  duration-[.8s] ">
-                <div class="right relative  bg-black translate-x-[-100%] duration-[700ms]
-                 group-[&.Open]/menu:translate-x-[0]  z-[11] w-[550px] min-w-[550px] 
-                flex flex-col h-full">
-                    <div class="Menu w-85p mx-auto h-[90%] flex justify-start items-center">
-                        <ul class="Menus w-full h-[80%] flex-col flex justify-center items-start gap-5">
-                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.2s]
-                            items-start overflow-hidden">
-                                <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
-                                font-normal text-[32px]  leading-32.01 text-white 
-                                    hover:text-grayMatn duration-[.4s] text-right">
-                                    homepage
-                                </a>
-                            </li>
-                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.3s]
-                            items-start overflow-hidden">
-                                <a href="/" title="projects" alt="projects" class="Menu-link font-Montserrat400 
-                                font-normal text-[32px]  leading-32.01 text-white 
-                                    hover:text-grayMatn duration-[.4s] text-right">
-                                    projects & experiences
-                                <sub class="font-Montserrat400  text-xs leading-14.06 text-white bottom-[unset] 
-                                relative top-[-18px]">(12)</sub>
-                                </a>
-                            </li>
-                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.4s]
-                            items-start overflow-hidden">
-                                <a href="/" title="productions" alt="productions" class="Menu-link font-Montserrat400 
-                                font-normal text-[32px]  leading-32.01 text-white 
-                                    hover:text-grayMatn duration-[.4s] text-right">
-                                    collections & productions
-            
-                                </a>
-                            </li>
-                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.5s]
-                            items-start overflow-hidden">
-                                <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
-                                font-normal text-[32px]  leading-32.01 text-white 
-                                    hover:text-grayMatn duration-[.4s] text-right">
-                                    privet
-                                </a>
-                            </li>
-                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.6s]
-                            items-start overflow-hidden">
-                                <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
-                                font-normal text-[32px]  leading-32.01 text-white 
-                                    hover:text-grayMatn duration-[.4s] text-right">
-                                    news & articles
-                                    <sub class="font-Montserrat400  text-xs leading-14.06 text-white bottom-[unset] 
-                                    relative top-[-18px]">(12)</sub>
-                                    </a>
-                                </a>
-                            </li>
-                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.7s]
-                            items-start overflow-hidden">
-                                <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
-                                font-normal text-[32px]  leading-32.01 text-white 
-                                    hover:text-grayMatn duration-[.4s] text-right">
-                                    about & history
-            
-                                </a>
-                            </li>
-                            <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
-                            opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.8s]
-                            items-start overflow-hidden">
-                                <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
-                                font-normal text-[32px]  leading-32.01 text-white 
-                                    hover:text-grayMatn duration-[.4s] text-right">
-                                    contact us & upload
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="Box w-85p mx-auto h-[10%] border-t-[1px] border-grayMatn flex justify-between items-center">
-                        <div class="Socials flex  w-full justify-between items-center">
-                            <span class="Social-item flex justify-center items-center">
-                                <a href="tel:" class="flex justify-center items-center hover:text-[#989898] duration-[.4s]
-                                 font-Montserrat400 text-sm leading-17.07 text-grayMatn">
-                                    instagram
-                                </a>
-                            </span>
-                            <span class="Social-item flex justify-center items-center">
-                                <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
-                                 font-Montserrat400 text-sm leading-17.07 text-grayMatn">
-                                 email
-                                </a>
-                            </span>
-                            <span class="Social-item flex justify-center items-center">
-                                <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
-                                 font-Montserrat400 text-sm leading-17.07 text-grayMatn">
-                                 whatsapp 
-                                </a>
-                            </span>
-                      
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class=" pointer-events-none opacity-0 left relative z-[11] w-auto flex flex-col h-full group-[&.Open]/menu:translate-x-[0] translate-x-[100%] duration-[700ms]">
-                    <img src="http://cdn.basiscore.net/hha117.undertest.ir/images/menu.jpg" alt="ramandJelvePardis"
-                        class="h-full object-cover" title="ramandJelvePardis">
-                </div> -->
+<body class="Home-mobile overflow-hidden">
+    <header class="MobileHeader fixed z-[99] left-0 group/header flex  w-screen overflow-hidden bg-black">
+        <div class="innerHeader py-[.5em] mx-auto w-90p  flex justify-between items-center">
+            <div class="Logo w-[25px] h-[50px] flex justify-center items-center">
+                <a href="">
+                    <img src="/web/assets/images/logo.svg" alt="">
+                </a>
             </div>
+           
+            <div class="right  flex flex-col gap-2 justify-center items-center">
+                <div class="MenuIcon w-auto flex justify-center items-center">
+                    <span class="toggleItems w-auto h-[28px] flex gap-[.4em]  group/toggleItems hover:cursor-pointer">
+                        <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
+                        <span
+                            class="toggleItem w-[1px] h-[28px] bg-white 
+                            group-hover/toggleItems:translate-y-[10px] group-[&.Open]/header:translate-y-[10px]
+                             group-[&.Open]/header:opacity-0
+                             duration-[900ms]"></span>
+                        <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
+                    </span>
+                </div>
+                <span class="SearchIcon hover:cursor-pointer">
+                    <img src="/web/assets/images/searchIcon.svg" alt="">
+                </span>
+                <span class="lang">
+                    <a href="" class="font-Montserrat400 text-sm leading-17.07 text-white">
+                        FA
+                    </a>
+                </span>
+            </div>
+         
+        </div>
+    
+    </header>
+    <div class="Menu-Container fixed  w-full 
+    bottom-0 h-[100svh] overflow-hidden z-[20]  pointer-events-none group/menu 
+     [&.Open]:pointer-events-auto
+    flex justify-between  duration-[.8s] ">
+    <div class="right relative  bg-black translate-x-[-100%] duration-[700ms] group-[&.Open]/menu:translate-x-[0]  z-[11] w-[550px] min-w-[550px] 
+    flex flex-col h-full">
+        <div class="Menu w-85p mx-auto h-[90%] flex justify-start items-center">
+            <ul class="Menus w-full h-[80%] flex-col flex justify-center items-start gap-5">
+                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.2s]
+                items-start overflow-hidden">
+                    <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
+                    font-normal text-[32px]  leading-32.01 text-white 
+                        hover:text-grayMatn duration-[.4s] text-right">
+                        homepage
+                    </a>
+                </li>
+                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.3s]
+                items-start overflow-hidden">
+                    <a href="/" title="projects" alt="projects" class="Menu-link font-Montserrat400 
+                    font-normal text-[32px]  leading-32.01 text-white 
+                        hover:text-grayMatn duration-[.4s] text-right">
+                        projects & experiences
+                    <sub class="font-Montserrat400  text-xs leading-14.06 text-white bottom-[unset] 
+                    relative top-[-18px]">(12)</sub>
+                    </a>
+                </li>
+                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.4s]
+                items-start overflow-hidden">
+                    <a href="/" title="productions" alt="productions" class="Menu-link font-Montserrat400 
+                    font-normal text-[32px]  leading-32.01 text-white 
+                        hover:text-grayMatn duration-[.4s] text-right">
+                        collections & productions
+
+                    </a>
+                </li>
+                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.5s]
+                items-start overflow-hidden">
+                    <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                    font-normal text-[32px]  leading-32.01 text-white 
+                        hover:text-grayMatn duration-[.4s] text-right">
+                        privet
+                    </a>
+                </li>
+                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.6s]
+                items-start overflow-hidden">
+                    <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
+                    font-normal text-[32px]  leading-32.01 text-white 
+                        hover:text-grayMatn duration-[.4s] text-right">
+                        news & articles
+                        <sub class="font-Montserrat400  text-xs leading-14.06 text-white bottom-[unset] 
+                        relative top-[-18px]">(12)</sub>
+                        </a>
+                    </a>
+                </li>
+                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.7s]
+                items-start overflow-hidden">
+                    <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                    font-normal text-[32px]  leading-32.01 text-white 
+                        hover:text-grayMatn duration-[.4s] text-right">
+                        about & history
+
+                    </a>
+                </li>
+                <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.8s]
+                items-start overflow-hidden">
+                    <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                    font-normal text-[32px]  leading-32.01 text-white 
+                        hover:text-grayMatn duration-[.4s] text-right">
+                        contact us & upload
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="Box w-85p mx-auto h-[10%] border-t-[1px] border-grayMatn flex justify-between items-center">
+            <div class="Socials flex  w-full justify-between items-center">
+                <span class="Social-item flex justify-center items-center">
+                    <a href="tel:" class="flex justify-center items-center hover:text-[#989898] duration-[.4s]
+                     font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                        instagram
+                    </a>
+                </span>
+                <span class="Social-item flex justify-center items-center">
+                    <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
+                     font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                     email
+                    </a>
+                </span>
+                <span class="Social-item flex justify-center items-center">
+                    <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
+                     font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                     whatsapp 
+                    </a>
+                </span>
+          
+            </div>
+        </div>
+    </div>
+    <div class=" pointer-events-none opacity-0 left relative z-[11] w-auto flex flex-col h-full group-[&.Open]/menu:translate-x-[0] translate-x-[100%] duration-[700ms]">
+        <img src="http://cdn.basiscore.net/hha117.undertest.ir/images/menu.jpg" alt="ramandJelvePardis"
+            class="h-full object-cover" title="ramandJelvePardis">
+    </div>
+</div>
                 <div class="Section-1 ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
                    <div class="Box textBox w-auto translate-x-[1.5em] delay-[.2s] duration-[.8s]
                     opacity-0 flex flex-col gap-6 max-w-[536px] min-w-[536px]">
@@ -204,7 +198,7 @@
                      font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
                      
                          <p>
-                             Architects worldwide understand the profound impact that the quality of a space has on life and strive to enhance it. True quality, however, is something that can only be created when it has been experienced, seen, or felt. This is what we have cultivated over years of collaboration with discerning clients, renowned global brands, and perfectionist architects. These experiences have taught us how to bring tangible, heartfelt quality to life in every design and execution.  Bocaveli’s architects, who have worked extensively with top global brands such as Lualdi and Poggenpohl, deeply understand and embody this level of quality. This profound awareness shines through in every design and project we undertake.Each project at Bocaveli is crafted through the synergy of creative architects and skilled artisans, working with passion and precision to create something truly unique.We believe that great design is not only beautiful but also evokes emotions and enriches life.  Bocaveli can be likened to a bonsai tree—small in size yet mature, refined, and deeply valuable. Like a bonsai, every detail is meticulously cultivated, embodying both artistry and growth, and reflecting a dedication to perfection that transcends size.  Today, Bocaveli stands as a symbol of quality and luxury design in Iran. We don’t just build cabinetry; we create spaces that invite you to experience a luxurious and enduring way of living.
+                             Architects worldwide understand the profound impact that the quality of a space has on life and strive to enhance it. True quality, however, is something that can only be created when it has been experienced, seen, or felt.This is what we have cultivated over years of collaboration with discerning clients, renowned global brands, and perfectionist architects. These experiences have taught us how to bring tangible, heartfelt quality to life in every design and execution.Bocaveli’s architects, who have worked extensively with top global brands such as Lualdi and Poggenpohl, deeply understand and embody this level of quality. This profound awareness shines through in every design and project we undertake.Each project at Bocaveli is crafted through the synergy of creative architects and skilled artisans, working with passion and precision to create something truly unique.We believe that great design is not only beautiful but also evokes emotions and enriches life.Bocaveli can be likened to a bonsai tree—small in size yet mature, refined, and deeply valuable. Like a bonsai, every detail is meticulously cultivated, embodying both artistry and growth, and reflecting a dedication to perfection that transcends size.Today, Bocaveli stands as a symbol of quality and luxury design in Iran. We don’t just build cabinetry; we create spaces that invite you to experience a luxurious and enduring way of living.
 
                          </p>
                      </div>
@@ -233,7 +227,7 @@
                         opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
                         font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
                             <p>
-                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs.  
+                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
                             </p>
                         </div>
                     </div>
@@ -257,7 +251,7 @@
                         opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
                         font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
                             <p>
-                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs.  
+                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
                             </p>
                         </div>
                     </div>
@@ -281,7 +275,7 @@
                         opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
                         font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
                             <p>
-                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs.  
+                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
                             </p>
                         </div>
                     </div>
@@ -305,7 +299,7 @@
                         opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
                         font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
                             <p>
-                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs.  
+                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
                             </p>
                         </div>
                     </div>
@@ -329,7 +323,7 @@
                         opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
                         font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-black">
                             <p>
-                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs.  
+                                Bocaveli began as a small design studio focused on bespoke cabinetry and interior solutions. Over two decades, it evolved into a leading brand recognized for its architectural approach to kitchens and living spaces. Partnering with European brands, Bocaveli emphasizes quality, creativity, and functionality, redefining luxury through timeless craftsmanship and innovative designs. 
                             </p>
                         </div>
                     </div>
@@ -464,9 +458,7 @@ We prioritize precision, creativity, and attention to detail, ensuring that each
                           </div>
                     </div>
                  </div>
-            </div>
-        </section>
-    </div>
+ 
     <div class="searchContainer overflow-y-auto flex-col fixed z-[98] top-0 left-0 w-screen 
     translate-x-[-100%] opacity-0 pointer-events-none duration-[.8s] [&.OpenSearch]:opacity-[1]
     [&.OpenSearch]:translate-x-[0] [&.OpenSearch]:pointer-events-auto
@@ -542,213 +534,9 @@ We prioritize precision, creativity, and attention to detail, ensuring that each
       </div>
       </div>
     <!-- MAIN CONTAINER -->
-    <script src="/web/assets/js/gsap.js"></script>
-    <script src="/web/assets/js/scrollTrigger.js"></script>
-    <script src="/web/assets/js/swiper.js"></script>
-    <script src="/web/assets/js/jQuery.js"></script>
-    <script src="/web/assets/js/imageLoaded.js"></script>
-    <script src="/web/assets/js/locoScroll.js"></script>
-    <!-- <script src="/web/assets/js/configDesk.js"></script> -->
-    <!-- <script src="/web/assets/js/defaultDesk.js"></script> -->
-     <script>
-    $('.Home-Sec').imagesLoaded( {
-
-},  function() {
-  $(document).ready(function() {
-    setTimeout(()=>{
-
-      gsap.registerPlugin(ScrollTrigger);
-      const pageContainer = document.querySelector(".Home-Sec");
-      /* SMOOTH SCROLL */
-      const scroller = new LocomotiveScroll({
-        el: pageContainer,
-        direction: 'horizontal',
-        smooth: true,
-        lerp: 0.05,
-      });
-      scroller.on("scroll", ScrollTrigger.update);
-      ScrollTrigger.scrollerProxy(pageContainer, {
-        scrollTop(value) {
-          return arguments.length
-            ? scroller.scrollTo(value, 0, 0)
-            : scroller.scroll.instance.scroll.y;
-        },
-        getBoundingClientRect() {
-          return {
-            left: 0,
-            top: 0,
-            width: window.innerWidth,
-            height: window.innerHeight
-          };
-        },
-        pinType: pageContainer.style.transform ? "transform" : "fixed"
-      });
-      ScrollTrigger.addEventListener("refresh", () => scroller.update());
-      ScrollTrigger.refresh();
-      let pinBoxes = document.querySelectorAll(".Pin-Wrapp > *");
-    let pinWrap = document.querySelector(".Pin-Wrapp");
-    let pinWrapWidth = pinWrap.offsetWidth;
-    let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-    // Pinning and horizontal scrolling
-    scrollTween= gsap.to(".Pin-Wrapp", {
-      scrollTrigger: {
-        scroller: pageContainer, //locomotive-scroll
-        scrub: true,
-        trigger:"#PinSection",
-        pin:true,
-        start: "top top",
-        end: pinWrapWidth
-      },
-      x: -horizontalScrollLength,
-      ease: "none"
-    });
-    scroller.update()
-    console.log(pinWrapWidth,'pinWrapWidth before')
-    window.addEventListener("load", function () {
-      ScrollTrigger.addEventListener("refresh", () => scroller.update()); //locomotive-scroll
-        ScrollTrigger.refresh();
-        scroller.update()
-      });
-      window.addEventListener("resize", () => {
-        ScrollTrigger.addEventListener("refresh", () => scroller.update()); //locomotive-scroll
-        ScrollTrigger.refresh(); 
-        scroller.update()
-      });
-      let textBoxs = document.querySelectorAll('.textBox')
-      textBoxs.forEach((textBox)=>{
-        gsap.to(textBox,{
-          scrollTrigger: {
-            trigger:textBox,
-            containerAnimation:scrollTween,
-            start: "top bottom",
-          },
-          onStart:()=>{
-            textBox.classList.add('appear')
-          },
-        })
-      })
-
-    let IMGS = document.querySelectorAll('.IMG')
-    IMGS.forEach((IMG)=>{
-        gsap.to(IMG,{
-          scrollTrigger: {
-            trigger:IMG,
-            containerAnimation:scrollTween,
-            start: "top bottom",
-          },
-          onStart:()=>{
-            IMG.classList.add('appear')
-          },
-        })
-      })
-      let header = document.querySelector('header')
-let menuC = document.querySelector('.Menu-Container')
-let menuToggle = document.querySelector('.toggleItems')
-let innerHeader = document.querySelector('.innerHeader')
-let isHeaderAppended = false;
-let iScrolling=false
-scroller.on('scroll', (e) => {
-    let scrollTop =e.scroll.y 
-   // کاربر به پایین اسکرول می‌کند
-        if (scrollTop > 0 && !isHeaderAppended) {
-            header.classList.add('fixedMenu');
-            menuC.classList.add('fixedMenu');
-            document.body.prepend(header);
-            innerHeader.appendChild(menuC)
-            setTimeout(() => {
-        let newPinWrapWidth = pinWrap.offsetWidth;
-        let newHorizontalScrollLength = newPinWrapWidth - window.innerWidth;
-        scrollTween.vars.end = newPinWrapWidth;
-        scrollTween.vars.x = -newHorizontalScrollLength ;
-        scrollTween.invalidate(); // مقدارهای جدید را درک کند
-      if (typeof scroller !== 'undefined') {
-          console.log("🔄 Updating Locomotive Scroll...");
-          scroller.update();
-      }
-      if (typeof ScrollTrigger !== 'undefined') {
-          console.log("🔄 Refreshing ScrollTrigger...");
-          ScrollTrigger.refresh();
-      }
-  
-      window.scrollBy(0, 1);
-      window.scrollBy(0, -1);
-  }, 100);
-            isHeaderAppended = true;
-
-        }
-    
-     else if (scrollTop === 0) {
-        iScrolling = true
-        // وقتی کاربر به بالای صفحه برگردد
-        let homeSec = document.querySelector('.Pin-Wrapp');
-      
-        if (isHeaderAppended) {
-            homeSec.insertBefore(header, homeSec.firstChild); // برگرداندن هدر به داخل .Home-Sec
-            header.parentNode.insertBefore(menuC, header.nextSibling);
-            setTimeout(() => {
-        let newPinWrapWidth = pinWrap.offsetWidth;
-        let newHorizontalScrollLength = newPinWrapWidth - window.innerWidth;
-        scrollTween.vars.end = newPinWrapWidth;
-        scrollTween.vars.x = -newHorizontalScrollLength ;
-        scrollTween.invalidate(); // مقدارهای جدید را درک کند
-      if (typeof scroller !== 'undefined') {
-          console.log("🔄 Updating Locomotive Scroll...");
-          scroller.update();
-      }
-      if (typeof ScrollTrigger !== 'undefined') {
-          console.log("🔄 Refreshing ScrollTrigger...");
-          ScrollTrigger.refresh();
-      }
-  
-      window.scrollBy(0, 1);
-      window.scrollBy(0, -1);
-  }, 100);
-  header.classList.remove('fixedMenu'); 
-  menuC.classList.remove('fixedMenu');
-            isHeaderAppended = false;
-        }
-     
-    }
-
-    // lastScrollTop = scrollTop;
-});
-menuToggle.addEventListener('click',()=>{
-    console.log('click menu');
-    
-    menuC.classList.toggle('Open')
-    header.classList.toggle('Open')
-    if(iScrolling){
-        console.log('0 position');
-        
-        setTimeout(() => {
-        let newPinWrapWidth = pinWrap.offsetWidth;
-        let newHorizontalScrollLength = newPinWrapWidth - window.innerWidth;
-        console.log("📏 مقدار جدید Pin-Wrapp:", newPinWrapWidth);
-        scrollTween.vars.end = newPinWrapWidth;
-        scrollTween.vars.x = -newHorizontalScrollLength -10;
-        scrollTween.invalidate(); // مقدارهای جدید را درک کند
-      if (typeof scroller !== 'undefined') {
-          console.log("🔄 Updating Locomotive Scroll...");
-          scroller.update();
-      }
-      if (typeof ScrollTrigger !== 'undefined') {
-          console.log("🔄 Refreshing ScrollTrigger...");
-          ScrollTrigger.refresh();
-      }
-  
-      window.scrollBy(0, 1);
-      window.scrollBy(0, -1);
-  }, 800);
-    }
- 
-})
-
-    },1000)
-
-   
-  })})
-
-     </script>
+    <script src="/mobile/assets/js/lenisScroll.js"></script>
+    <script src="/mobile/assets/js/configMobile.js"></script>
+    <script src="/mobile/assets/js/default-mobile.js"></script>
 </body>
 
 </html>
