@@ -39,54 +39,54 @@ let loaderContainer2 = document.querySelector('.loaderContainer')
    loaderContainer2.style.display="none"
  }
 // SEARCH
-let searchIcon = document.querySelector('.SearchIconHeader')
-let searchBTN = document.querySelector('header .SearchIcon')
-let closeSearch = document.querySelector('.CloseSerch')
-let search = document.querySelector('.searchContainer')
-let header2 = document.querySelector('header')
-let inputt = document.querySelector('.searchContainer .inputBox input#search')
-searchBTN.addEventListener('click',()=>{
-  search.classList.add('OpenSearch')
-})
-closeSearch.addEventListener('click',()=>{
-  search.classList.remove('OpenSearch')
-})
+// let searchIcon = document.querySelector('.SearchIconHeader')
+// let searchBTN = document.querySelector('header .SearchIcon')
+// let closeSearch = document.querySelector('.CloseSerch')
+// let search = document.querySelector('.searchContainer')
+// let header2 = document.querySelector('header')
+// let inputt = document.querySelector('.searchContainer .inputBox input#search')
+// searchBTN.addEventListener('click',()=>{
+//   search.classList.add('OpenSearch')
+// })
+// closeSearch.addEventListener('click',()=>{
+//   search.classList.remove('OpenSearch')
+// })
 
-searchIcon.addEventListener('click',()=>{
-  let input = document.querySelector('.searchContainer .inputBox input#search')
-      if(input.value == ''){
-          return
-      }
-     else{
-        console.log('value',input.value);
-        $bc.setSource('db.query',`${input.value}`)
-         $bc.setSource('btn.load',true)
-    }
-
-
-})
-inputt.addEventListener("keypress", function(event) {
-  let input = document.querySelector('.searchContainer .inputBox input#search')
-  // If the user presses the "Enter" key on the keyboard
-  if (event.key === "Enter") {
-    // Cancel the default action, if needed
-    if(input.value != ''){
-      event.preventDefault();
-      console.log('value',input.value);
-      $bc.setSource('db.query',`${input.value}`)
-       $bc.setSource('btn.load',true)
-    }
+// searchIcon.addEventListener('click',()=>{
+//   let input = document.querySelector('.searchContainer .inputBox input#search')
+//       if(input.value == ''){
+//           return
+//       }
+//      else{
+//         console.log('value',input.value);
+//         $bc.setSource('db.query',`${input.value}`)
+//          $bc.setSource('btn.load',true)
+//     }
 
 
-  }
-});
-document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll("p").forEach(p => {
-      if (p.innerHTML.trim() === "") {
-          p.remove();
-      }
-  });
-});
+// })
+// inputt.addEventListener("keypress", function(event) {
+//   let input = document.querySelector('.searchContainer .inputBox input#search')
+//   // If the user presses the "Enter" key on the keyboard
+//   if (event.key === "Enter") {
+//     // Cancel the default action, if needed
+//     if(input.value != ''){
+//       event.preventDefault();
+//       console.log('value',input.value);
+//       $bc.setSource('db.query',`${input.value}`)
+//        $bc.setSource('btn.load',true)
+//     }
+
+
+//   }
+// });
+// document.addEventListener("DOMContentLoaded", function() {
+//   document.querySelectorAll("p").forEach(p => {
+//       if (p.innerHTML.trim() === "") {
+//           p.remove();
+//       }
+//   });
+// });
 
 const lenis =  new Lenis({
   smoothWheel: true,
