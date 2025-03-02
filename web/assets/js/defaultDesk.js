@@ -75,19 +75,6 @@ $('.Home-Sec').imagesLoaded( {
       })
 
     let IMGS = document.querySelectorAll('.IMG')
-    let projects = document.querySelectorAll('.Project')
-    projects.forEach((proj)=>{
-      gsap.to(proj.querySelector('.IMG'),{
-        scrollTrigger: {
-          trigger:proj,
-          containerAnimation:scrollTween,
-          start: "top bottom",
-        },
-        onStart:()=>{
-          proj.querySelector('.IMG').classList.add('appear')
-        },
-      })
-    })
     IMGS.forEach((IMG)=>{
         gsap.to(IMG,{
           scrollTrigger: {
@@ -101,11 +88,5 @@ $('.Home-Sec').imagesLoaded( {
         })
       })
    
-    // let SURVEY = document.querySelector('.SURVEY')
-    // let stringTag = SURVEY.getAttribute('href')
-    // let cleanString = stringTag.replace(/<\/?p>/g,'')
-    // console.log(cleanString);
-    // SURVEY.setAttribute('href',cleanString)
-    
     },1000)
   })})

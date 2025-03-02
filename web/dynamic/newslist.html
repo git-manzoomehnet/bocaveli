@@ -1,0 +1,183 @@
+<basis core="dbsource" source="media" name="db" lid="2" catid="2311" > 
+    <member type="list" name="blogBanner" perpage="10" pageno="1"/> 
+</basis>
+<basis core="dbsource" source="basiscore" mid="1" name="db" lid="2"> 
+    <member name="blogDescription" type="tree" request="cat" parentid="213359"/>
+ </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" catid="213359"> 
+    <member name="blog" type="list" size="440x560" propertyid="7244,7245" link="news.bc"
+     postsql=" select *, SUBSTR(prp_7244, 1,300-CHARINDEX(' ', REVERSE(SUBSTR(prp_7244, 1, 300)))) || '...' as substr from [db.blog]"/>
+ </basis>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsList</title>
+    <meta name="description" content="NewsList">
+    <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+</head>
+<body class="Newslist-c horizontal">
+    <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+      <!-- MAIN CONTAINER -->
+      <div class="Newslist-Sec container-Sec" >
+        <section id="PinSection">
+            <div class="Pin-Wrapp">
+                <div class="Section-1 ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
+                   <div class="textBox Box w-auto translate-x-[1.5em] duration-[.8s] opacity-0 flex flex-col gap-6
+                    max-w-[536px] min-w-[492px]">
+                   <basis core="print" datamembername="db.blogBanner">
+                       <layout>
+                        <div class="Title w-auto flex justify-start items-start text-left">
+                           @child
+                        </div>
+                       </layout>
+                       <face>
+                        <h1 class="font-Montserrat700 text-[32px] leading-[39.01px] text-black flex flex-col">
+                          @name
+                        </h1>
+                       </face>
+                   </basis>
+                   <basis core="print" datamembername="db.blogBanner">
+                    <layout>
+                        <div class="Text font-OpenSans300 font-light text-[13px] text-gray leading-[17.07px]">
+                            @child
+                        </div>
+                    </layout>
+                    <face>
+                        <p class="font-OpenSans300 font-light text-[13px] leading-[16.25px]">
+                            @description
+                           </p>
+                       </face>
+                   </basis>
+                   <div class="Logo flex flex-col gap-6">
+                    <span class="w-[202px] h-[32px]">
+                        <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full h-full object-cover"
+                         alt="Bocavoli" title="Bocavoli">
+                    </span>
+                    <span class="det font-KozGoPr6N400 uppercase font-normal text-sm leading-28 text-gray ">
+                        proudly made in iran
+                    </span>
+                </div>
+                   </div>
+                </div>
+                <basis core="print" datamembername="db.blogBanner">
+                    <layout>
+                        <div class="Section-2 mr-[5em] ml-[5em] w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
+                            <div class="IMG w-max max-h-[90%] h-full flex justify-center items-center [&.appear]:translate-x-[0]
+                             [&.appear]:opacity-[1]  
+                             translate-x-[-1.5em] opacity-0 my-auto">
+                        @child
+                            </div>
+                        </div>
+                    </layout>
+                    <face>
+                        <img src="@largeIMG" alt="@name" title="@name" class=" h-auto max-h-[90%] 
+                        object-cover">
+                    </face>
+                </basis>
+             
+                 <div class="BlackSec px-[3em] bg-black flex h-screen">
+                        <basis core="print" datamembername="db.blogDescription">
+                            <layout>
+                         
+                                    <div class="Section-3 pr-[1em] h-90p my-auto border-x-[1px] sec flex justify-center items-center">
+                                @child
+                                    </div>
+                          
+                            </layout>
+    
+                            <face>
+                                <div class="Box textBox [&:not(:last-child)]:border-r-[1px]
+                                [&:first-child]:border-l-white  border-white h-90p justify-center
+                                  px-[5em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                                duration-[.8s] opacity-0 flex flex-col ">
+                                 <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                                     <h2 class="font-Montserrat700 text-[32px] w-[150px]
+                                     leading-[39.01px] flex flex-col text-left text-white">
+                                     @urltitle
+                                    <!-- <span>
+                                        NEWS 
+                                       
+                                    </span>
+                                    <span>
+                                     
+                                        & ARTICLES 
+                                    </span> -->
+                                     </h2>
+                                  
+                                 </div>
+                                 <div class="text w-[484px] flex-col flex justify-start items-start 
+                                 font-OpenSans300 font-light text-[15px] leading-[18.9px] gap-3 text-justify text-grayMatn">
+                                 @urldescription
+                                 </div>
+                        
+                                </div>
+                            </face>
+                        </basis>
+            
+                            <basis core="print" datamembername="db.blog">
+                                <layout>
+                                    <div class="Section-4 h-90p max-h-[750px] my-auto sec flex justify-start items-center">
+                                        <div class="Items flex justify-start h-full items-start">
+                                    @child
+                                        </div>
+                                    </div>
+                                </layout>
+                                <face>
+                                    <div class="Item-blog min-w-[454px] overflow-hidden h-full translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                                    gap-5 [&:not(:last-child)]:border-r-[1px] opacity-0
+                                    [&:first-child]:border-l-[1px] [&.appear]:translate-x-[0] [&.appear]:opacity-[1]
+                                    px-[8em] my-auto border-white flex flex-col justify-center items-center">
+                      
+                                <div class="imageContainer IMG lg:h-75p  group/img 
+                                     hover:cursor-pointer duration-[.4s] w-[454px] max-w-[567px]">
+                                    <a href="@link"  alt="@title" title="@title" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
+                                        <img src="[##cms.cms.cdn##]/@00440X00560prp" alt="@title" title="@title"
+                                         class="w-full h-full object-cover">
+                                    </a>
+                                </div>
+                            
+                                <div class="Title mr-auto w-auto flex justify-start text-left text-white
+                                     font-Montserrat400 font-normal text-lg leading-21.94">
+                                    <a href="@link"  alt="@title" title="@title" class="flex flex-col">
+                                        <span class="font-Montserrat700 mr-auto font-bold text-lg leading-21.94 text-white">
+                                            @title
+                                        </span>
+                                        <!-- <span></span>
+                                        ABOUT & HISTORY -->
+                                    </a>
+                                </div>
+                          
+                                <div class="Text w-full max-w-[454px]  flex flex-col justify-start items-start 
+                                     font-OpenSans300 font-light text-[13px] leading-17.07 text-left text-white relative">
+                                    
+                                    <div class="relative flex flex-col justify-start items-start textWrapper">
+                                        <p  class="line-clamp-3 overflow-hidden relative textContent">
+                                       @substr
+                                           
+                                       <!-- <span class="hidden-span">                   </span> -->
+                                        </p>
+                                        <!-- <button  class="toggleButton absolute bottom-0 right-0 text-white whitespace-nowrap 
+                                                font-OpenSans300 font-light text-[13px] leading-17.07">
+                                            +read more
+                                        </button> -->
+                                    </div>
+                                </div>
+                                    </div>
+                                </face>
+                            </basis>
+                     
+                         
+                      
+                 </div>
+                 <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+            </div>
+        </section>
+    </div>
+ 
+    <!-- MAIN CONTAINER -->
+    <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    <script src="[##cms.cms.cdn##]/js/newslist.js"></script>
+</body>
+</html>

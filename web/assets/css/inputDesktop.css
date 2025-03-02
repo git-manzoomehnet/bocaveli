@@ -151,49 +151,49 @@
     
 @font-face {
   font-family: "Inter300";
-  src: url("../fonts/Inter_18pt-Light.ttf") format("truetype");
+  src: url("../fonts/Inter_24pt-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter400";
-  src: url("../fonts/Inter_18pt-Medium.ttf") format("truetype");
+  src: url("../fonts/Inter_24pt-Medium.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
     font-family: "Inter500";
-    src: url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
+    src: url("../fonts/Inter_24pt-Regular.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Inter600";
-    src: url("../fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+    src: url("../fonts/Inter_24pt-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
   }
 @font-face {
     font-family: "Inter700";
-    src: url("../fonts/Inter_24pt-Bold.ttf") format("truetype");
+    src: url("../fonts/Inter_28pt-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Inter800";
-    src: url("../fonts/Inter_24pt-ExtraBold.ttf") format("truetype");
+    src: url("../fonts/Inter_28pt-ExtraBold.ttf") format("truetype");
     font-weight: 800;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Inter900";
-    src: url("../fonts/Inter_18pt-Black.ttf") format("truetype");
+    src: url("../fonts/Inter_28pt-Black.ttf") format("truetype");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -292,37 +292,6 @@ h6 {
   margin: 0;
 }
 
-h1 {
-  font-size: 24px;
-  font-family: "Montserrat700";
-  line-height: 26px;
-}
-h2 {
-  font-size: 20px;
-  font-family: "Montserrat700";
-  line-height: 26px;
-}
-h3 {
-  font-size: 18px;
-  font-family: "Montserrat500";
-  line-height: 25px;
-}
-h4,
-h5 {
-  font-size: 16px;
-  font-family: "Montserrat400";
-  line-height: 24px;
-}
-h6 {
-  font-size: 14px;
-  font-family: "Montserrat300";
-  line-height: 22px;
-}
-a {
-  font-size: 14px;
-  font-family: "Montserrat400";
-  line-height: 24px;
-}
 header.Open .toggleItem:nth-child(1){
   transform: rotate(27deg);
   transform-origin: 0px 16px;
@@ -450,4 +419,37 @@ footer{
   border-radius: 4px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #0a0a0a;
+}
+.simple-spinner {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.simple-spinner span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-right-color: rgba(255, 255, 255, 0.7);
+  animation: spinner-anim 0.8s linear infinite;
+}
+
+@keyframes spinner-anim {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Noresult {
+  margin-top: 3em;
+}
+.searchContainer .Results {
+  margin-top: 5em;
 }

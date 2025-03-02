@@ -1,0 +1,334 @@
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="project" type="view"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="architect" type="view" postsql="select * from [db.architect] where ord=840"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="location" type="view" postsql="select * from [db.location] where ord=740"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="style" type="view" postsql="select * from [db.style] where prpID=3087499"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="description" type="view" postsql="select * from [db.description] where TypeID=144"/> 
+</basis>
+<basis core="dbsource" name="db" source="media" lid="2" sourcemid="19" usedforid="[##cms.query.id##]"> 
+    <member name="projectGallery" type="list" format="4"/> 
+</basis>	
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="title" type="view" postsql="select * from [db.title] where TypeID=150"/> 
+ </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="Subtitle" type="view" postsql="select * from [db.Subtitle] where TypeID=128"/> 
+ </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="text" type="view" postsql="select * from [db.text] where TypeID=250"/> 
+ </basis>
+ <basis core="dbsource" source="basiscore" name="json" lid="1" usedforid="[##cms.query.id##]" > 
+    <member request="json-ld" type="scalar" name="fq" /> 
+</basis>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[##cms.seo.title##]</title>
+    <meta name="description" content="[##cms.seo.description##]">
+    <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+</head>
+<body class="Project-c horizontal">
+    <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+      <!-- MAIN CONTAINER -->
+      <div class="Project-Sec container-Sec" >
+        <section id="PinSection">
+            <div class="Pin-Wrapp">
+                <basis core="print" datamembername="db.projectGallery">
+                    <layout>
+                        <div class="Section-1 ml-[82px] pl-[6em] pr-[6em] sec max-h-[750px]  h-90p flex flex-col justify-center items-center">
+                            <div class="Banner w-max overflow-hidden flex max-h-[90%]">
+                        @child
+                            </div>
+                        </div>
+                    </layout>
+                    <face filter="ord=1">
+                        <div class="IMG-first [&.appear]:translate-x-[0]
+                        [&.appear]:opacity-[1]  
+                        translate-x-[-2.5rem] opacity-0  my-auto">
+                            <img src="@largeIMG" alt="@name" title="@name"
+                            class="object-cover ">
+                        </div>
+                    </face>
+                </basis>
+                 <div class="Section-2 max-h-[750px] sec h-80p flex  flex-col justify-center gap-[8em] items-center">
+                    <div class="DetailBox mt-8 min-w-[473px] flex justify-between">
+                        <div class="left textBox translate-x-[1.5em] duration-[.8s] opacity-0  gap-5 w-auto flex flex-col">
+                            <div class="Title w-auto flex justify-start items-start text-left">
+                                <h1 class="font-Montserrat700 text-[38px] leading-[46.32px] text-black flex flex-col">
+                                    [##db.title.Answer##]
+                                </h1>
+                            </div>
+                            <div class="schamas w-[224px] flex flex-col">
+                                <div class="schemabox w-full gap-[.5em] flex font-KozGoPr6N400 text-xs leading-24 text-gray">
+                                    <span class="name w-[30%] flex items-start justify-start">
+                                        Architect: 
+                                    </span>
+                                    <span class="answer w-max flex justify-start">
+                                     [##db.architect.text##]
+                                    </span>
+                                </div>
+                                <div class="schemabox w-full gap-[.5em] flex font-KozGoPr6N400 text-xs leading-24 text-gray">
+                                    <span class="name w-[30%] flex items-start justify-start">
+                                        Location: 
+                                    </span>
+                                    <span class="answer w-max flex justify-start">
+                                        [##db.location.text##]
+                                    </span>
+                                </div>
+                                <div class="schemabox w-full gap-[.5em] flex font-KozGoPr6N400 text-xs leading-24 text-gray">
+                                    <span class="name w-[30%] flex items-start justify-start">
+                                        Style: 
+                                    </span>
+                                    <span class="answer w-max flex justify-start">
+                                        [##db.style.text##]
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right w-auto flex flex-col gap-2 justify-center items-center">
+                            <basis core="print" datamembername="db.projectGallery">
+                                <layout>
+                                    <div class="Section-1 sec  h-90p flex flex-col justify-center items-center">
+                                        <div class="Banner w-max overflow-hidden flex max-h-[90%]">
+                                    @child
+                                        </div>
+                                    </div>
+                                </layout>
+                                <face filter="ord=2">
+                                    <div class="IMG userIMG [&.appear]:translate-x-[0]
+                                    [&.appear]:opacity-[1] translate-x-[-2.5rem] opacity-0   w-[220px] h-[220px]">
+                                        <img src="@largeIMG" alt="@name" title="@name"
+                                        class="w-full h-full object-cover">
+                                    </div>
+                                </face>
+                            </basis>
+                            <div class="sign textBox translate-x-[1.5em] duration-[.8s] opacity-0 font-Saint400 text-lg leading-[26.9px] font-normal text-black">
+                                [##db.architect.text##]
+                            </div>
+                        </div>
+                    </div>
+                    <basis core="print" datamembername="db.description">
+                        <layout>
+                            <div class="textBox Box w-auto translate-x-[1.5em] duration-[.8s] opacity-0 
+                            flex flex-col gap-6 max-w-[473px] min-w-[473px]">
+                            
+                             <div class="Text font-OpenSans300 font-light text-[15px] leading-[20.43px] text-gray text-justify ">
+                            @child
+                             </div>
+                            </div>
+                        </layout>
+                        <face filter="RowNumber=1">
+                            <p class="font-OpenSans300 font-light text-[15px] leading-[20.43px]">
+                                @largetext
+                            </p>
+                        </face>
+                    </basis>
+            
+                 </div>
+                 <basis core="print" datamembername="db.projectGallery">
+                    <layout>
+                        <div class="Section-3 pl-[6em] sec h-90p flex flex-col justify-center items-center">
+                            <div class="IMG [&.appear]:translate-x-[0]
+                            [&.appear]:opacity-[1]  max-w-[480px] min-w-[480px]
+                            translate-x-[-2.5rem] opacity-0 ">
+                        @child
+                            </div>
+                        </div>
+                    </layout>
+                    <face filter="ord=3">
+                            <img src="@largeIMG" alt="@name" title="@name"
+                            class="w-full object-cover">
+                    </face>
+                </basis>
+                 <div class="Section-4 max-h-[750px]  pl-[6em] sec h-85p flex flex-col justify-center gap-[5em] items-center">
+                    <basis core="print" datamembername="db.projectGallery">
+                        <layout>
+                            <div class="IMG [&.appear]:translate-x-[0]
+                    [&.appear]:opacity-[1]  max-w-[472px] min-w-[472px]
+                    translate-x-[-2.5rem] opacity-0 ">
+                            @child
+                                </div>
+                           
+                        </layout>
+                        <face filter="ord=4">
+                                <img src="@largeIMG" alt="@name" title="@name"
+                                class="w-full object-cover">
+                        </face>
+                    </basis>
+                    <basis core="print" datamembername="db.description">
+                        <layout>
+                            <div class="textBox Box w-full translate-x-[1.5em]  duration-[.8s] opacity-0 flex 
+                            flex-col gap-1 max-w-[472px] min-w-[472px]">
+                             <div class="Text font-OpenSans300 font-light text-[13px] text-justify text-gray leading-17.07">
+                            @child
+                             </div>
+                            </div>
+                        </layout>
+                        <face filter="RowNumber=2">
+                            <p class="font-OpenSans300 font-light text-[13px] leading-17.07">
+                                @largetext
+                            </p>
+                        </face>
+                    </basis>
+         
+                 </div>
+                 <div class="Section-5 pl-[6em] sec h-90p flex flex-col justify-center items-center">
+                    <basis core="print" datamembername="db.projectGallery">
+                        <layout>
+                            <div class="IMG [&.appear]:translate-x-[0]
+                            [&.appear]:opacity-[1]  max-w-[480px] min-w-[480px]
+                            translate-x-[-2.5rem] opacity-0 ">
+                            @child
+                                </div>
+                           
+                        </layout>
+                        <face filter="ord=5">
+                                <img src="@largeIMG" alt="@name" title="@name"
+                                class="w-full object-cover">
+                        </face>
+                    </basis>
+                 </div>
+                 <div class="Section-6  max-h-[750px] gap-8 pl-[6em] sec h-80p flex flex-col justify-center mt-[4em] items-start">      
+              
+                    <div class="textBox gap-8 Box w-full translate-x-[1.5em] duration-[.8s] opacity-0 flex 
+                    flex-col max-w-[472px] min-w-[472px]">
+                    <div class="Title w-auto flex justify-start items-start text-left">
+                        <h2 class="font-Montserrat700 flex text-[38px] leading-[46.32px] text-black justify-center items-center gap-2">
+                           <span class="font-Montserrat700 text-[38px] leading-[46.32px] text-black">
+                            Design 
+                           </span>
+                           <span class="font-Inter400 text-[32px] leading-[38.73px] text-black">
+                             Story
+                           </span>
+                        </h2>
+                    </div>
+                    <basis core="print" datamembername="db.description">
+                        <layout>
+                             <div class="Text font-OpenSans300 font-light text-[15px] text-justify text-gray leading-[20.43px]">
+                            @child
+                             </div>
+                     
+                        </layout>
+                        <face filter="RowNumber=3">
+                            <p class="font-OpenSans300 font-light  text-[15px] leading-[20.43px]">
+                                @largetext
+                            </p>
+                        </face>
+                    </basis>
+                  
+                    </div>
+                    <basis core="print" datamembername="db.projectGallery">
+                        <layout>
+                            <div class="IMG [&.appear]:translate-x-[0]
+                            [&.appear]:opacity-[1]  max-w-[472px] min-w-[472px]
+                            translate-x-[-2.5rem] opacity-0">
+                            @child
+                                </div>                     
+                        </layout>
+                        <face filter="ord=6">
+                                <img src="@largeIMG" alt="@name" title="@name"
+                                class="w-full object-cover">
+                        </face>
+                    </basis>
+                 </div>
+                 <div class="Section-7 max-h-[750px] overflow-hidden pl-[6em] sec h-90p flex flex-col justify-center items-center">
+                    <basis core="print" datamembername="db.projectGallery">
+                        <layout>
+                            <div class="IMG  max-h-[595px] my-auto [&.appear]:translate-x-[0]
+                    [&.appear]:opacity-[1]  max-w-[920px] min-w-[920px]
+                    translate-x-[-2.5rem] opacity-0">
+                            @child
+                                </div>                     
+                        </layout>
+                        <face filter="ord=7">
+                                <img src="@largeIMG" alt="@name" title="@name"
+                                class="w-full object-cover h-full">
+                        </face>
+                    </basis>
+                 </div>
+                 <div class="Section-8 pl-[6em] max-h-[750px] sec h-90p flex flex-col justify-center items-center">
+                    <basis core="print" datamembername="db.projectGallery">
+                        <layout>
+                            <div class="IMG [&.appear]:translate-x-[0]
+                            [&.appear]:opacity-[1]  max-w-[480px] min-w-[480px]
+                            translate-x-[-2.5rem] opacity-0 ">
+                            @child
+                                </div>                     
+                        </layout>
+                        <face filter="ord=8">
+                                <img src="@largeIMG" alt="@name" title="@name"
+                                class="w-full object-cover">
+                        </face>
+                    </basis>
+                 </div>
+                 <div class="Section-9 mt-[2em] gap-8 pl-[6em] sec max-h-[750px] h-90p flex flex-col justify-center items-center">      
+              
+                    <div class="textBox gap-6 Box w-full translate-x-[1.5em] duration-[.8s] opacity-0 flex 
+                    flex-col max-w-[472px] min-w-[472px]">
+                    <div class="Title w-auto flex justify-start items-start flex-col text-left">
+                        <h2 class="font-Montserrat700 flex text-[38px] leading-[46.32px] text-black  flex-col justify-start
+                         items-center">
+                           <span class="font-Montserrat700 text-[38px] leading-[46.32px] text-black">
+                            Architecture
+
+                           </span>
+                           <span class="font-Inter400 text-[38px] leading-[45.93px] text-black">
+                            Characteristics 
+                           </span>
+                        </h2>
+                    </div>
+                    <basis core="print" datamembername="db.description">
+                        <layout>
+                            <div class="Text font-OpenSans300 font-light text-justify text-[15px] text-grayMatn leading-20.43">
+                            @child
+                             </div>
+                     
+                        </layout>
+                        <face filter="RowNumber=4">
+                            <p class="font-OpenSans300 font-light text-[15px] text-grayMatn leading-20.43">
+                                @largetext
+                            </p>
+                        </face>
+                    </basis>
+                 
+                    </div>
+            
+                 </div>
+                 <div class="Section-10 pr-[1em] pl-[6em] sec max-h-[750px] h-90p flex flex-col justify-center items-center">
+                    <basis core="print" datamembername="db.projectGallery">
+                        <layout>
+                            <div class="IMG [&.appear]:translate-x-[0]
+                            [&.appear]:opacity-[1]  max-w-[480px] min-w-[480px]
+                            translate-x-[-2.5rem] opacity-0 ">
+                            @child
+                                </div>                     
+                        </layout>
+                        <face filter="ord=9">
+                                <img src="@largeIMG" alt="@name" title="@name"
+                                class="w-full object-cover">
+                        </face>
+                    </basis>
+                 </div>
+                 <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+            </div>
+        </section>
+    </div>
+  
+    <!-- MAIN CONTAINER -->
+<basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+<script src="[##cms.cms.cdn##]/js/project.js"></script>
+<script type="application/ld+json">
+ [##json.fq.column1##]
+</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<basis core="dbsource" source="media" name="db" lid="2" catid="2317" >
+    <member type="list" name="projecst-sec1" perpage="10" pageno="1" />
+</basis>
+<basis core="dbsource" source="basiscore" mid="19" name="db" lid="2">
+    <member name="projectDescription" type="tree" request="cat" parentid="213358"/>
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" catid="213358"> 
+   <member name="projectList" type="list" size="450x572" propertyid="3087500" link="project.bc"
+   postsql=" select *, SUBSTR(prp_3087500, 1,230-CHARINDEX(' ', REVERSE(SUBSTR(prp_3087500, 1, 230)))) || '...' as substr from [db.projectList]"/> 
+</basis>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Projects</title>
+   <meta name="description" content="Projects">
+   <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+</head>
+<body class="Projectlist-c horizontal">
+   <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+     <!-- MAIN CONTAINER -->
+     <div class="Projectlist-Sec container-Sec" >
+       <section id="PinSection">
+           <div class="Pin-Wrapp">
+               <div class="Section-1 ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
+                  <div class="textBox Box w-auto translate-x-[1.5em] duration-[.8s] opacity-0 flex flex-col gap-6
+                   max-w-[500px] min-w-[500px]">
+                   <basis core="print" datamembername="db.projecst-sec1">
+                       <layout>
+                           <div class="Title w-auto flex justify-start items-start text-left">
+                           @child
+                           </div>
+                       </layout>
+                       <face >
+                           <h1 class="font-Montserrat700 text-[32px] leading-[39.01px] text-black flex flex-col">
+                               @name
+                           </h1>
+                       </face>
+                   </basis>
+                   <basis core="print" datamembername="db.projecst-sec1">
+                       <layout>
+                           <div class="Text text-justify font-OpenSans300 font-light text-sm text-gray leading-17.07">
+                           @child
+                           </div>
+                       </layout>
+                       <face >
+                           <p class="font-OpenSans300 font-light text-sm text-gray leading-17.07 ">
+                               @description
+                           </p>
+                       </face>
+                   </basis>
+          
+                   <div class="Logo flex flex-col gap-6">
+                    <span class="w-[202px] h-[32px]">
+                        <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full h-full object-cover"
+                         alt="Bocavoli" title="Bocavoli">
+                    </span>
+                    <span class="det font-KozGoPr6N400 uppercase font-normal text-sm leading-28 text-gray ">
+                        proudly made in iran
+                    </span>
+                </div>
+                  </div>
+               </div>
+               <basis core="print" datamembername="db.projecst-sec1">
+                   <layout>
+                       <div class="Section-2 mr-[7em]  w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
+                           <div class="IMG w-max max-h-[90%] h-full flex justify-center items-center [&.appear]:translate-x-[0]
+                            [&.appear]:opacity-[1]  
+                            translate-x-[-1.5em] opacity-0 my-auto">
+                       @child
+                           </div>
+                       </div>
+                   </layout>
+                   <face>
+                       <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class=" h-auto max-h-[90%] 
+                       object-cover">
+                   </face>
+               </basis>
+
+                <div class="BlackSec bg-black flex h-screen">
+                   <div class="Section-3  px-[8em] max-h-[750px] h-90p my-auto border-x-[1px] border-black sec 
+                    flex flex-col justify-center items-center">
+                       <div class="Box textBox gap-[1.3em] w-auto translate-x-[1.5em] delay-[.2s] 
+                       duration-[.8s] opacity-0 flex flex-col 
+                       max-w-[500px] min-w-[500px]">
+                       <basis core="print" datamembername="db.projectDescription">
+                           <layout>
+                               <div class="Title w-auto flex-col flex justify-start items-start text-left">
+                                   <h2 class="font-Montserrat700 flex flex-col font-normal text-[32px] leading-[39.01px] text-left text-white">
+                               @child
+                                   </h2>
+                               </div>
+
+                           </layout>
+                           <face>
+                               @urltitle
+                           </face>
+                       </basis>
+                       <basis core="print" datamembername="db.projectDescription">
+                           <layout>
+                               <div class="text w-auto flex-col flex justify-start items-start 
+                               font-OpenSans300 font-light text-[15px] leading-20.43 gap-3 text-justify text-white">
+                               @child
+                                 
+                               </div>
+
+                           </layout>
+                           <face>
+                               @urldescription
+                           </face>
+                       </basis>
+   
+                       </div>
+                    </div>
+                    <div class="Section-4 h-90p max-h-[750px] my-auto sec flex justify-start items-center">
+                       <div class="projects flex justify-start h-full items-start">
+                           <basis core="print" datamembername="db.projectList">
+                               <layout>
+                                   @child
+                               </layout>
+                               <face>
+                                   <div class="project group/item  min-w-[450px] overflow-hidden h-full xl:gap-[2em]
+                                   lg:gap-1 [&:not(:first-child)]:border-x-[1px]
+                                  [&:first-child]:border-l-[1px]  border-white 
+                                   px-[8em] my-auto flex flex-col justify-center items-center">
+                                   <div class="IMG-proj group-odd/item:order-3 group-even/item:order-1 
+                                    lg:h-80p xl:h-70p xxl:h-fit group-odd/item:translate-y-[3em] group-even/item:translate-y-[-3em] 
+                                     group/img [&.appear]:!translate-y-[0]
+                                     [&.appear]:!opacity-[1]  opacity-0
+                                   hover:cursor-pointer duration-[.4s] w-[450px] max-w-[450px]">
+                                          <a href="@link" alt="@title" title="@title" class="w-full">
+                                          <img src="[##cms.cms.cdn##]/@00450X00572prp" alt="@title" title="@title" class="w-full max-h-[572px]  h-full object-cover">
+                                          </a>
+                                      </div>
+                                      <div class="Title group-even/item:order-2 group-odd/item:order-1 textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                                      opacity-0 mr-auto w-auto flex justify-start text-left text-white
+                                      font-Montserrat700 uppercase font-bold text-lg leading-21.94">
+                                          <a href="@link" alt="@title" title="@title" >
+                                           @title	
+       
+                                          </a>
+                                      </div>
+                                      <div class="Text group-even/item:order-3 group-odd/item:order-1 textBox translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                                      opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
+                                      font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-grayMatn">
+                                          <p>
+                                          @substr
+                                          </p>
+                                      </div>
+                                  </div>
+                               </face>
+                           </basis>
+                       </div>
+                       </div>
+                </div>
+                <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+           </div>
+       </section>
+   </div>
+
+   <!-- MAIN CONTAINER -->
+   <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+   <script src="[##cms.cms.cdn##]/js/projectList.js"></script>
+</body>
+</html>

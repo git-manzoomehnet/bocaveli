@@ -6,9 +6,38 @@ menuToggle.addEventListener('click',()=>{
     
     menuC.classList.toggle('Open')
     header.classList.toggle('Open')
+    
 })
 
-
+const host = {
+  debug: !1,
+  settings: {
+    'connection.web.callcommand': '/',
+      "connection.web.trust_login": "https://basispanel.ir/apicms",
+      "connection.web.basiscore": "https://basispanel.ir/apicms",
+      "connection.web.media": "https://basispanel.ir/apicms",
+      "default.dbsource.verb": "post",
+      "default.call.verb": "get",
+      "default.viewCommand.groupColumn": "prpid",
+      "default.dmnid": "4914",
+      "default.binding.regex": "\\{##([^#]*)##\\}",
+  },
+ };
+let loaderContainer = document.querySelector('.loading')
+let loaderContainer2 = document.querySelector('.loaderContainer')
+ function fn(args){
+    console.log('fn');
+   loaderContainer2.style.display="flex"
+   loaderContainer.style.display="flex"
+   console.log('proc',args.result);
+   let prevRes =[...document.querySelectorAll('.ResultC .Results')] 
+   prevRes.map(e=> e.remove())
+ }
+ function render(args){
+    console.log('render');
+   loaderContainer.style.display="none"
+   loaderContainer2.style.display="none"
+ }
 // SEARCH
 let searchIcon = document.querySelector('.SearchIconHeader')
 let searchBTN = document.querySelector('header .SearchIcon')
@@ -25,15 +54,14 @@ closeSearch.addEventListener('click',()=>{
 
 searchIcon.addEventListener('click',()=>{
   let input = document.querySelector('.searchContainer .inputBox input#search')
-      console.log('val',input.value);
       if(input.value == ''){
           return
-           }
-         else{
-             console.log('val',input.value);
-             setTimeout(()=>{
-            window.location.href = `/search.bc?q=${input.value}`
-             },1000)}
+      }
+     else{
+        console.log('value',input.value);
+        $bc.setSource('db.query',`${input.value}`)
+         $bc.setSource('btn.load',true)
+    }
 
 
 })
@@ -44,15 +72,18 @@ inputt.addEventListener("keypress", function(event) {
     // Cancel the default action, if needed
     if(input.value != ''){
       event.preventDefault();
-    console.log('clicked');
-console.log('val',input );
-console.log('val',input.value);
-  window.location.href = `/search.bc?q=${input.value}`
-setTimeout(() => {
- 
-}, 1000);
+      console.log('value',input.value);
+      $bc.setSource('db.query',`${input.value}`)
+       $bc.setSource('btn.load',true)
     }
 
 
   }
+});
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll("p").forEach(p => {
+      if (p.innerHTML.trim() === "") {
+          p.remove();
+      }
+  });
 });

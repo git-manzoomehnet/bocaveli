@@ -1,0 +1,725 @@
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="2373830">
+    <member name="private" type="view"/> 
+</basis>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Privet</title>
+   <meta name="description" content="Privet">
+   <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+</head>
+<body class="Privet-c horizontal">
+   <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+     <!-- MAIN CONTAINER -->
+     <div class="Privet-Sec container-Sec" >
+       <section id="PinSection">
+           <div class="Pin-Wrapp">
+               <div class="Section-1 ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
+                  <div class="textBox Box w-auto translate-x-[1.5em] duration-[.8s] opacity-0 flex flex-col gap-6 max-w-[536px] min-w-[536px]">
+                   <basis core="print" datamembername="db.private">
+                       <layout>
+                           <div class="Title w-auto flex justify-start items-start text-left">
+                           @child
+                           </div>
+                       </layout>
+                       <face filter="TypeID=150">
+                           <h1 class="font-Montserrat700 text-[32px] leading-[39.01px] text-black flex flex-col">
+                          @text
+                           </h1>
+                       </face>
+                   </basis>
+                   <basis core="print" datamembername="db.private">
+                       <layout>
+                           <div class="Text w-[492px] text-justify font-OpenSans300 font-light text-[13px] text-gray leading-[17.07px]">
+                            <p class="font-OpenSans300 font-light text-[13px] leading-[16.25px]">
+                            @child
+                            </p>
+                           </div>
+                       </layout>
+                       <face filter="TypeID=129">     
+                          @largetext
+                       </face>
+                   </basis>
+                   <div class="Logo flex flex-col gap-6">
+                    <span class="w-[202px] h-[32px]">
+                        <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full h-full object-cover"
+                         alt="Bocavoli" title="Bocavoli">
+                    </span>
+                    <span class="det font-KozGoPr6N400 uppercase font-normal text-sm leading-28 text-gray ">
+                        proudly made in iran
+                    </span>
+                </div>
+                  </div>
+               </div>
+            
+                <div class="BlackSec px-[3em] bg-black flex h-screen">
+                   <div class="Section-2 h-90p max-h-[750px] my-auto border-x-[1px]  sec  flex justify-center items-center">
+                       <div class="Box textBox [&:not(:last-child)]:border-r-[1px]
+                       [&:first-child]:border-l-white  border-white h-90p justify-start  px-[6em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                       duration-[.8s] opacity-0 flex flex-col ">
+                        <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                            <h2 class="font-Montserrat700 flex flex-col text-[32px] 
+                            leading-[39.01px] text-left text-white">
+                            HISTORY
+                            </h2>
+                         
+                        </div>
+                        <div class="text text-justify w-[566px] flex-col flex justify-start items-start 
+                        font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-grayMatn">
+                            <p>
+                               Bocaveli’s history is important because it reflects years of commitment to quality, craftsmanship, and client trust, establishing the brand's reputation in the luxury market. This legacy sets a strong foundation, showcasing experience, reliability, and growth. It assures clients of Bocaveli’s consistency and dedication, while inspiring the team to uphold high standards and innovate. A respected history builds credibility, driving long-term loyalty and market positioning.
+
+                           </p>
+                        </div>
+                        <div class="historys w-[566px] flex-col flex justify-start items-start 
+                        font-Montserrat700 font-bold text-xl leading-[35px] text-right text-white">
+                        
+                        <p>
+                           1383		YOUB OFFICE FURNITURE
+
+                        </p>
+                        <p>
+                           1390		YOUB KITCHEN
+                        </p>
+                        <p>
+                           1393		POGGENPOHL <span class="det  font-Montserrat300 font-light text-[13px] leading-[35px]">
+                               GERMAN KITCHEN
+                           </span> 
+                        </p>
+                        <p>
+                           1393		LUALDI <span class="det  font-Montserrat300 font-light text-[13px] leading-[35px]">
+                               ITALIAN DOORS
+                           </span> 
+                        </p>
+                        <p>
+                           1394		ASTER, ARMONY
+                        </p>
+                        <p>
+                           1395 		BOCAVELI WARDROBE
+                        </p>
+                        <p>
+                           1396 		BOCAVELI KITCHEN
+                        </p>
+                        <p>
+                           1402 		PORTAROSSA
+                        </p>
+                        <p>
+                           1403 		SADRA BOUSHEHRI 
+                           <span class="det  font-Montserrat300 font-light text-[13px] leading-[35px]">
+                               DESIGN STUDIO
+                           </span> 
+                        </p>
+                        </div>
+                      
+                       </div>
+                       <div class="Box textBox [&:not(:last-child)]:border-r-[1px]
+                     [&:first-child]:border-l-white  border-white h-90p justify-start  px-[6em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                     duration-[.8s] opacity-0 flex flex-col ">
+                       <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                           <h3 class="font-Montserrat700 flex flex-col text-[32px] 
+                           leading-[39.01px] text-left text-white">
+                           DEPARTMENTS
+                           </h3>
+                        
+                       </div>
+                       <div class="text w-[566px] flex-col flex justify-start items-start 
+                       font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                       
+                           <p>
+                               Dividing the company into three departments enhances focus and efficiency. Sadra Boushehri Design Studio is dedicated to creativity and collection design, reinforcing Bocaveli’s luxury image. Bocaveli handles small, high-quality projects (1-10 units), maintaining premium standards for kitchens and wardrobes. Porta Rossa oversees larger, more complex projects, prioritizing budget control, timeline adherence, and robust project management. This structure improves client satisfaction and aligns each department with specific project needs and scales.
+
+                          </p>
+                       </div>
+                       <div class="determines mt-10 w-[566px] flex-col flex justify-start items-start 
+                       font-Montserrat700 gap-6 font-bold text-xl leading-[35px] text-left text-white">
+                       <span class="determine">
+                           <div class="title flex font-Montserrat700 font-bold text-[30px] leading-[36.57px] text-left text-white">
+                              
+                                   <span class="font-Montserrat700 font-bold text-[30px] leading-[36.57px] text-left text-white">
+                                       SB 
+                                   </span>
+                                
+                                 <span class="light font-Montserrat300 font-light text-[30px] leading-[37.57px] text-grayMatn">
+                                   DS
+                                 </span>
+                                
+                           </div>
+                           <div class="text font-Montserrat300 font-light text-sm leading-17.07 text-grayMatn">
+                               CREATIVE DESIGN STUDIO
+                           </div>
+                       </span>
+                       <span class="determine">
+                           <div class="title flex font-Montserrat700 font-bold text-[30px] leading-[36.57px] text-left text-white">
+                              
+                                   <span class="font-Montserrat700 font-bold text-[30px] leading-[36.57px] text-left text-white">
+                                       BOCAVELI 
+                                   </span>
+                                
+                              
+                                
+                           </div>
+                           <div class="text font-Montserrat300 font-light text-sm leading-17.07 text-grayMatn">
+                               HIGH END KITCHEN, WARDROBE AND MORE
+                           </div>
+                       </span>
+                       <span class="determine">
+                           <div class="title flex font-Montserrat700 font-bold text-[30px] leading-[36.57px] text-left text-white">
+                              
+                                   <span class="font-Montserrat700 font-bold text-[30px] leading-[36.57px] text-left text-white">
+                                       PORTA
+                                   </span>
+                                
+                                 <span class="red font-Montserrat700 font-light text-[30px] leading-[36.57px] text-red2">
+                                   ROSSA 
+                                 </span>
+                                
+                           </div>
+                           <div class="text font-Montserrat300 font-light text-sm leading-17.07 text-grayMatn">
+                               PROJECT MANAGMENT SERVICES
+                           </div>
+                       </span>
+                       <span class="determine">
+                           <div class="title flex font-Montserrat700 font-bold text-[30px] leading-[36.57px] text-left text-white">
+                              
+                                   <span class="font-Montserrat700 font-bold text-[30px] leading-[36.57px] text-left text-white">
+                                       LUALDI 
+                                   </span>
+                                
+                       
+                                
+                           </div>
+                           <div class="text font-Montserrat300 font-light text-sm leading-17.07 text-grayMatn">
+                              
+                       ITALIAN HIGH END DOORS
+                           </div>
+                       </span>
+                 
+                       </div>
+                     
+                      </div>
+                      <div class="Box  textBox [&:not(:last-child)]:border-r-[1px]
+                      [&:first-child]:border-l-white  border-white h-90p justify-start  px-[6em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                      duration-[.8s] opacity-0 flex flex-col ">
+                      <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                          <h2 class="font-Montserrat700 flex flex-col text-[32px] 
+                          leading-[39.01px] text-left text-white">
+                          VALUES
+                          </h2>
+                       
+                      </div>
+                      <div class="text w-[566px] flex-col flex justify-start items-start 
+                      font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                      
+                          <p>
+                           Bocaveli’s values guide decisions, build trust, and distinguish the brand in luxury markets. With principles like quality, customization, and ethics, every project reflects excellence and consistency. Emphasis on growth and global collaborations drives innovation and attracts talent aligned with Bocaveli’s vision. These values foster customer loyalty and support sustainable success.
+
+                         </p>
+                      </div>
+                      <div class="historys  mt-10 w-[566px] flex-col flex justify-start items-start 
+                      font-Montserrat700 font-bold text-xl leading-[35px] text-left text-white">
+                      
+                    <div class="text flex flex-col font-normal font-Montserrat400 leading-[35px] text-white">
+                       <p>
+                           ETHICS & COMMITMENT  
+                       </p>
+                       <p>
+                           ARCHITECTURAL PRINCIPLES  
+                       </p>
+                       <p>
+                           INNOVATION 
+                       </p>
+                       <p>
+                           QUALITY & DETAIL PERFECTION 
+                       </p>
+                       <p>
+                           CUSTOMIZATION & FLEXIBILITY  
+                       </p>
+                       <p>
+                           COLLABORATION WITH GLOBAL BRANDS  
+                       </p>
+                       <p>
+                           CONTINUOUS GROWTH  
+                       </p>
+                       <p>
+                           CUSTOMER EXPERIENCE 
+                       </p>
+                    </div>
+                      </div>
+                    
+                     </div>
+                     <div class="Box textBox [&:not(:last-child)]:border-r-[1px]
+                     [&:first-child]:border-l-white  border-white h-90p justify-start  px-[6em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                     duration-[.8s] opacity-0 flex flex-col ">
+                      <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                          <h2 class="font-Montserrat700 flex flex-col text-[32px] 
+                          leading-[39.01px] text-left text-white">
+                          ARCHITECTS&DEVELOPERS
+                          </h2>
+                       
+                      </div>
+                      <div class="text  w-[566px] flex-col flex justify-start items-start 
+                      font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                      
+                          <p>
+                           Working with renowned architects has elevated Bocaveli's brand reputation, positioning it as a trusted name in Iran’s luxury interior design market. These collaborations signal high design quality, aligning Bocaveli with innovative architectural visions and attracting clients who value artistry and precision. Additionally, partnerships with well-known architects bolster Bocaveli's portfolio, showcasing its ability to meet the rigorous standards of top-tier professionals and setting it apart from competitors in the luxury market.
+
+
+
+                         </p>
+                      </div>
+                      <div class="historys  mt-10 w-[566px] flex-col flex justify-start items-start 
+                      font-Montserrat700 font-bold text-xl leading-[35px] text-left text-white">
+                      
+                    <div class="text w-full flex flex-wrap gap-x-20 font-normal text-xl font-Montserrat400 leading-[35px] text-white">
+                     <div class="col flex flex-col">
+                       <p>
+                           H.BADRIAHMADI
+
+                       </p>
+                       <p>
+                           R.TEHRANI
+
+                       </p>
+                       <p>
+                           M.NIKBAKHT
+
+                       </p>
+                       <p>
+                           A.TAGHABON
+                       </p>
+                       <p>
+                           O.GHOLAMPOUR
+
+                       </p>
+                       <p>
+                           H.HAKAMIAN
+
+
+                       </p>
+                       <p>
+                           H.KACHABI
+
+                       </p>
+                     </div>
+                     <div class="col flex flex-col">
+                       
+                       <p>
+                           SH.ALIDOUST
+                       </p>
+                       <p>
+                           F.DALIRI
+                       </p>
+                       <p>
+                           EBRAHIMZADE
+                       </p>
+                       <p>
+                           A.HOJAT
+
+                       </p>
+                       <p>
+                           SH.GHAFFARI
+                       </p>
+                       <p>
+                           M.HAGHBIN
+
+                       </p>
+                     </div>
+                   
+                 
+                    </div>
+                      </div>
+                    
+                     </div>
+                     <div class="Box textBox [&:not(:last-child)]:border-r-[1px]
+                     [&:first-child]:border-l-white  border-white h-90p justify-start  px-[6em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                     duration-[.8s] opacity-0 flex flex-col ">
+                     <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                         <h2 class="font-Montserrat700 flex flex-col text-[32px] 
+                         leading-[39.01px] text-left text-white">
+                         PROJECTS
+                         </h2>
+                      
+                     </div>
+                     <div class="text  w-[566px] flex-col flex justify-start items-start 
+                     font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                     
+                         <p>
+                           Previous projects are crucial for understanding a company’s capabilities, experience, and expertise. They provide evidence of quality, consistency, and adherence to timelines and client requirements. Reviewing past work helps prospective clients gauge whether the company can handle similar or more complex projects. For a brand like Bocaveli, previous projects also establish credibility, showcasing its successful collaborations, design versatility, and ability to meet high standards in the luxury market.
+
+
+
+                       </p>
+                     </div>
+                     <div class="historys  mt-10 w-[566px] flex-col flex justify-start items-start 
+                     font-Montserrat700 font-bold text-xl leading-[35px] text-left text-white">
+                     
+                   <div class="text w-full flex flex-col font-normal text-xl font-Montserrat400 leading-[35px] text-white">
+                      <p>
+                       20 UNITS & MORE
+
+                      </p>
+                      <p>
+                       10 TO 20 UNITS
+
+                      </p>
+                      <p>
+                       5 TO 10 UNITS
+                      </p>
+                      <p>
+                       2 TO 5 UNITS
+
+                      </p>
+                      <p>
+                       UNIQE OR TAILORE MADE PROJECTS
+                      </p>
+                      <p>
+                       CONSULTANCY
+                      </p>
+                   
+                   </div>
+                     </div>
+                   
+                    </div>
+                    <div class="Box textBox [&:not(:last-child)]:border-r-[1px]
+                    [&:first-child]:border-l-white  border-white h-90p justify-start  px-[6em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                    duration-[.8s] opacity-0 flex flex-col ">
+                    <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                        <h2 class="font-Montserrat700 flex flex-col text-[32px] 
+                        leading-[39.01px] text-left text-white">
+                        STYLES
+                        </h2>
+                     
+                    </div>
+                    <div class="text  w-[566px] flex-col flex justify-start items-start 
+                    font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                    
+                        <p>
+                           Bocaveli needs different styles to meet diverse client preferences, expand market appeal, and stay competitive in luxury design. Offering a range—from classic to modern—ensures clients find options that suit their unique visions. This versatility highlights Bocaveli's design expertise, allows adaptation to shifting trends, and enhances customer satisfaction, positioning the brand as a dynamic choice that caters to varied tastes and broadens its reach.
+                       </p>
+                    </div>
+                    <div class="historys  mt-10 w-[566px] flex-col flex justify-start items-start 
+                    font-Montserrat700 font-bold text-xl leading-[35px] text-left text-white">
+                    
+                  <div class="text w-auto flex flex-col font-normal text-xl font-Montserrat400 leading-[35px] text-white">
+                 <div class="schema gap-[3.5em] w-auto flex justify-start items-center
+                  font-normal text-xl font-Montserrat400 leading-[35px] text-white">
+                   <span class="uppercase">
+                       BRAVURA
+                   </span>
+                   <span class="w-auto flex font-normal text-[15px] font-Montserrat400 leading-[18.29px] text-white">
+                       NEW CLASSIC LUXTURY
+                   </span>
+                 </div>
+                 <div class="schema gap-[3.5em] w-auto flex justify-start items-center
+                  font-normal text-xl font-Montserrat400 leading-[35px] text-white">
+                   <span class="uppercase">
+                       ORIGIN
+                   </span>
+                   <span class="w-auto flex font-normal text-[15px] font-Montserrat400 leading-[18.29px] text-white">
+                       SIMPLE CLASSIC 
+                   </span>
+                 </div>
+                 <div class="schema gap-[3.5em] w-auto flex justify-start items-center
+                  font-normal text-xl font-Montserrat400 leading-[35px] text-white">
+                   <span class="uppercase">
+                       CARISMA	
+                   </span>
+                   <span class="w-auto flex font-normal text-[15px] font-Montserrat400 leading-[18.29px] text-white">
+                       MODERN
+                   </span>
+                 </div>
+                 <div class="schema gap-[3.5em] w-auto flex justify-start items-center
+                  font-normal text-xl font-Montserrat400 leading-[35px] text-white">
+                   <span class="uppercase">
+                       APEX						
+                   </span>
+                   <span class="w-auto flex font-normal text-[15px] font-Montserrat400 leading-[18.29px] text-white">
+                           I DONT KNOW
+                   </span>
+                 </div>
+                 <div class="schema gap-[3.5em] w-auto flex justify-start items-center
+                  font-normal text-xl font-Montserrat400 leading-[35px] text-white">
+                   <span class="uppercase">
+                       VISION				
+                   </span>
+                   <span class="w-auto flex font-normal text-[15px] font-Montserrat400 leading-[18.29px] text-white">
+                       I DONT KNOW
+                   </span>
+                 </div>
+                 <div class="schema gap-[3.5em] w-auto flex justify-start items-center
+                  font-normal text-xl font-Montserrat400 leading-[35px] text-white">
+                   <span class="uppercase">
+                       ESSENCE	
+                   </span>
+                   <span class="w-auto flex font-normal text-[15px] font-Montserrat400 leading-[18.29px] text-white">
+                       I DONT KNOW
+                   </span>
+                 </div>
+                 <div class="schema gap-[3.5em] w-auto flex justify-start items-center
+                 font-normal text-xl font-Montserrat400 leading-[35px] text-white">
+                  <span class="uppercase">
+                   LEGACY	
+                  </span>
+                  <span class="w-auto flex font-normal text-[15px] font-Montserrat400 leading-[18.29px] text-white">
+                      I DONT KNOW
+                  </span>
+                </div>
+                <div class="schema gap-[3.5em] w-auto flex justify-start items-center
+                font-normal text-xl font-Montserrat400 leading-[35px] text-white">
+                 <span class="uppercase">
+                   IRAN		
+                 </span>
+                 <span class="w-auto flex font-normal text-[15px] font-Montserrat400 leading-[18.29px] text-white">
+                     I DONT KNOW
+                 </span>
+               </div>
+                  </div>
+                    </div>
+                  
+                   </div>
+                   <div class="Box textBox [&:not(:last-child)]:border-r-[1px]
+                   [&:first-child]:border-l-white  border-white h-90p justify-start  px-[6em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                   duration-[.8s] opacity-0 flex flex-col ">
+                   <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                       <h2 class="font-Montserrat700 flex flex-col text-[32px] 
+                       leading-[39.01px] text-left text-white">
+                       MEDIAS
+                       </h2>
+                    
+                   </div>
+                   <div class="text  w-[566px] flex-col flex justify-start items-start 
+                   font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                   
+                       <p>
+                           Our past media efforts have effectively built Bocaveli’s brand identity, establishing us as a leader in luxury cabinetry and design. Through digital and print channels, we’ve highlighted our commitment to quality, innovation, and customization. Each campaign has showcased our diverse styles, from classic to modern, reflecting our adaptability to varied client preferences. 
+
+                           These initiatives have strengthened client trust and provided our sales team with powerful tools to engage customers confidently. Moving forward, our media strategy remains focused on enhancing Bocaveli’s image, fostering loyalty, and maintaining our reputation for excellence in the luxury design market.
+                           
+                           
+                           
+                           
+                           
+                           </p>
+                
+                   </div>
+                   <div class="historys  mt-10 w-[566px] flex-col flex justify-start items-start 
+                   font-Montserrat700 font-bold text-xl leading-[35px] text-left text-white">
+                   
+                 <div class="text w-full flex flex-col font-normal text-[28px] font-Montserrat400 leading-[40px] text-white">
+                    <p>
+                       THE PEN ROOM
+                                     
+                    </p>
+                    <p>
+                  PRODUCTION
+                    </p>
+                    <p>
+                       INSTALATION
+                    </p>
+                    <p>
+                       INTERVIEWS
+                       
+                    </p>
+                 
+                 </div>
+                   </div>
+                 
+                  </div>
+                  <div class="Box textBox [&:not(:last-child)]:border-r-[1px]
+                  [&:first-child]:border-l-white  border-white h-90p justify-start  px-[6em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                  duration-[.8s] opacity-0 flex flex-col ">
+                  <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                      <h2 class="font-Montserrat700 flex flex-col text-[32px] 
+                      leading-[39.01px] text-left text-white">
+                      MATERIALS
+                      </h2>
+                   
+                  </div>
+                  <div class="text  w-[566px] flex-col flex justify-start items-start 
+                  font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                  
+                      <p>
+                       Material combination is crucial at Bocaveli as it defines the quality, aesthetics, and functionality of our designs. By carefully selecting and combining materials, we create cabinetry that is not only visually stunning but also durable and highly customized to each client's needs. Using diverse materials—such as wood, metal, glass, and stone—allows us to achieve unique textures, finishes, and contrasts that enhance the luxury feel of each project. This attention to material choice and pairing reflects Bocaveli’s commitment to craftsmanship and innovation, ensuring that every piece we create is both a functional and artistic statement in our clients' spaces.
+                   </p>
+               
+                  </div>
+                  <div class="historys  mt-10 w-[566px] flex-col flex justify-start items-start 
+                  font-Montserrat700 font-bold text-xl leading-[35px] text-left text-white">
+                  
+                <div class="text w-full flex flex-col font-normal text-[28px] font-Montserrat400 leading-[40px] text-white">
+                   <p>
+                       MELAMINE MDF DOORS
+            
+                   </p>
+                   <p>
+                       MELAMINE MDF CARCASES
+
+                   </p>
+                   <p>
+                       LEATHER MDF
+
+                   </p>
+                   <p>
+                       LAQURED MDF
+                   </p>
+                   <p>
+                       
+           ALUMINIUM PROFILES
+
+                   </p>
+                </div>
+                  </div>
+                
+                 </div>
+                   <div class="Box textBox [&:not(:last-child)]:border-r-[1px]
+                   [&:first-child]:border-l-white  border-white h-90p justify-start  px-[6em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                   duration-[.8s] opacity-0 flex flex-col ">
+                   <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                       <h2 class="font-Montserrat700 flex flex-col text-[32px] 
+                       leading-[39.01px] text-left text-white">
+                       
+                           APPLIANCES
+
+                       </h2>
+                   
+                   </div>
+                   <div class="text  w-[566px] flex-col flex justify-start items-start 
+                   font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                   
+                       <p>
+                           Choosing the correct appliances is essential to complete and enhance Bocaveli’s designs. The right appliances seamlessly integrate with cabinetry, ensuring both functional harmony and aesthetic cohesion. Well-selected appliances not only complement the style but also elevate the overall luxury and usability of the space. At Bocaveli, we prioritize appliance selection to create a cohesive, efficient, and visually striking environment that meets clients’ design expectations and lifestyle needs.
+                       </p>
+                   </div>
+                   <div class="historys  mt-10 w-[566px] flex-col flex justify-start items-start 
+                   font-Montserrat700 font-bold text-xl leading-[35px] text-left text-white">
+                   
+                   <div class="text w-full flex flex-col font-normal text-[28px] font-Montserrat400 leading-[40px] text-white">
+                   <p>
+                       BOSCH
+                   </p>
+                   <p>
+                       MIELE
+                   </p>
+                   <p>
+                       GAGGENOU		
+
+                   </p>
+                   <p>
+                       SIMENSE
+                   </p>
+                   <p>
+                       DORNBRACHT
+                   </p>
+                   <p>
+                       ASKO
+                   </p>
+                   <p>
+                       SHOCK
+                   </p>
+                   
+                   </div>
+                   </div>
+                   
+                   </div>
+                   <div class="Box textBox [&:not(:last-child)]:border-r-[1px]
+                   [&:first-child]:border-l-white  border-white h-90p justify-start  px-[6em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                   duration-[.8s] opacity-0 flex flex-col ">
+                   <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                       <h2 class="font-Montserrat700 flex flex-col text-[32px] 
+                       leading-[39.01px] text-left text-white">
+                       
+                       ACCESSORIES
+
+                       </h2>
+                   
+                   </div>
+                   <div class="text  w-[566px] flex-col flex justify-start items-start 
+                   font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                   
+                       <p>
+                           Experience helps you learn about the everyday realities of working life and most importantly equips you with the soft skills needed to succeed at any organization. While a college degree might increase your peer base, experience gives you access to a huge network of people who have been there and done that.
+
+                       </p>
+
+                   </div>
+                   <div class="historys  mt-10 w-[566px] flex-col flex justify-start items-start 
+                   font-Montserrat700 font-bold text-xl leading-[35px] text-left text-white">
+                   
+                   <div class="text w-full flex flex-col font-normal text-[28px] font-Montserrat400 leading-[40px] text-white">
+                   <p>
+                       KESSEBOHME
+
+                   </p>
+                   <p>
+                       PEKA
+
+                   </p>
+                   <p>
+                       FANTONI
+
+
+                   </p>
+                   <p>
+                       MELONI
+
+                   </p>
+                   <p>
+                       MINFERI
+
+                   </p>
+                   </div>
+                   </div>
+                   
+                   </div>
+                   <div class="Box textBox [&:not(:last-child)]:border-r-[1px]
+                   [&:first-child]:border-l-white  border-white h-90p justify-start  px-[6em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                   duration-[.8s] opacity-0 flex flex-col ">
+                   <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                       <h2 class="font-Montserrat700 flex flex-col text-[32px] 
+                       leading-[39.01px] text-left text-white">
+                       
+                       WORKTOPS
+
+                       </h2>
+                   
+                   </div>
+                   <div class="text  w-[566px] flex-col flex justify-start items-start 
+                   font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                   
+                       <p>
+                           Experience helps you learn about the everyday realities of working life and most importantly equips you with the soft skills needed to succeed at any organization. While a college degree might increase your peer base, experience gives you access to a huge network of people who have been there and done that.
+
+                       </p>
+
+                   </div>
+                   <div class="historys  mt-10 w-[566px] flex-col flex justify-start items-start 
+                   font-Montserrat700 font-bold text-xl leading-[35px] text-left text-white">
+                   
+                   <div class="text w-full flex flex-col font-normal text-[28px] font-Montserrat400 leading-[40px] text-white">
+                   <p>
+                       AVANDAD
+                   </p>
+                   <p>
+                       MADO
+                   </p>
+                  
+                   
+                   </div>
+                   </div>
+                   
+                   </div>
+                    </div>
+                
+                </div>
+                <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+           </div>
+       </section>
+   </div>
+  
+   <!-- MAIN CONTAINER -->
+   <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+   <script src="[##cms.cms.cdn##]/js/privet.js"></script>
+</body>
+</html>

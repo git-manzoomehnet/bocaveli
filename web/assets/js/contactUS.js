@@ -75,19 +75,7 @@ $('.ContactUS-Sec').imagesLoaded( {
       })
 
     let IMGS = document.querySelectorAll('.IMG')
-    // let projects = document.querySelectorAll('.Item-blog')
-    // projects.forEach((proj)=>{
-    //   gsap.to(proj,{
-    //     scrollTrigger: {
-    //       trigger:proj,
-    //       containerAnimation:scrollTween,
-    //       start: "top bottom",
-    //     },
-    //     onStart:()=>{
-    //       proj.classList.add('appear')
-    //     },
-    //   })
-    // })
+
     
     IMGS.forEach((IMG)=>{
             gsap.to(IMG,{

@@ -117,11 +117,6 @@ $('.Newslist-Sec').imagesLoaded( {
             }
         })
       })
-    // let SURVEY = document.querySelector('.SURVEY')
-    // let stringTag = SURVEY.getAttribute('href')
-    // let cleanString = stringTag.replace(/<\/?p>/g,'')
-    // console.log(cleanString);
-    // SURVEY.setAttribute('href',cleanString)
-    
+  
     },1000)
   })})
