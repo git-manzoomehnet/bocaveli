@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newslist</title>
+    <link rel="stylesheet" href="/mobile/assets/css/outputMobileBocavoli.css">
+</head>
+<body>
+    <main class="Newslist-mobile flex flex-col pb-8">
+        <header class="MobileHeader fixed z-[99] left-0 group/header flex  w-screen overflow-hidden bg-black">
+            <div class="innerHeader py-[.5em] mx-auto w-90p  flex justify-between items-center">
+                <div class="Logo w-[25px] h-[50px] flex justify-center items-center">
+                    <a href="">
+                        <img src="/web/assets/images/logo.svg" alt="">
+                    </a>
+                </div>
+               
+                <div class="right flex gap-6 justify-center items-center">
+                    <span class="lang">
+                        <a href="" class="font-Montserrat400 text-sm leading-17.07 text-white">
+                            FA
+                        </a>
+                    </span>
+                    <span class="SearchIcon hover:cursor-pointer">
+                        <img src="/web/assets/images/searchIcon.svg" alt="">
+                    </span>
+                  
+                    <div class="MenuIcon w-auto flex justify-center items-center">
+                        <span class="toggleItems w-[28px] h-auto flex-col flex gap-[5px]  group/toggleItems hover:cursor-pointer">
+                            <span class="toggleItem h-[1px] w-[28px] bg-white duration-[900ms]"></span>
+                            <span
+                                class="toggleItem h-[1px] w-[28px] bg-white 
+                               
+                                 group-[&.Open]/header:opacity-0
+                                 duration-[900ms]"></span>
+                            <span class="toggleItem h-[1px] w-[28px] bg-white duration-[900ms]"></span>
+                        </span>
+                    </div>
+                </div>
+             
+            </div>
+        
+        </header>
+        <div class="Menu-Container fixed  w-screen top-0 left-0 right-0
+        bottom-0 h-[100svh] overflow-hidden z-[20]  pointer-events-none group/menu 
+         [&.Open]:pointer-events-auto 
+        flex justify-between  duration-[1.2s] ">
+        <div class="right relative  bg-black translate-x-[-120%] duration-[700ms] group-[&.Open]/menu:translate-x-[0] 
+         z-[11] w-full ml-auto
+        flex flex-col h-full">
+            <div class="Menu w-85p mx-auto h-[90%] flex justify-start items-center">
+                <ul class="Menus w-full h-[80%] flex-col flex justify-center items-start gap-8">
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.2s]
+                    items-start overflow-hidden">
+                        <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            homepage
+                        </a>
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.3s]
+                    items-start overflow-hidden">
+                        <a href="/" title="projects" alt="projects" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            projects & experiences
+                        <sub class="font-Montserrat400  text-xs leading-14.06 text-white bottom-[unset] 
+                        relative top-[-18px]">(12)</sub>
+                        </a>
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.4s]
+                    items-start overflow-hidden">
+                        <a href="/" title="productions" alt="productions" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            collections & productions
+    
+                        </a>
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.5s]
+                    items-start overflow-hidden">
+                        <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            privet
+                        </a>
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.6s]
+                    items-start overflow-hidden">
+                        <a href="/" title="homepage" alt="homepage" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            news & articles
+                            <sub class="font-Montserrat400  text-xs leading-14.06 text-white bottom-[unset] 
+                            relative top-[-18px]">(12)</sub>
+                            </a>
+                        </a>
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.7s]
+                    items-start overflow-hidden">
+                        <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            about & history
+    
+                        </a>
+                    </li>
+                    <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
+                    opacity-0 duration-[1s] group-[&.Open]/menu:translate-x-[0] group-[&.Open]/menu:opacity-[1] delay-[.8s]
+                    items-start overflow-hidden">
+                        <a href="/" title="privet" alt="privet" class="Menu-link font-Montserrat400 
+                        font-normal text-2xl  leading-[29.26px] text-white 
+                            hover:text-grayMatn duration-[.4s] text-right">
+                            contact us & upload
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Box w-85p mx-auto h-[10%] border-t-[1px] border-grayMatn flex justify-between items-center">
+                <div class="Socials flex  w-full justify-between items-center">
+                    <span class="Social-item flex justify-center items-center">
+                        <a href="tel:" class="flex justify-center items-center hover:text-[#989898] duration-[.4s]
+                         font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                            instagram
+                        </a>
+                    </span>
+                    <span class="Social-item flex justify-center items-center">
+                        <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
+                         font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                         email
+                        </a>
+                    </span>
+                    <span class="Social-item flex justify-center items-center">
+                        <a href="tel:" class="flex justify-center items-center  hover:text-[#989898] duration-[.4s]
+                         font-Montserrat400 text-sm leading-17.07 text-grayMatn">
+                         whatsapp 
+                        </a>
+                    </span>
+              
+                </div>
+            </div>
+        </div>
+      
+        </div>
+        <div class="Section-1 sec pt-[7em] w-full flex flex-col justify-center items-center">
+            <div class="textBox Box w-90p mx-auto translate-x-[1.5em] 
+            duration-[.8s] opacity-0 flex flex-col gap-4">
+             <div class="Title w-auto flex justify-start items-start text-left">
+                 <h1 class="font-Montserrat700 text-xl leading-[24.38px] text-black flex flex-col">
+                     Whats Up!
+                 </h1>
+             </div>
+             <div class="Text font-OpenSans300 font-light text-[13px] text-gray leading-[17.07px]">
+                <p class="font-OpenSans300 font-light text-[13px] leading-[17.07px]">
+                     we share the latest news and updates about our website, including new features, upcoming events, and special promotions. Stay tuned for insightful articles, community highlights, and exciting announcements designed to keep you in the loop. We aim to foster a vibrant community where you can connect with us and other members. Whether it’s spotlighting user stories, introducing new products, or sharing helpful tips, this column is your go-to source for everything happening here. Thank you for being a part of our journey – let’s explore what’s new together!
+
+                 </p>
+             </div>
+             <div class="Logo flex flex-col gap-6">
+                <span class="w-[146px] h-[24px]">
+                    <img src="/web/assets/images/Backup_of_logo bocaveli 1.png" alt="" class="w-full object-cover">
+                </span>
+                <span class="det font-KozGoPr6N400 uppercase font-normal text-xs leading-24 text-gray ">
+                    proudly made in iran
+                </span>
+            </div>
+            </div>
+         </div>
+         <div class="Section-2 w-full mb-12 mt-4  sec  flex flex-col justify-center items-center">
+            <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+            [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                 <img src="/web/assets/images/Frame 107 1.png" alt="" class=" w-full
+                 object-cover">
+             </div>
+       
+          </div>
+          <div class="BlackSec bg-black pt-[1em] pb-[2em] flex w-full flex-col">
+             <div class="Section-3 w-full sec flex justify-center items-center">
+                 <div class="Box w-90p mx-auto textBox border-b-[1px]
+                border-white justify-center pb-[2em]
+                   gap-[1.5em] translate-x-[1.5em] 
+                   duration-[.8s] opacity-0 flex flex-col ">
+                  <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                      <h2 class="font-Montserrat700 font-bold text-xl 
+                      leading-[24.38px] flex flex-col text-left text-white">
+                     <span>
+                         NEWS 
+                        
+                     </span>
+                     <span>
+                      
+                         & ARTICLES 
+                     </span>
+                      </h2>
+                   
+                  </div>
+                  <div class="text w-full flex-col flex justify-start items-start 
+                  font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                  
+                      <p>
+                         Here, you will find a blend of breaking news, in-depth articles, interviews, and thoughtful commentary on topics that matter most to our community.
+
+                         This section aims to provide timely and relevant information, ensuring you are always up-to-date with local events and global developments. Our news articles deliver key facts succinctly, while our feature pieces explore deeper narratives and trends, offering context and analysis that encourage a richer understanding of the world around us.
+                         
+                         We incorporate multimedia elements such as videos, images, and infographics, making the content more engaging and accessible. The interactive nature of the section also allows you to participate in discussions, share your opinions, and connect with other readers, fostering a sense of community.
+                         
+                         Whether you are looking for the latest updates or in-depth exploration of specific topics, the “News & Articles” section is your go-to resource for reliable information and stimulating content. We invite you to explore and stay connected with the stories that shape our lives and inspire our community. work experience is a must!
+                         
+                         
+                     </p>
+                  </div>
+         
+                 </div>
+              </div> 
+              <div class="Section-4 mt-[1.5em] w-full sec flex justify-start items-center">
+                 <div class="Items w-90p mx-auto flex-col flex justify-start gap-[1.5em] items-start">
+                     <div class="Item-blog translate-y-[2.5rem] opacity-0
+                     [&.appear]:translate-y-[0] [&.appear]:opacity-[1] IMG w-full border-b-[1px] pb-[2em] gap-3
+                      border-white flex flex-col justify-center items-center">
+                 <div class="imageContainer w-full IMG  group/img 
+                      hover:cursor-pointer duration-[.4s]">
+                     <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
+                         <img src="/web/assets/images/Layer 28 copy 1.png" alt="" class="w-full h-full object-cover">
+                     </a>
+                 </div>
+                 <div class="Title w-full flex justify-start text-left text-white
+                      font-Montserrat400 font-normal text-base leading-[19.5px]">
+                     <a href="" class="flex flex-col">
+                         <span class="font-Montserrat700 font-bold text-base leading-21.94 text-white">
+                             DUZZI
+                         </span>
+                         <span></span>
+                         ABOUT & HISTORY
+                     </a>
+                 </div>
+                 <div class="Text w-full flex flex-col justify-start items-start 
+                      font-OpenSans300 font-light text-[13px] leading-17.07 text-left text-white relative">
+                      Bocaveli and Duzzi have collaborated to create an exquisite kitchen that elevates home decor. 
+                      Showroom Duzzi, known for its exceptional interior design offerings, teamed up with Bocaveli 
+                      to bring a modern
+                      Bocaveli and Duzzi have collaborated to create an exquisite kitchen that elevates home decor. 
+                      Showroom Duzzi, known for its exceptional interior design offerings, teamed up with Bocaveli 
+                      to bring a modern
+                 </div>
+                     </div>
+                     <div class="Item-blog translate-y-[2.5rem] opacity-0
+                     [&.appear]:translate-y-[0] [&.appear]:opacity-[1] IMG w-full border-b-[1px] pb-[2em] gap-3
+                      border-white flex flex-col justify-center items-center">
+                 <div class="imageContainer w-full IMG  group/img 
+                      hover:cursor-pointer duration-[.4s]">
+                     <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
+                         <img src="/web/assets/images/Layer 28 copy 1.png" alt="" class="w-full h-full object-cover">
+                     </a>
+                 </div>
+                 <div class="Title w-full flex justify-start text-left text-white
+                      font-Montserrat400 font-normal text-base leading-[19.5px]">
+                     <a href="" class="flex flex-col">
+                         <span class="font-Montserrat700 font-bold text-base leading-21.94 text-white">
+                             DUZZI
+                         </span>
+                         <span></span>
+                         ABOUT & HISTORY
+                     </a>
+                 </div>
+                 <div class="Text w-full flex flex-col justify-start items-start 
+                      font-OpenSans300 font-light text-[13px] leading-17.07 text-left text-white relative">
+                      Bocaveli and Duzzi have collaborated to create an exquisite kitchen that elevates home decor. 
+                      Showroom Duzzi, known for its exceptional interior design offerings, teamed up with Bocaveli 
+                      to bring a modern
+                      Bocaveli and Duzzi have collaborated to create an exquisite kitchen that elevates home decor. 
+                      Showroom Duzzi, known for its exceptional interior design offerings, teamed up with Bocaveli 
+                      to bring a modern
+                 </div>
+                     </div>
+                     <div class="Item-blog translate-y-[2.5rem] opacity-0
+                     [&.appear]:translate-y-[0] [&.appear]:opacity-[1] IMG w-full border-b-[1px] pb-[2em] gap-3
+                      border-white flex flex-col justify-center items-center">
+                 <div class="imageContainer w-full IMG  group/img 
+                      hover:cursor-pointer duration-[.4s]">
+                     <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
+                         <img src="/web/assets/images/Layer 28 copy 1.png" alt="" class="w-full h-full object-cover">
+                     </a>
+                 </div>
+                 <div class="Title w-full flex justify-start text-left text-white
+                      font-Montserrat400 font-normal text-base leading-[19.5px]">
+                     <a href="" class="flex flex-col">
+                         <span class="font-Montserrat700 font-bold text-base leading-21.94 text-white">
+                             DUZZI
+                         </span>
+                         <span></span>
+                         ABOUT & HISTORY
+                     </a>
+                 </div>
+                 <div class="Text w-full flex flex-col justify-start items-start 
+                      font-OpenSans300 font-light text-[13px] leading-17.07 text-left text-white relative">
+                      Bocaveli and Duzzi have collaborated to create an exquisite kitchen that elevates home decor. 
+                      Showroom Duzzi, known for its exceptional interior design offerings, teamed up with Bocaveli 
+                      to bring a modern
+                      Bocaveli and Duzzi have collaborated to create an exquisite kitchen that elevates home decor. 
+                      Showroom Duzzi, known for its exceptional interior design offerings, teamed up with Bocaveli 
+                      to bring a modern
+                 </div>
+                     </div>
+                     <div class="Item-blog translate-y-[2.5rem] opacity-0
+                     [&.appear]:translate-y-[0] [&.appear]:opacity-[1] IMG w-full border-b-[1px] pb-[2em] gap-3
+                      border-white flex flex-col justify-center items-center">
+                 <div class="imageContainer w-full IMG  group/img 
+                      hover:cursor-pointer duration-[.4s]">
+                     <a href="" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
+                         <img src="/web/assets/images/Layer 28 copy 1.png" alt="" class="w-full h-full object-cover">
+                     </a>
+                 </div>
+                 <div class="Title w-full flex justify-start text-left text-white
+                      font-Montserrat400 font-normal text-base leading-[19.5px]">
+                     <a href="" class="flex flex-col">
+                         <span class="font-Montserrat700 font-bold text-base leading-21.94 text-white">
+                             DUZZI
+                         </span>
+                         <span></span>
+                         ABOUT & HISTORY
+                     </a>
+                 </div>
+                 <div class="Text w-full flex flex-col justify-start items-start 
+                      font-OpenSans300 font-light text-[13px] leading-17.07 text-left text-white relative">
+                      Bocaveli and Duzzi have collaborated to create an exquisite kitchen that elevates home decor. 
+                      Showroom Duzzi, known for its exceptional interior design offerings, teamed up with Bocaveli 
+                      to bring a modern
+                      Bocaveli and Duzzi have collaborated to create an exquisite kitchen that elevates home decor. 
+                      Showroom Duzzi, known for its exceptional interior design offerings, teamed up with Bocaveli 
+                      to bring a modern
+                 </div>
+                     </div>
+                 </div>
+                 </div>
+          </div>
+          <div class="Section-footer mobileFooter mt-6 py-[2em] before:contents-[''] 
+          before:absolute before:right-0 before:mx-auto before:left-0 before:top-0
+          before:w-[1px] before:h-full before:bg-black before:z-[1]
+           relative my-auto sec w-full mx-auto flex justify-start items-center">
+             <div class="footerDesk mx-auto w-90p relative z-10
+               flex flex-col justify-center">
+                   <div class="TopSec  mx-auto flex flex-col justify-center items-center " >
+                     <div class="Details bg-white flex-col flex gap-[2em] py-[2em]">
+                         <div class="Texts w-90p mx-auto translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                         opacity-0 textBox gap-3 flex flex-col">
+                            <div class="Title w-full  flex justify-center items-center flex-col">
+                             <p class="font-Montserrat700 font-bold tracking-[3px] text-lg leading-21.94 text-black">
+                                 BOCAVELI
+                               
+                             </p>
+                             <p class="font-Montserrat300 font-light text-lg leading-21.94 text-black">
+                                 KITCEHNS & MORE
+                             </p>
+                            </div>
+                            <div class="Text flex w-full flex-col gap-[1em] font-Montserrat300 font-light 
+                            text-[13px] leading-17.07 text-grayMatn text-center">
+                             <p>
+                                 we offer specialized design services with a focus on kitchens, wardrobes, and more. Our professional team of architects, with extensive experience in kitchen and wardrobe design, brings expertise gained from working with high-end international brands.
+
+We prioritize precision, creativity, and attention to detail, ensuring that each space we design is both unique and functional. Bocaveli not only delivers beautiful, high-quality products but also provides an exceptional experience in design and project execution, tailored to meet the highest standards and the unique needs of our clients.
+
+
+
+                             </p>
+                             <p>
+                                 +98-91007733    
+                             </p>
+                            </div>
+                         </div>
+                         <ul class="MenuFooter gap-[.5em] w-auto flex flex-col items-center justify-between">
+                             <li class="Menu-item textBox translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                             opacity-0">
+                                 <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                    <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                     text-lg font-Montserrat700 leading-[19.5px] text-black">
+                                     About
+                                    </span>
+                                    <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                     & History 
+                                    </span>
+                                 </a>
+                             </li>
+                             <li class="Menu-item textBox translate-x-[1.5em] delay-[.3s] duration-[.8s]
+                             opacity-0">
+                                 <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                    <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                     text-lg font-Montserrat700 leading-[19.5px] text-black">
+                                     Projects
+                                    </span>
+                                    <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                     & Experiences
+                                    </span>
+                                 </a>
+                             </li>
+                             <li class="Menu-item textBox translate-x-[1.5em] delay-[.4s] duration-[.8s]
+                             opacity-0">
+                                 <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                    <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                     text-lg font-Montserrat700 leading-[19.5px] text-black">
+                                     Collections
+                                    </span>
+                                    <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                     & Products
+                                    </span>
+                                 </a>
+                             </li>
+                             <li class="Menu-item textBox translate-x-[1.5em] delay-[.5s] duration-[.8s]
+                             opacity-0">
+                                 <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                    <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                     text-lg font-Montserrat700 leading-[19.5px] text-black">
+                                     News 
+                                    
+                                    </span>
+                                    <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                     & Arcticles
+                                    </span>
+                                 </a>
+                             </li>
+                             <li class="Menu-item textBox translate-x-[1.5em] delay-[.6s] duration-[.8s]
+                             opacity-0">
+                                 <a href="" class="Menu-link group/footeritem flex flex-col text-center">
+                                    <span class="font-bold duration-[.4s] group-hover/footeritem:text-grayMatn
+                                     text-lg font-Montserrat700 leading-[19.5px] text-black">
+                                     Contact Us
+                                     
+                                    </span>
+                                    <span class="font-light text-[13px] font-Montserrat300 leading-15.85 text-black">
+                                     & Uploads
+                                    </span>
+                                 </a>
+                             </li>
+                         </ul>
+                        
+                     </div>
+                   </div>
+                   <div class="BottomSec pt-[3.5em] w-full flex justify-center items-center">
+                     <div class="socials-footer flex gap-[1.5em] justify-start items-center">
+                         <span class="social-item shopping">
+                             <a href="" target="_blank">
+                                 <img src="/web/assets/images/shopping.svg" alt="">
+                             </a>
+                         </span>
+                         <span class="social-item instagramF">
+                             <a href="" target="_blank">
+                                 <img src="/web/assets/images/instagramF.svg" alt="">
+                             </a>
+                         </span>
+                         <span class="social-item emailF">
+                             <a href="" target="_blank">
+                                 <img src="/web/assets/images/emailF.svg" alt="">
+                             </a>
+                         </span>
+                         <span class="social-item whatsappF">
+                             <a href="" target="_blank">
+                                 <img src="/web/assets/images/whatsappF.svg" alt="">
+                             </a>
+                         </span>
+                         <span class="social-item imagesF">
+                             <a href="" target="_blank">
+                                 <img src="/web/assets/images/imagesF.svg" alt="">
+                             </a>
+                         </span>
+                     </div>
+                   </div>
+             </div>
+      </div>
+    </main>
+ 
+    <script src="/mobile/assets/js/lenisScroll.js"></script>
+    <script src="/mobile/assets/js/config-mobile.js"></script>
+    <script src="/mobile/assets/js/newslist-mobile.js"></script>
+</body>
+</html>
