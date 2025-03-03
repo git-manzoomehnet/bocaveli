@@ -851,6 +851,10 @@ video {
   margin-bottom: 3rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-\[2em\] {
   margin-bottom: 2em;
 }
@@ -911,6 +915,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -961,14 +969,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .box-border {
@@ -1173,6 +1173,10 @@ video {
   height: 100vh;
 }
 
+.h-\[84px\] {
+  height: 84px;
+}
+
 .max-h-\[340px\] {
   max-height: 340px;
 }
@@ -1243,6 +1247,10 @@ video {
 
 .w-\[100px\] {
   width: 100px;
+}
+
+.w-\[120px\] {
+  width: 120px;
 }
 
 .w-\[146px\] {
@@ -1378,8 +1386,16 @@ video {
   width: 100vw;
 }
 
-.w-\[120px\] {
-  width: 120px;
+.w-\[\] {
+  width: ;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-\[84px\] {
+  width: 84px;
 }
 
 .min-w-\[450px\] {
@@ -1513,6 +1529,10 @@ video {
 
 .max-w-none {
   max-width: none;
+}
+
+.max-w-\[84px\] {
+  max-width: 84px;
 }
 
 .flex-auto {
@@ -2788,6 +2808,14 @@ video {
   border-color: #ffff;
 }
 
+.border-l-white {
+  border-left-color: #ffff;
+}
+
+.border-b-white {
+  border-bottom-color: #ffff;
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
@@ -3175,12 +3203,20 @@ video {
   padding-top: 7em;
 }
 
-.pt-\[8em\] {
-  padding-top: 8em;
-}
-
 .pt-\[9em\] {
   padding-top: 9em;
+}
+
+.pt-\[1\.5em\] {
+  padding-top: 1.5em;
+}
+
+.pt-\[1\.8em\] {
+  padding-top: 1.8em;
+}
+
+.pb-\[1\.3em\] {
+  padding-bottom: 1.3em;
 }
 
 .text-left {
@@ -3347,6 +3383,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[11px\] {
+  font-size: 11px;
 }
 
 .font-bold {
@@ -3525,6 +3565,14 @@ video {
   line-height: 19.07px;
 }
 
+.leading-\[19\.36px\] {
+  line-height: 19.36px;
+}
+
+.leading-\[19\.43px\] {
+  line-height: 19.43px;
+}
+
 .leading-\[19\.5px\] {
   line-height: 19.5px;
 }
@@ -3605,16 +3653,8 @@ video {
   line-height: 1;
 }
 
-.leading-\[19\.43px\] {
-  line-height: 19.43px;
-}
-
-.leading-\[19\.36px\] {
-  line-height: 19.36px;
-}
-
-.leading-\[20\.43\] {
-  line-height: 20.43;
+.leading-\[13\.41px\] {
+  line-height: 13.41px;
 }
 
 .tracking-\[3px\] {
