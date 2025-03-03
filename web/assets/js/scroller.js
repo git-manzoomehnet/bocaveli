@@ -1,11 +1,11 @@
-$('.AboutUsHistory-Sec').imagesLoaded( {
+$('.container-Sec').imagesLoaded( {
 
 },  function() {
   $(document).ready(function() {
     setTimeout(()=>{
 
       gsap.registerPlugin(ScrollTrigger);
-      const pageContainer = document.querySelector(".AboutUsHistory-Sec");
+      const pageContainer = document.querySelector(".container-Sec");
       /* SMOOTH SCROLL */
       const scroller = new LocomotiveScroll({
         el: pageContainer,
@@ -75,52 +75,20 @@ $('.AboutUsHistory-Sec').imagesLoaded( {
       })
 
     let IMGS = document.querySelectorAll('.IMG')
-    let projects = document.querySelectorAll('.Item')
-    projects.forEach((proj)=>{
-      gsap.to(proj.querySelector('.IMG-proj'),{
-        scrollTrigger: {
-          trigger:proj,
-          containerAnimation:scrollTween,
-          start: "top bottom",
-        },
-        onStart:()=>{
-          proj.querySelector('.IMG-proj').classList.add('appear')
-        },
-      })
-    })
+    document.querySelector('.IMG-first').classList.add('appear')
+
     IMGS.forEach((IMG)=>{
-        gsap.to(IMG,{
-          scrollTrigger: {
-            trigger:IMG,
-            containerAnimation:scrollTween,
-            start: "top bottom",
-          },
-          onStart:()=>{
-            IMG.classList.add('appear')
-          },
-        })
-      })
-    let texts1 =[...document.querySelectorAll('.Section-4 .text-1 p')]
-    texts1 = texts1.map(t=>{
-     return t.innerHTML
+            gsap.to(IMG,{
+                scrollTrigger: {
+                  trigger:IMG,
+                  containerAnimation:scrollTween,
+                  start: "top bottom",
+                },
+                onStart:()=>{
+                  IMG.classList.add('appear')
+                },
+              })
     })
-    let texts2 =[...document.querySelectorAll('.Section-4 .text-2 p')]
-    texts2 = texts2.map(t=>{
-      return t.innerHTML
-     })
-    let parent = document.querySelector('.Section-4 .textSec')
-    for(let i = 0 ; i < texts1.length ; i++){
-      let newP = document.createElement('p')
-      let span1 = document.createElement('span')
-      let span2 = document.createElement('span')
-      span2.className +='font-medium font-Montserrat500'
-      console.log(texts1[i]);
-      
-      span1.innerHTML = texts1[i]
-      span2.innerHTML = texts2[i]
-      newP.appendChild(span1)
-      newP.appendChild(span2)
-      parent.appendChild(newP)
-    }
+   
     },1000)
   })})

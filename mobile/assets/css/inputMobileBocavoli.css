@@ -419,3 +419,6 @@ footer{
 .searchContainer .Results {
   margin-top: 5em;
 }
+.TextPer,.TextPer p{
+  direction: rtl;
+}

@@ -453,3 +453,6 @@ footer{
 .searchContainer .Results {
   margin-top: 5em;
 }
+.pin-spacer.goRight{
+transform: translate(450px,0) !important;
+}

@@ -6,53 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/web/assets/css/outputDesktop.css">
+    <style>
+        .Home-Sec{
+            overflow-x: hidden !important;
+        }
+    </style>
 </head>
 
 <body class="Home horizontal">
-
-      <!-- MAIN CONTAINER -->
-      <div class="Home-Sec container-Sec" >
-        <section id="PinSection">
-            <div class="Pin-Wrapp">
-                <header class="Horizontal-header  [&.fixedMenu]:fixed z-[99] left-0 group/header flex DesktopHeader w-[82px] h-screen overflow-hidden bg-black">
-                    <div class="innerHeader h-[90%] my-auto flex-col w-full flex justify-between items-center">
-                        <div class="Logo w-full flex justify-center items-center">
-                            <a href="">
-                                <img src="/web/assets/images/logo.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="MenuIcon w-auto flex justify-center items-center">
-                            <span class="toggleItems w-auto h-[28px] flex gap-[.4em]  group/toggleItems hover:cursor-pointer">
-                                <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
-                                <span
-                                    class="toggleItem w-[1px] h-[28px] bg-white 
-                                    group-hover/toggleItems:translate-y-[10px] group-[&.Open]/header:translate-y-[10px]
-                                     group-[&.Open]/header:opacity-0
-                                     duration-[900ms]"></span>
-                                <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
-                            </span>
-                        </div>
-                        <div class="Bottom w-full flex flex-col gap-2 justify-center items-center">
-                            <span class="SearchIcon hover:cursor-pointer">
-                                <img src="/web/assets/images/searchIcon.svg" alt="">
-                            </span>
-                            <span class="lang">
-                                <a href="" class="font-Montserrat400 text-sm leading-17.07 text-white">
-                                    FA
-                                </a>
-                            </span>
-                        </div>
-                     
-                    </div>
-                
-                </header>
-                <div class="Menu-Container  w-0 [&.fixedMenu]:fixed [&.fixedMenu]:ml-[82px] [&.fixedMenu]:left-0 [&.fixedMenu]:top-0
-                [&.fixedMenu]:z-50
+    <header class="Horizontal-header fixed z-[99] left-0 group/header flex DesktopHeader w-[82px] h-screen overflow-hidden bg-black">
+        <div class="innerHeader h-[90%] my-auto flex-col w-full flex justify-between items-center">
+            <div class="Logo w-full flex justify-center items-center">
+                <a href="">
+                    <img src="/web/assets/images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="MenuIcon w-auto flex justify-center items-center">
+                <span class="toggleItems w-auto h-[28px] flex gap-[.4em]  group/toggleItems hover:cursor-pointer">
+                    <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
+                    <span
+                        class="toggleItem w-[1px] h-[28px] bg-white 
+                        group-hover/toggleItems:translate-y-[10px] group-[&.Open]/header:translate-y-[10px]
+                         group-[&.Open]/header:opacity-0
+                         duration-[900ms]"></span>
+                    <span class="toggleItem w-[1px] h-[28px] bg-white duration-[900ms]"></span>
+                </span>
+            </div>
+            <div class="Bottom w-full flex flex-col gap-2 justify-center items-center">
+                <span class="SearchIcon hover:cursor-pointer">
+                    <img src="/web/assets/images/searchIcon.svg" alt="">
+                </span>
+                <span class="lang">
+                    <a href="" class="font-Montserrat400 text-sm leading-17.07 text-white">
+                        FA
+                    </a>
+                </span>
+            </div>
+            <div class="Menu-Container fixed right-0 top-0  w-[94.7vw] 
                 bottom-0 h-screen overflow-hidden z-[20]  pointer-events-none group/menu 
-                 [&.Open]:pointer-events-auto [&.Open]:w-[550px]
+                 [&.Open]:pointer-events-auto
                 flex justify-between  duration-[.8s] ">
-                <div class="right relative  bg-black translate-x-[-100%] duration-[700ms]
-                 group-[&.Open]/menu:translate-x-[0]  z-[11] w-[550px] min-w-[550px] 
+                <div class="right relative  bg-black translate-x-[-100%] duration-[700ms] group-[&.Open]/menu:translate-x-[0]  z-[11] w-[550px] min-w-[550px] 
                 flex flex-col h-full">
                     <div class="Menu w-85p mx-auto h-[90%] flex justify-start items-center">
                         <ul class="Menus w-full h-[80%] flex-col flex justify-center items-start gap-5">
@@ -83,7 +77,7 @@
                                 font-normal text-[32px]  leading-32.01 text-white 
                                     hover:text-grayMatn duration-[.4s] text-right">
                                     collections & productions
-            
+
                                 </a>
                             </li>
                             <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
@@ -114,7 +108,7 @@
                                 font-normal text-[32px]  leading-32.01 text-white 
                                     hover:text-grayMatn duration-[.4s] text-right">
                                     about & history
-            
+
                                 </a>
                             </li>
                             <li class="Menu-item w-auto flex justify-start translate-x-[20px] 
@@ -152,12 +146,22 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class=" pointer-events-none opacity-0 left relative z-[11] w-auto flex flex-col h-full group-[&.Open]/menu:translate-x-[0] translate-x-[100%] duration-[700ms]">
+                <div class=" pointer-events-none opacity-0 left relative z-[11] w-auto flex flex-col h-full group-[&.Open]/menu:translate-x-[0] translate-x-[100%] duration-[700ms]">
                     <img src="http://cdn.basiscore.net/hha117.undertest.ir/images/menu.jpg" alt="ramandJelvePardis"
                         class="h-full object-cover" title="ramandJelvePardis">
-                </div> -->
+                </div>
             </div>
-                <div class="Section-1 ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
+        </div>
+    
+    </header>
+      <!-- MAIN CONTAINER -->
+      <div class="Home-Sec container-Sec" >
+        <section id="PinSection">
+            <div class="Pin-Wrapp">
+           
+         
+                <div class="Section-1 [&.goRight]:translate-x-[423px] duration-[.5s]
+                 ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
                    <div class="Box textBox w-auto translate-x-[1.5em] delay-[.2s] duration-[.8s]
                     opacity-0 flex flex-col gap-6 max-w-[536px] min-w-[536px]">
                     <div class="Title w-auto flex-col flex justify-start items-start text-left">
@@ -174,7 +178,7 @@
                   
                    </div>
                 </div>
-                <div class="Section-2 w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
+                <div class="Section-2 duration-[.5s] [&.goRight]:translate-x-[423px] w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
                     <div class="IMG  max-h-[90%] h-full flex justify-center items-center [&.appear]:translate-x-[0]
                      [&.appear]:opacity-[1]  
                      translate-x-[-1.5em] opacity-0 my-auto">
@@ -651,28 +655,28 @@ scroller.on('scroll', (e) => {
     let scrollTop =e.scroll.y 
    // کاربر به پایین اسکرول می‌کند
         if (scrollTop > 0 && !isHeaderAppended) {
-            header.classList.add('fixedMenu');
-            menuC.classList.add('fixedMenu');
-            document.body.prepend(header);
-            innerHeader.appendChild(menuC)
-            setTimeout(() => {
-        let newPinWrapWidth = pinWrap.offsetWidth;
-        let newHorizontalScrollLength = newPinWrapWidth - window.innerWidth;
-        scrollTween.vars.end = newPinWrapWidth;
-        scrollTween.vars.x = -newHorizontalScrollLength ;
-        scrollTween.invalidate(); // مقدارهای جدید را درک کند
-      if (typeof scroller !== 'undefined') {
-          console.log("🔄 Updating Locomotive Scroll...");
-          scroller.update();
-      }
-      if (typeof ScrollTrigger !== 'undefined') {
-          console.log("🔄 Refreshing ScrollTrigger...");
-          ScrollTrigger.refresh();
-      }
+            // header.classList.add('fixedMenu');
+            // menuC.classList.add('fixedMenu');
+            // document.body.prepend(header);
+            // innerHeader.appendChild(menuC)
+//             setTimeout(() => {
+//         let newPinWrapWidth = pinWrap.offsetWidth;
+//         let newHorizontalScrollLength = newPinWrapWidth - window.innerWidth;
+//         scrollTween.vars.end = newPinWrapWidth;
+//         scrollTween.vars.x = -newHorizontalScrollLength ;
+//         scrollTween.invalidate(); // مقدارهای جدید را درک کند
+//       if (typeof scroller !== 'undefined') {
+//           console.log("🔄 Updating Locomotive Scroll...");
+//           scroller.update();
+//       }
+//       if (typeof ScrollTrigger !== 'undefined') {
+//           console.log("🔄 Refreshing ScrollTrigger...");
+//           ScrollTrigger.refresh();
+//       }
   
-      window.scrollBy(0, 1);
-      window.scrollBy(0, -1);
-  }, 100);
+//       window.scrollBy(0, 1);
+//       window.scrollBy(0, -1);
+//   }, 100);
             isHeaderAppended = true;
 
         }
@@ -683,28 +687,28 @@ scroller.on('scroll', (e) => {
         let homeSec = document.querySelector('.Pin-Wrapp');
       
         if (isHeaderAppended) {
-            homeSec.insertBefore(header, homeSec.firstChild); // برگرداندن هدر به داخل .Home-Sec
-            header.parentNode.insertBefore(menuC, header.nextSibling);
-            setTimeout(() => {
-        let newPinWrapWidth = pinWrap.offsetWidth;
-        let newHorizontalScrollLength = newPinWrapWidth - window.innerWidth;
-        scrollTween.vars.end = newPinWrapWidth;
-        scrollTween.vars.x = -newHorizontalScrollLength ;
-        scrollTween.invalidate(); // مقدارهای جدید را درک کند
-      if (typeof scroller !== 'undefined') {
-          console.log("🔄 Updating Locomotive Scroll...");
-          scroller.update();
-      }
-      if (typeof ScrollTrigger !== 'undefined') {
-          console.log("🔄 Refreshing ScrollTrigger...");
-          ScrollTrigger.refresh();
-      }
+            // homeSec.insertBefore(header, homeSec.firstChild); // برگرداندن هدر به داخل .Home-Sec
+            // header.parentNode.insertBefore(menuC, header.nextSibling);
+//             setTimeout(() => {
+//         let newPinWrapWidth = pinWrap.offsetWidth;
+//         let newHorizontalScrollLength = newPinWrapWidth - window.innerWidth;
+//         scrollTween.vars.end = newPinWrapWidth;
+//         scrollTween.vars.x = -newHorizontalScrollLength ;
+//         scrollTween.invalidate(); // مقدارهای جدید را درک کند
+//       if (typeof scroller !== 'undefined') {
+//           console.log("🔄 Updating Locomotive Scroll...");
+//           scroller.update();
+//       }
+//       if (typeof ScrollTrigger !== 'undefined') {
+//           console.log("🔄 Refreshing ScrollTrigger...");
+//           ScrollTrigger.refresh();
+//       }
   
-      window.scrollBy(0, 1);
-      window.scrollBy(0, -1);
-  }, 100);
-  header.classList.remove('fixedMenu'); 
-  menuC.classList.remove('fixedMenu');
+//       window.scrollBy(0, 1);
+//       window.scrollBy(0, -1);
+//   }, 100);
+//   header.classList.remove('fixedMenu'); 
+//   menuC.classList.remove('fixedMenu');
             isHeaderAppended = false;
         }
      
@@ -713,33 +717,39 @@ scroller.on('scroll', (e) => {
     // lastScrollTop = scrollTop;
 });
 menuToggle.addEventListener('click',()=>{
-    console.log('click menu');
-    
+ 
+    gsap.registerPlugin(ScrollTrigger);
     menuC.classList.toggle('Open')
     header.classList.toggle('Open')
-    if(iScrolling){
-        console.log('0 position');
-        
-        setTimeout(() => {
-        let newPinWrapWidth = pinWrap.offsetWidth;
-        let newHorizontalScrollLength = newPinWrapWidth - window.innerWidth;
-        console.log("📏 مقدار جدید Pin-Wrapp:", newPinWrapWidth);
-        scrollTween.vars.end = newPinWrapWidth;
-        scrollTween.vars.x = -newHorizontalScrollLength -10;
-        scrollTween.invalidate(); // مقدارهای جدید را درک کند
-      if (typeof scroller !== 'undefined') {
-          console.log("🔄 Updating Locomotive Scroll...");
-          scroller.update();
-      }
-      if (typeof ScrollTrigger !== 'undefined') {
-          console.log("🔄 Refreshing ScrollTrigger...");
-          ScrollTrigger.refresh();
-      }
+ if(header.classList.contains('Open')){
+    console.log('click menu');
+    document.querySelector('.Section-1').classList.add('goRight')
+    document.querySelector('.Section-2').classList.add('goRight')
+ }
+ else{
+     document.querySelector('.Section-1').classList.remove('goRight')
+       document.querySelector('.Section-2').classList.remove('goRight')
+ }
+//         setTimeout(() => {
+//         let newPinWrapWidth = pinWrap.offsetWidth;
+//         let newHorizontalScrollLength = newPinWrapWidth - window.innerWidth;
+//         console.log("📏 مقدار جدید Pin-Wrapp:", newPinWrapWidth);
+//         scrollTween.vars.end = newPinWrapWidth;
+//         scrollTween.vars.x = -newHorizontalScrollLength;
+//         scrollTween.invalidate(); // مقدارهای جدید را درک کند
+//       if (typeof scroller !== 'undefined') {
+//           console.log("🔄 Updating Locomotive Scroll...");
+//           scroller.update();
+//       }
+//       if (typeof ScrollTrigger !== 'undefined') {
+//           console.log("🔄 Refreshing ScrollTrigger...");
+//           ScrollTrigger.refresh();
+//       }
   
-      window.scrollBy(0, 1);
-      window.scrollBy(0, -1);
-  }, 800);
-    }
+//       window.scrollBy(0, 1);
+//       window.scrollBy(0, -1);
+//   }, 300);
+    
  
 })
 
