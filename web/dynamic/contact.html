@@ -19,281 +19,284 @@
     <meta name="description" content="Contact US">
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
-<body>
-    <main class="ContactUS-mobile overflow-hidden flex flex-col pb-8">
-        <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-        <div class="Section-1 sec pt-[7em] w-full flex flex-col justify-center items-center">
-            <div class=" Box w-90p mx-auto  textBox
-            translate-y-[2.5rem] delay-[.2s] duration-[.8s]
-            opacity-0 flex flex-col gap-4">
-            <basis core="print" datamembername="db.contact-section2">
-                <layout>
-                    <div class="Title w-auto flex justify-start items-start text-left">
-                        <h1 class="font-Montserrat700 text-[20px] leading-[24.38px] text-black flex flex-col">
-                    @child
-                        </h1>
+<body class="ContactUS-c horizontal">
+    <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+      <!-- MAIN CONTAINER -->
+      <div class="ContactUS-Sec container-Sec" >
+        <section id="PinSection">
+            <div class="Pin-Wrapp">
+                <div class="Section-1 [&.goRight]:translate-x-[423px] duration-[.5s] ml-[82px] pl-[10em] pr-[8em] sec max-h-[650px] h-80p flex flex-col justify-end items-end">
+                    <div class="textBox Box w-auto translate-x-[1.5em] duration-[.8s] opacity-0 flex flex-col gap-6 max-w-[492px] 
+                    min-w-[492px]">
+                    <basis core="print" datamembername="db.contact-section2">
+                        <layout>
+                            <div class="Title w-auto flex justify-start items-start text-left">
+                                <h1 class="font-Montserrat700 text-[32px] leading-[39.01px] text-black flex flex-col">
+                            @child
+                                </h1>
+                            </div>
+                        </layout>
+                        <face>
+                            @name
+                        </face>
+                    </basis>
+                    <basis core="print" datamembername="db.contact-section2">
+                        <layout>
+                            <div class="Text font-OpenSans300 font-light text-[13px] text-gray text-justify leading-[17.07px]">
+                                <p class="font-OpenSans300 font-light text-[13px] text-justify leading-[16.25px]">
+                            @child
+                                </p>
+                            </div>
+                        </layout>
+                        <face>
+                            @description
+                        </face>
+                    </basis>
+                    <div class="Logo flex flex-col gap-6">
+                        <span class="w-[202px] h-[32px]">
+                            <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full h-full object-cover"
+                             alt="Bocavoli" title="Bocavoli">
+                        </span>
+                        <span class="det font-KozGoPr6N400 uppercase font-normal text-sm leading-28 text-gray ">
+                            proudly made in iran
+                        </span>
                     </div>
-                </layout>
-                <face>
-                    @name
-                </face>
-            </basis>
-            <basis core="print" datamembername="db.contact-section2">
-                <layout>
-                    <div class="Text font-OpenSans300 font-light text-[13px] text-gray leading-[17.07px]">
-                        <p class="font-OpenSans300 font-light text-[13px] leading-[17.07px]">
-                    @child
-                        </p>
                     </div>
-                </layout>
-                <face>
-                    @description
-                </face>
-            </basis>
-            <div class="Logo flex flex-col gap-6">
-                <span class="w-[146px] h-[24px]">
-                    <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full object-cover"
-                     alt="Bocavoli" title="Bocavoli">
-                </span>
-                <span class="det font-KozGoPr6N400 uppercase font-normal text-xs leading-24 text-gray ">
-                    proudly made in iran
-                </span>
-            </div>
-            </div>
-         </div>
-         <basis core="print" datamembername="db.contact-section2">
-            <layout>
-                <div class="Section-2 w-full mb-12 mt-4  sec  flex flex-col justify-center items-center">
-                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
-                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
-                @child
-                   </div>
-               </div>
-            </layout>
-            <face>
-               <img src="@largeIMG" alt="@name" title="@name" class="w-full 
-               object-cover">
-            </face>
-        </basis>
-      
-         <div class="BlackSec bg-black pt-[1.8em] pb-[2em] flex w-full flex-col">
-            <div class="Section-3 w-full sec gap-[1.5em] flex flex-col justify-center items-center">
-                <div class="Box textBox pb-[2.5em] border-b-[1px]
-                border-white w-90p mx-auto gap-[1em] translate-y-[2.5rem] delay-[.2s] duration-[.8s]
-                opacity-0 flex flex-col">
-                <basis core="print" datamembername="db.contactus">
-                    <layout>
-                        <div class="Title w-auto flex-col flex justify-start items-start text-left">
-                            <h2 class="font-Montserrat700 flex flex-col text-[20px] 
-                            leading-[24.38px] text-left text-white">
-                        @child
-                            </h2>
+                 </div>
+                 <basis core="print" datamembername="db.contact-section2">
+                     <layout>
+                        <div class="Section-2 [&.goRight]:translate-x-[423px] duration-[.5s] mr-[6em] ml-[3em] max-h-[650px] w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
+                            <div class="IMG w-max max-h-[90%] h-full flex justify-center items-center [&.appear]:translate-x-[0]
+                             [&.appear]:opacity-[1]  
+                             translate-x-[-1.5em] opacity-0 my-auto">
+                         @child
+                            </div>
                         </div>
-                    </layout>
-                    <face filter="TypeID=150">
-                        @Answer
-                    </face>
-                </basis>
-                <basis core="print" datamembername="db.contactus">
-                    <layout>
-                        <div class="text w-full flex-col flex justify-start items-start 
-                        font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">  
-                            <p>
-                        @child
-                            </p>
-                        </div>
-                    </layout>
-                    <face filter="TypeID=129">
-                        @Answer
-                    </face>
-                </basis>
-                </div>
-             </div>
-             <div class="Section-4 w-full mt-6 sec flex justify-start items-center">                    
-                   <div class="contact-catalog w-90p mx-auto 
-                   translate-y-[2.5rem] opacity-0
-                     [&.appear]:translate-y-[0] [&.appear]:opacity-[1] IMG
-                gap-[.5em] pb-[2em]
-                     overflow-hidden
-                border-b-[1px]  border-white 
-                   flex flex-col justify-center items-center">
-                   
-                       <div class="Title gap-2 
-                        mr-auto w-auto flex justify-start text-left text-white
-                       font-Montserrat700 flex-col  uppercase font-bold text-lg leading-21.94">
-                          <span>
-                            DOWNLOAD
-                          </span>
-                          <span class=" font-Montserrat400 uppercase font-normal text-[15px] leading-[18.29px]">
-                            BOCAVELI CATALOGES
-                          </span>
+                     </layout>
+                     <face>
+                        <img src="@largeIMG" alt="@name" title="@name" class=" h-auto max-h-[90%] 
+                        object-cover">
+                     </face>
+                 </basis>
 
+                 <div class="BlackSec bg-black flex h-screen">
+                    <div class="Section-3 textBox max-h-[750px] translate-x-[1.5em] delay-[.2s] duration-[.8s] opacity-0 px-[8em] h-90p my-auto border-x-[1px] border-white sec  flex flex-col justify-center items-center">
+                        <div class="Box  gap-[1.3em] w-auto  flex flex-col 
+                        max-w-[474px] min-w-[474px]">
+                        <basis core="print" datamembername="db.contactus">
+                            <layout>
+                                <div class="Title w-auto flex-col flex justify-start items-start text-left">
+                                    <h2 class="font-Montserrat700 flex flex-col font-normal text-[32px] leading-[39.02px] text-left text-white">
+                                @child
+                                    </h2>
+                                </div>
+                            </layout>
+                            <face filter="TypeID=150">
+                                @Answer
+                            </face>
+                        </basis>
+                        <basis core="print" datamembername="db.contactus">
+                            <layout>
+                                <div class="text w-auto flex-col flex justify-start items-start 
+                                font-OpenSans300 font-light text-[15px] leading-20.43 gap-3 text-justify text-grayMatn">
+                                
+                                    <p>
+                                @child
+                                    </p>
+                                </div>
+                            </layout>
+                            <face filter="TypeID=129">
+                                @Answer
+                            </face>
+                        </basis>
+                       
+                        </div>
+                     </div>
+                     <div class="Section-4 h-[86%] max-h-[750px] textBox translate-x-[1.5em] delay-[.2s] duration-[.8s] opacity-0 my-auto sec flex justify-start items-center">                    
+                           <div class="contact-catalog translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                            textBox  min-w-[470px] overflow-hidden h-full xl:gap-[2em]
+                            lg:gap-1
+                           [&:first-child]:border-l-white  border-white 
+                            px-[8em] my-auto flex flex-col justify-center items-center">
                            
-                       </div>
-                       <basis core="print" datamembername="db.text">
-                        <layout>
-                            <div class="Text w-full  flex-col flex justify-start items-start 
-                            font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-grayMatn">
-                                <p>
-                            @child
-                             </p>
-                         </div>
-                        </layout>
-                        <face filter="RowNumber=1">
-                            @largetext
-                        </face>
-                    </basis>
-                    <basis core="print" datamembername="db.contactGallery">
-                        <layout>
-                            <div class="IMG-proj IMG w-full 
-                            hover:cursor-pointer duration-[.4s] ">
-                            @child
-                         </div>
-                        </layout>
-                        <face filter="ord=1">
-                         <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" 
-                         class="w-full object-cover">
-                        </face>
-                    </basis>
-                    <basis core="print" datamembername="db.contactGallery">
-                        <layout>
-                            <div class="Text w-full flex-col flex justify-start items-start 
-                            font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-grayMatn">
-                                <p>
-                            @child
-                             </p>
-                         </div>
-                        </layout>
-                        <face filter="ord=1">
-                         @description	
-                        </face>
-                    </basis>
-                   </div>
-            </div>
-            <div class="Section-5 w-full mt-6 sec flex justify-start items-center">                    
-                <div class="contact-catalog w-90p mx-auto 
-                translate-y-[2.5rem] opacity-0
-                  [&.appear]:translate-y-[0] [&.appear]:opacity-[1] IMG
-                  gap-[1em] pb-[2em]
-                  overflow-hidden
-             border-b-[1px]  border-white 
-                flex flex-col justify-center items-center">
-                <basis core="print" datamembername="db.contactGallery">
-                    <layout>
-                        <div class="IMG-proj IMG w-full 
-                        hover:cursor-pointer duration-[.4s] ">
-                        @child
-                        </div>
-                    </layout>
-                    <face filter="ord=2">
-                     <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" 
-                     class="w-full object-cover">
-                    </face>
-                </basis>
-                    <div class="Title gap-2 
-                     mr-auto w-auto flex justify-start text-left text-white
-                    font-Montserrat700 flex-col  uppercase font-bold text-lg leading-21.94">
-                       <span>
-                        UPLOAD
-                       </span>
-                       <span class=" font-Montserrat400 uppercase font-normal text-[15px] leading-[18.29px]">
-                        YOUR PROJECT DETAILS
-                       </span>
+                               <div class="Title 
+                                mr-auto w-auto flex justify-start text-left text-white
+                               font-Montserrat700 flex-col  uppercase font-bold text-lg leading-21.94">
+                                  <span>
+                                    DOWNLOAD
+                                  </span>
+                                  <span class=" font-Montserrat400 uppercase font-normal text-[15px] leading-[18.29px]">
+                                    BOCAVELI CATALOGES
+                                  </span>
 
-                        
-                    </div>
-                    <basis core="print" datamembername="db.text">
-                        <layout>
-                            <div class="Text w-full  flex-col flex justify-start items-start 
-                            font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-grayMatn">
-                                <p>
-                            @child
-                             </p>
-                         </div>
-                        </layout>
-                        <face filter="RowNumber=2">
-                            @largetext
-                        </face>
-                    </basis>
-                </div>
-         </div>
-         <div class="Section-6 w-full mt-6 sec flex justify-start items-center">                    
-            <div class="contact-catalog w-90p mx-auto 
-            translate-y-[2.5rem] opacity-0
-              [&.appear]:translate-y-[0] [&.appear]:opacity-[1] IMG
-              gap-[1em] pb-[2em]
-              overflow-hidden
-         border-b-[1px]  border-white 
-            flex flex-col justify-center items-center">
-            <basis core="print" datamembername="db.contactGallery">
-                <layout>
-                    <div class="IMG-proj IMG w-full 
-                    hover:cursor-pointer duration-[.4s] ">
-                    @child
-                    </div>
-                </layout>
-                <face filter="ord=3">
-                 <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
-                </face>
-            </basis>
-            <basis core="print" datamembername="db.text">
-                <layout>
-                    <div class="Title gap-2 
-                 mr-auto w-auto flex justify-start text-left text-white
-                font-Montserrat700 flex-col  uppercase font-bold text-lg leading-21.94">
-                   <span>
-                    @child
-                     </span>
-                 </div>
-                </layout>
-                <face filter="RowNumber=3">
-                    @text
-                </face>
-            </basis>
-            <basis core="print" datamembername="db.text">
-                <layout>
-                    <div class="Text w-full  flex-col flex justify-start items-start 
-                    font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-grayMatn">
-                        <p>
-                    @child
-                     </p>
-                 </div>
-                </layout>
-                <face filter="RowNumber=3">
-                    @largetext
-                </face>
-            </basis>
-                <div class="QRboxes mt-[1em] w-full flex justify-between items-center">
-                    <basis core="print" datamembername="db.contactGallery">
-                        <layout>
-                            @child
-                        </layout>
-                        <face filter="ord=10">
-                            <span class="QR w-auto max-w-[84px] flex flex-col gap-[3em]">
-                                <div class="IMG w-[84px] h-[84px]">
-                                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full h-full object-cover">
+                                   
+                               </div>
+                               <basis core="print" datamembername="db.text">
+                                   <layout>
+                                    <div class="Text max-w-[470px] w-auto flex-col flex justify-start items-start 
+                                    font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-grayMatn">
+                                        <p>
+                                       @child
+                                        </p>
+                                    </div>
+                                   </layout>
+                                   <face filter="RowNumber=1">
+                                       @largetext
+                                   </face>
+                               </basis>
+
+                               <basis core="print" datamembername="db.contactGallery">
+                                   <layout>
+                                    <div class="IMG-proj IMG
+                               lg:h-[45%] base:h-[49%] group/img  
+                              hover:cursor-pointer duration-[.4s] w-[470px] max-h-[340px] max-w-[470px]">
+                              <div class="w-full h-full group-hover/img:opacity-[.7] duration-[.4s]">
+                                       @child
+                                    </div>
+                                    </div>
+                                   </layout>
+                                   <face filter="ord=1">
+                                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full max-h-[340px]  h-full object-cover">
+                                   </face>
+                               </basis>
+                               <basis core="print" datamembername="db.contactGallery">
+                                   <layout>
+                                    <div class="Text  max-w-[470px] w-auto flex-col flex justify-start items-start 
+                                    font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-grayMatn">
+                                        <p>
+                                       @child
+                                        </p>
+                                    </div>
+                                   </layout>
+                                   <face filter="ord=1">
+                                    @description	
+                                   </face>
+                               </basis>
+                           </div>
+                        </div>
+                     <div class="Section-5 max-h-[750px] h-90p textBox translate-x-[1.5em] delay-[.2s] duration-[.8s] opacity-0 my-auto border-l-[1px]  border-white sec flex justify-start items-center">                    
+                        <div class="Item  min-w-[470px] overflow-hidden h-90p xl:gap-[2em]
+                         lg:gap-1 
+                         px-[8em] my-auto  flex flex-col justify-start items-center">
+                         <basis core="print" datamembername="db.contactGallery">
+                            <layout>
+                                <div class="IMG 
+                                lg:h-[55%]  group/img
+                               hover:cursor-pointer duration-[.4s] w-[470px] max-w-[470px]">
+                       <div class="w-full h-full  group-hover/img:opacity-[.7] duration-[.4s]">
+                                @child
+                             </div>
                                 </div>
-                                <div class="Title  w-full flex-wrap flex justify-start text-left text-white
-                                font-Montserrat700 flex-col  uppercase font-bold text-[13px] leading-[15.85px]">
+                            </layout>
+                            <face filter="ord=2">
+                             <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full max-h-[340px]  h-full object-cover">
+                            </face>
+                        </basis>
+                            <div class="Title mr-auto w-auto flex justify-start text-left text-white
+                            font-Montserrat700 flex-col  uppercase font-bold text-lg leading-21.94">
+                               <span>
+                                UPLOAD
+                               </span>
+                               <span class=" font-Montserrat400 uppercase font-normal text-[15px] leading-[18.29px]">
+                                YOUR PROJECT DETAILS
+                               </span>
+
+                                
+                            </div>
+                            <basis core="print" datamembername="db.text">
+                                <layout>
+                                    <div class="Text max-w-[470px] w-auto flex-col flex justify-start items-start 
+                                    font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-grayMatn">
+                                        <p>
+                                    @child
+                                     </p>
+                                 </div>
+                                </layout>
+                                <face filter="RowNumber=2">
+                                    @largetext
+                                </face>
+                            </basis>
+                        </div>
+                    </div> 
+                    <div class="Section-6 max-h-[750px] h-90p textBox translate-x-[1.5em] delay-[.2s] duration-[.8s] opacity-0 my-auto border-l-[1px]  border-white sec flex justify-start items-center">                    
+                        <div class="Item overflow-hidden h-90p xl:gap-[2em]
+                         lg:gap-1 
+                         px-[8em] my-auto  flex flex-col justify-start items-center">
+                         <basis core="print" datamembername="db.contactGallery">
+                            <layout>
+                                <div class="IMG 
+                                lg:h-[34%] xl:h-[42%] base:h-[50%] xxl:h-[60%] group/img 
+                               hover:cursor-pointer duration-[.4s] min-w-[470px] max-w-[470px]">
+                       <div class="w-full  h-full  group-hover/img:opacity-[.7] duration-[.4s]">
+                                @child
+                             </div>
+                                </div>
+                            </layout>
+                            <face filter="ord=3">
+                             <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full max-h-[340px]  h-full object-cover">
+                            </face>
+                        </basis>
+                        <basis core="print" datamembername="db.text">
+                            <layout>
+                                <div class="Title  mr-auto w-auto flex justify-start text-left text-white
+                                font-Montserrat700 flex-col  uppercase font-bold text-lg leading-21.94">
                                    <span>
-                                   @name
-                                   </span>
-                                   <span class=" font-Montserrat700 uppercase font-bold text-[11px] leading-[13.41px]">
-                                  @description	
-                                   </span>                 
-                                </div>
-                            </span>
-                        </face>
-                    </basis>  
-                </div>
+                                @child
+                                 </span>
+                             </div>
+                            </layout>
+                            <face filter="RowNumber=3">
+                                @text
+                            </face>
+                        </basis>
+                    
+                            <basis core="print" datamembername="db.text">
+                                <layout>
+                                    <div class="Text max-w-[470px] w-auto flex-col flex justify-start items-start 
+                                    font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-grayMatn">
+                                        <p>
+                                    @child
+                                     </p>
+                                 </div>
+                                </layout>
+                                <face filter="RowNumber=3">
+                                    @largetext
+                                </face>
+                            </basis>
+                    
+                            <div class="QRboxes max-w-[470px] min-w-[470px] flex justify-between items-center">
+                                <basis core="print" datamembername="db.contactGallery">
+                                    <layout>
+                                        @child
+                                    </layout>
+                                    <face filter="ord=10">
+                                        <span class="QR w-auto flex flex-col gap-1">
+                                            <div class="IMG w-[100px] h-[100px]">
+                                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full h-full object-cover">
+                                            </div>
+                                            <div class="Title mr-auto w-auto flex justify-start text-left text-white
+                                            font-Montserrat700 flex-col  uppercase font-bold text-base leading-[19.5px]">
+                                               <span>
+                                               @name
+                                               </span>
+                                               <span class=" font-Montserrat700 uppercase font-bold text-[13px] leading-[15.85px]">
+                                              @description	
+                                               </span>                 
+                                            </div>
+                                        </span>
+                                    </face>
+                                </basis>                 
+                            </div>
+                        </div>
+                   </div>
+                 </div>
+                 <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
             </div>
-     </div>
-      
-     
-         </div>
-         <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-    </main>
+        </section>
+    </div>
+  
+    <!-- MAIN CONTAINER -->
     <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-    <script src="[##cms.cms.cdn##]/js/contactUS-mobile.js"></script>
+    <script src="[##cms.cms.cdn##]/js/contactUS.js"></script>
 </body>
 </html>

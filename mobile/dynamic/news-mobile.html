@@ -16,13 +16,20 @@
 <basis core="dbsource" source="basiscore" name="json" lid="1" usedforid="[##cms.query.id##]" > 
     <member request="json-ld" type="scalar" name="fq" /> 
 </basis>
+<basis core="dbsource" request="seo" source="basiscore" name="db" lid="1">
+    <member name="seolist" type="list" request="product" id="[##cms.query.id##]"></member>
+</basis>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[##cms.seo.title##]</title>
-    <meta name="description" content="[##cms.seo.description##]">
+    <basis core="print" datamembername="db.seolist">
+        <face>
+            <title>[##cms.seo.title|db.seolist.title##]</title>
+            <meta name="description" content="[##cms.seo.description|db.seolist.description##]" />
+        </face>
+    </basis>
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
 <body>

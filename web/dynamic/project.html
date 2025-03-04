@@ -28,13 +28,20 @@
  <basis core="dbsource" source="basiscore" name="json" lid="1" usedforid="[##cms.query.id##]" > 
     <member request="json-ld" type="scalar" name="fq" /> 
 </basis>
+<basis core="dbsource" request="seo" source="basiscore" name="db" lid="1">
+    <member name="seolist" type="list" request="project" id="[##cms.query.id##]"></member>
+</basis>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[##cms.seo.title##]</title>
-    <meta name="description" content="[##cms.seo.description##]">
+    <basis core="print" datamembername="db.seolist">
+        <face>
+            <title>[##cms.seo.title|db.seolist.title##]</title>
+            <meta name="description" content="[##cms.seo.description|db.seolist.description##]" />
+        </face>
+    </basis>
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
 <body class="Project-c horizontal">
@@ -45,7 +52,7 @@
             <div class="Pin-Wrapp">
                 <basis core="print" datamembername="db.projectGallery">
                     <layout>
-                        <div class="Section-1 [&.goRight]:translate-x-[423px] duration-[.5s] ml-[82px] pl-[6em] pr-[6em] sec max-h-[750px]  h-90p flex flex-col justify-center items-center">
+                        <div class="Section-1 [&.goRight]:translate-x-[500px] duration-[.5s] ml-[82px] pl-[6em] pr-[6em] sec max-h-[750px]  h-90p flex flex-col justify-center items-center">
                             <div class="Banner w-max overflow-hidden flex max-h-[90%]">
                         @child
                             </div>
@@ -60,7 +67,7 @@
                         </div>
                     </face>
                 </basis>
-                 <div class="Section-2 [&.goRight]:translate-x-[423px] duration-[.5s] max-h-[750px] sec h-80p flex  flex-col justify-center gap-[8em] items-center">
+                 <div class="Section-2 [&.goRight]:translate-x-[500px] duration-[.5s] max-h-[750px] sec h-80p flex  flex-col justify-center gap-[8em] items-center">
                     <div class="DetailBox mt-8 min-w-[473px] flex justify-between">
                         <div class="left textBox translate-x-[1.5em] duration-[.8s] opacity-0  gap-5 w-auto flex flex-col">
                             <div class="Title w-auto flex justify-start items-start text-left">
