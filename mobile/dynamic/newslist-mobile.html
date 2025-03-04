@@ -1,0 +1,148 @@
+<basis core="dbsource" source="media" name="db" lid="2" catid="2311" > 
+    <member type="list" name="blogBanner" perpage="10" pageno="1"/> 
+</basis>
+<basis core="dbsource" source="basiscore" mid="1" name="db" lid="2"> 
+    <member name="blogDescription" type="tree" request="cat" parentid="213359"/>
+ </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" catid="213359"> 
+    <member name="blog" type="list" size="440x560" propertyid="7244,7245" link="news.bc"
+     postsql=" select *, SUBSTR(prp_7244, 1,300-CHARINDEX(' ', REVERSE(SUBSTR(prp_7244, 1, 300)))) || '...' as substr from [db.blog]"/>
+ </basis>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsList</title>
+    <meta name="description" content="NewsList">
+    <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+</head>
+<body>
+    <main class="Newslist-mobile flex flex-col pb-8">
+        <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+        <div class="Section-1 sec pt-[7em] w-full flex flex-col justify-center items-center">
+            <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+            opacity-0  flex flex-col gap-4">
+            <basis core="print" datamembername="db.blogBanner">
+            <layout>
+                <div class="Title w-auto flex justify-start items-start text-left">
+                    <h1 class="font-Montserrat700 text-xl leading-[24.38px] text-black flex flex-col">
+                   @child
+                    </h1>
+                </div>
+               </layout>
+               <face>
+                  @name
+               </face>
+           </basis>
+           <basis core="print" datamembername="db.blogBanner">
+            <layout>
+                <div class="Text font-OpenSans300 font-light text-[13px] text-gray leading-[17.07px]">
+                    <p class="font-OpenSans300 font-light text-[13px] leading-[17.07px]">
+                    @child
+                    </p>
+                </div>
+            </layout>
+            <face>
+                    @description
+               </face>
+           </basis>
+           <div class="Logo flex flex-col gap-6">
+            <span class="w-[146px] h-[24px]">
+                <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full object-cover"
+                 alt="Bocavoli" title="Bocavoli">
+            </span>
+            <span class="det font-KozGoPr6N400 uppercase font-normal text-xs leading-24 text-gray ">
+                proudly made in iran
+            </span>
+        </div>
+            </div>
+         </div>
+         <basis core="print" datamembername="db.blogBanner">
+            <layout>
+                <div class="Section-2 w-full mb-12 mt-4  sec  flex flex-col justify-center items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                </div>
+            </layout>
+            <face>
+                <img src="@largeIMG" alt="@name" title="@name" class=" w-full
+                object-cover">
+            </face>
+        </basis>
+          <div class="BlackSec bg-black pt-[1em] pb-[2em] flex w-full flex-col">
+            <basis core="print" datamembername="db.blogDescription">
+                <layout>
+             
+                    <div class="Section-3 w-full sec flex justify-center items-center">
+                    @child
+                        </div>
+              
+                </layout>
+
+                <face>
+                    <div class="Box w-90p mx-auto textBox border-b-[1px]
+                    border-white justify-center pb-[2em]
+                       gap-[1em] translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                       opacity-0  flex flex-col ">
+                      <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
+                          <h2 class="w-[100px] font-Montserrat700 font-bold text-xl 
+                          leading-[24.38px] flex flex-col text-left text-white">
+                          @urltitle
+                          </h2>
+                       
+                      </div>
+                      <div class="text w-full flex-col flex justify-start items-start 
+                      font-OpenSans300 font-light text-[15px] leading-[20.43px] gap-3 text-justify text-grayMatn">
+                      
+                          <p>
+                            @urldescription
+                         </p>
+                      </div>
+             
+                     </div>
+                </face>
+            </basis>
+            <basis core="print" datamembername="db.blog">
+                <layout>
+                    <div class="Section-4 mt-[1.5em] w-full sec flex justify-start items-center">
+                        <div class="Items w-90p mx-auto flex-col flex justify-start gap-[1.5em] items-start">
+                    @child
+                        </div>
+                    </div>
+                </layout>
+                <face>
+                    <div class="Item-blog translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] IMG w-full border-b-[1px] pb-[2em] gap-3
+                     border-white flex flex-col justify-center items-center">
+                <div class="imageContainer w-full IMG  group/img 
+                     hover:cursor-pointer duration-[.4s]">
+                    <a href="@link"  alt="@title" title="@title" class="w-full mt-[.3em] group-hover/img:opacity-[.7] duration-[.4s]">
+                        <img src="[##cms.cms.cdn##]/@00440X00560prp" alt="@title" title="@title" class="w-full h-full object-cover">
+                    </a>
+                </div>
+                <div class="Title w-full flex justify-start text-left text-white
+                     font-Montserrat400 font-normal text-base leading-[19.5px]">
+                    <a href="@link"  alt="@title" title="@title"class="flex flex-col">
+                        <span class="font-Montserrat700 font-bold text-base leading-21.94 text-white">
+                            @title
+                        </span>
+                    </a>
+                </div>
+                <div class="Text w-full flex flex-col justify-start items-start 
+                     font-OpenSans300 font-light text-[13px] leading-17.07 text-left text-white relative">
+                     @substr
+                </div>
+                    </div>
+                </face>
+            </basis>
+          </div>
+          <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+ 
+    <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    <script src="[##cms.cms.cdn##]/js/newslist-mobile.js"></script>
+</body>
+</html>

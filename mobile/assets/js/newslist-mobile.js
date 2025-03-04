@@ -15,7 +15,7 @@ document.addEventListener('scroll',(e)=>{
 })
 const animate = (elem)=>{
 let fadeElement = elem
-let positionElement = fadeElement.getBoundingClientRect().top;
+let positionElement = fadeElement.getBoundingClientRect().top+200;
 let windowHeight = window.innerHeight
 if(positionElement < windowHeight){
     fadeElement.classList.add('appear')

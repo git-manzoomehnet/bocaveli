@@ -22,7 +22,7 @@
      <div class="Collection-Sec container-Sec" >
        <section id="PinSection">
            <div class="Pin-Wrapp">
-               <div class="Section-1 ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
+               <div class="Section-1 [&.goRight]:translate-x-[423px] duration-[.5s] ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
                   <div class="textBox Box w-auto translate-x-[1.5em] duration-[.8s] opacity-0 flex flex-col
                    gap-6 max-w-[536px]">
                    <div class="Title w-auto flex justify-start items-start text-left">
@@ -67,7 +67,7 @@
                </div>
                <basis core="print" datamembername="db.collectionGallery">
                    <layout>
-                       <div class="Section-2 mr-[5em] ml-[5em] w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
+                       <div class="Section-2 [&.goRight]:translate-x-[423px] duration-[.5s] mr-[5em] ml-[5em] w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
                            <div class="IMG w-max max-h-[90%] h-full flex justify-center items-center [&.appear]:translate-x-[0]
                             [&.appear]:opacity-[1]  
                             translate-x-[-1.5em] opacity-0 my-auto">
@@ -83,8 +83,9 @@
                 <div class="BlackSec pr-[3em] bg-black flex h-screen">
                    <div class="Section-3  px-[8em] max-h-[750px] h-90p my-auto border-x-[1px] border-white sec 
                     flex flex-col justify-center items-center">
-                       <div class="Box textBox gap-[1.3em] w-auto translate-x-[1.5em] delay-[.2s] duration-[.8s] opacity-0 flex flex-col 
-                       max-w-[474px] min-w-[474px]">
+                       <div class="Box textBox gap-[1.3em] w-auto translate-x-[1.5em]
+                        delay-[.2s] duration-[.8s] opacity-0 flex flex-col 
+                       max-w-[492px] min-w-[492px]">
                        <basis core="print" datamembername="db.collection">
                            <layout>
                                <div class="Title w-auto flex-col flex justify-start items-start text-left">
@@ -125,7 +126,7 @@
                                    lg:gap-1 [&:not(:first-child)]:border-x-[1px]
                                   [&:first-child]:border-l-white  border-white last:border-black
                                    px-[8em] my-auto flex flex-col justify-center items-center">
-                                   <div class="IMG-proj group-odd/item:order-3 group-even/item:order-1 
+                                   <div class="IMG-proj  
                                     lg:h-[75%] xxl:h-[80%] group/img  [&.appear]:!translate-y-[0]
                                      [&.appear]:!opacity-[1] group-odd/item:translate-y-[3em] group-even/item:translate-y-[-3em]  opacity-0
                                    hover:cursor-pointer duration-[.4s] w-[454px] max-w-[567px]">
@@ -133,13 +134,13 @@
                                            class="w-full h-full object-cover">
                                      
                                       </div>
-                                      <div class="Title group-even/item:order-2 group-odd/item:order-1 textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                                      <div class="Title  textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
                                       opacity-0 mr-auto w-auto flex justify-start text-left text-white
                                       font-Montserrat700 uppercase font-bold text-lg leading-21.94">                                   
                                            @name
       
                                       </div>
-                                      <div class="Text group-even/item:order-3 group-odd/item:order-1 textBox translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                                      <div class="Text textBox translate-x-[1.5em] delay-[.2s] duration-[.8s]
                                       opacity-0 max-w-[454px] w-auto flex-col flex justify-start items-start 
                                       font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-grayMatn">
                                           <p>

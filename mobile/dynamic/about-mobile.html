@@ -1,0 +1,414 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" catid="70824"> 
+    <member name="list" type="list" size="324x731" propertyid="7245,7246"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="2373823"> 
+    <member name="about" type="view"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="2373823"> 
+    <member name="aboutText" type="view" postsql="select * from [db.aboutText] where TypeID=250"/> 
+</basis>
+<basis core="dbsource" name="db" source="media" lid="2" sourcemid="1" usedforid="2373823"> 
+    <member name="aboutGallery" type="list" format="4"/>
+ </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="2373828"> 
+    <member name="text" type="view"/> 
+</basis>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUS & History</title>
+    <meta name="description" content="AboutUS & History">
+    <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+</head>
+<body>
+    <main class="AboutUsHistory-mobile flex flex-col pb-8">
+        <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+        <div class="Section-1 sec pt-[7em] w-full flex flex-col justify-center items-center">
+            <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+            opacity-0  flex flex-col gap-4">
+            <basis core="print" datamembername="db.about">
+                <layout>
+                    <div class="Title w-auto flex justify-start items-start text-left">
+                    @child
+                    </div>
+                </layout>
+                <face filter="TypeID=128">
+                    <h1 class="font-Montserrat700 text-[20px] leading-[24.38px] text-black flex flex-col">
+                       @text
+                    </h1>
+                </face>
+            </basis>
+            <basis core="print" datamembername="db.about">
+                <layout>
+                    <div class="Text font-OpenSans300 font-light text-[13px] text-gray text-justify leading-[17.07px]">
+                        <p class="font-OpenSans300 font-light text-[13px] text-justify leading-[17.07px]">
+                    @child
+                        </p>
+                    </div>
+                </layout>
+                <face filter="TypeID=129">
+                       @Answer
+
+                </face>
+            </basis>
+            <div class="Logo flex flex-col gap-6">
+                <span class="w-[146px] h-[24px]">
+                    <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full object-cover"
+                     alt="Bocavoli" title="Bocavoli">
+                </span>
+                <span class="det font-KozGoPr6N400 uppercase font-normal text-xs leading-24 text-gray ">
+                    proudly made in iran
+                </span>
+            </div>
+
+         </div>
+        </div>
+        <basis core="print" datamembername="db.aboutGallery">
+            <layout>
+                <div class="Section-2 w-full mb-12 mt-4  sec  flex flex-col justify-center items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                </div>
+            </layout>
+            <face filter="ord=50">
+                <img src="@largeIMG" alt="@name" title="@name" class="w-full 
+                object-cover">
+            </face>
+        </basis>
+   
+         <div class="BlackSec bg-black pt-[2em] pb-[2em] flex w-full flex-col">
+            <div class="Section-3 sec gap-[1.5em] flex flex-col justify-center items-center">
+                <div class="Box textBox pb-[1.5em] border-b-[1px]
+                 border-white w-90p mx-auto gap-[1.3em] translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                 opacity-0  flex flex-col">
+                  <div class="Title w-auto flex-col flex justify-start items-start text-left">
+                      <h3 class="font-Montserrat700 flex flex-col text-[20px] 
+                      leading-[24.38px] text-left text-white">
+                         <span class="font-Montserrat700 font-bold">
+                             SPACE
+                         </span>
+                         <span class="font-Montserrat300 font-light">
+                           IS OUR 
+                         </span>
+                         <span class="font-Montserrat300 font-light">
+                            CONCERN
+                         </span>
+                      </h3>
+                   
+                  </div>
+                  <basis core="print" datamembername="db.aboutText">
+                    <layout>
+                        <div class="text w-full flex-col flex justify-start items-start 
+                        font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-white">
+                       
+                        @child
+                       </div>
+                    </layout>
+                    <face filter="RowNumber=1">
+                       <p>
+                           @largetext
+                       </p> 
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.aboutText">
+                    <layout>
+                        <div class="TextPer w-full flex-col flex justify-start items-start 
+                  font-MyriadArabic400 font-normal text-[13px] leading-14.86 gap-3 text-justify text-white" dir="rtl">
+                        @child
+                       </div>
+                    </layout>
+                    <face filter="RowNumber=2">
+                       <p>
+                           @largetext
+                       </p> 
+                    </face>
+                </basis>
+         
+                 </div>
+                 <div class="Box textBox pb-[1.5em] border-b-[1px]
+                 border-white w-90p mx-auto gap-[1.3em] translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                 opacity-0  flex flex-col">
+                  <div class="Title w-auto flex-col flex justify-start items-start text-left">
+                      <h3 class="font-Montserrat700 flex flex-col text-[20px] 
+                      leading-[24.38px] text-left text-white">
+                         <span class="font-Montserrat700 font-bold">
+                            ARCHITECTURE
+                         </span>
+                         <span class="font-Montserrat300 font-light">
+                           IS OUR 
+                         </span>
+                         <span class="font-Montserrat300 font-light">
+                            LANGUAGE
+                         </span>
+                      </h3>
+                   
+                  </div>
+                  <basis core="print" datamembername="db.aboutText">
+                    <layout>
+                        <div class="text w-full flex-col flex justify-start items-start 
+                        font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-white">
+                        @child
+                       </div>
+                    </layout>
+                    <face filter="RowNumber=3">
+                       <p>
+                           @largetext
+                       </p> 
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.aboutText">
+                    <layout>
+                        <div class="TextPer w-full flex-col flex justify-start items-start 
+                  font-MyriadArabic400 font-normal text-[13px] leading-14.86 gap-3 text-justify text-white" dir="rtl">
+                        @child
+                       </div>
+                    </layout>
+                    <face filter="RowNumber=4">
+                       <p>
+                           @largetext
+                       </p> 
+                    </face>
+                </basis>
+             
+                 </div>
+                 <div class="Box textBox pb-[1.5em] border-b-[1px]
+                 border-white w-90p mx-auto gap-[1.3em] translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                 opacity-0  flex flex-col">
+                  <div class="Title w-auto flex-col flex justify-start items-start text-left">
+                      <h3 class="font-Montserrat700 flex flex-col text-[20px] 
+                      leading-[24.38px] text-left text-white">
+                         <span class="font-Montserrat700 font-bold">
+                            DESIGN
+                         </span>
+                         <span class="font-Montserrat300 font-light">
+                           IS OUR 
+                         </span>
+                         <span class="font-Montserrat300 font-light">
+                            TOOL
+                         </span>
+                      </h3>
+                   
+                  </div>
+                  <basis core="print" datamembername="db.aboutText">
+                    <layout>
+                        <div class="text w-full flex-col flex justify-start items-start 
+                  font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-white">
+                       
+                        @child
+                       </div>
+                    </layout>
+                    <face filter="RowNumber=5">
+                       <p>
+                           @largetext
+                       </p> 
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.aboutText">
+                    <layout>
+                        <div class="TextPer w-full flex-col flex justify-start items-start 
+                        font-MyriadArabic400 font-normal text-[13px] leading-14.86 gap-3 text-justify text-white" dir="rtl">
+                        @child
+                       </div>
+                    </layout>
+                    <face filter="RowNumber=6">
+                       <p>
+                           @largetext
+                       </p> 
+                    </face>
+                </basis>
+         
+                 </div>
+                 <div class="Box textBox pb-[1.5em] border-b-[1px]
+                 border-white w-90p mx-auto gap-[1.3em] translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                 opacity-0  flex flex-col">
+                  <div class="Title w-auto flex-col flex justify-start items-start text-left">
+                      <h3 class="font-Montserrat700 flex flex-col text-[20px] 
+                      leading-[24.38px] text-left text-white">
+                         <span class="font-Montserrat700 font-bold">
+                            FURNITURE
+                         </span>
+                         <span class="font-Montserrat300 font-light">
+                           IS OUR 
+                         </span>
+                         <span class="font-Montserrat300 font-light">
+                            PRODUCT
+                         </span>
+                      </h3>
+                   
+                  </div>
+                  <basis core="print" datamembername="db.aboutText">
+                    <layout>
+                        <div class="text w-full flex-col flex justify-start items-start 
+                        font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-white">
+                        @child
+                       </div>
+                    </layout>
+                    <face filter="RowNumber=7">
+                       <p>
+                           @largetext
+                       </p> 
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.aboutText">
+                    <layout>
+                        <div class="TextPer w-full flex-col flex justify-start items-start 
+                        font-MyriadArabic400 font-normal text-[13px] leading-14.86 gap-3 text-justify text-white" dir="rtl">
+                        @child
+                       </div>
+                    </layout>
+                    <face filter="RowNumber=8">
+                       <p>
+                           @largetext
+                       </p> 
+                    </face>
+                </basis>
+          
+                 </div>
+                 <div class="Box textBox pb-[1.5em] border-b-[1px]
+                 border-white w-90p mx-auto gap-[1.3em] translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                 opacity-0  flex flex-col">
+                  <div class="Title w-auto flex-col flex justify-start items-start text-left">
+                      <h3 class="font-Montserrat700 flex flex-col text-[20px] 
+                      leading-[24.38px] text-left text-white">
+                         <span class="font-Montserrat700 font-bold">
+                            QUALITY
+                         </span>
+                         <span class="font-Montserrat300 font-light">
+                           IS OUR 
+                         </span>
+                         <span class="font-Montserrat300 font-light">
+                            HABIT
+                         </span>
+                      </h3>
+                   
+                  </div>
+                  <basis core="print" datamembername="db.aboutText">
+                    <layout>
+                        <div class="text w-full flex-col flex justify-start items-start 
+                        font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-white">
+                        @child
+                       </div>
+                    </layout>
+                    <face filter="RowNumber=9">
+                       <p>
+                           @largetext
+                       </p> 
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.aboutText">
+                    <layout>
+                        <div class="TextPer w-full flex-col flex justify-start items-start 
+                        font-MyriadArabic400 font-normal text-[13px] leading-14.86 gap-3 text-justify text-white" dir="rtl">
+                        @child
+                       </div>
+                    </layout>
+                    <face filter="RowNumber=10">
+                       <p>
+                           @largetext
+                       </p> 
+                    </face>
+                </basis>
+          
+                 </div>
+              </div>
+              <div class="Section-4 w-full sec flex justify-start items-center">
+                 <div class="aboutUS w-90p mt-[1.5em] mx-auto gap-2 flex">
+                         <div class="ImageSec w-[50%] flex justify-center items-center">
+                             <img src="[##cms.cms.cdn##]/images/sadra.png" alt="Bocaveli" title="Bocaveli" class="w-full object-cover">
+                         </div>
+                         <div class="Texts w-[50%] flex flex-col justify-center items-start gap-[1.5em]">
+                            <basis core="print" datamembername="db.text">
+                                <layout>
+                                    <div class="Title w-full flex-col flex justify-start items-start text-left">
+                                        <h3 class="font-Montserrat700 flex font-bold flex-col text-[20px] 
+                                        leading-[24.38px] text-left text-white">
+                                    @child
+                                        </h3>
+                                    </div>
+                                </layout>
+                                <face filter="TypeID=150">
+                                    @text
+                                </face>
+                            </basis>
+                            <div class="textSec w-max flex-col flex justify-start items-start 
+                            font-Montserrat300 font-light text-[13px] leading-[20px] gap-1 text-left text-graylight">
+  
+                            <div class="text-1 hidden">
+                                <basis core="print" datamembername="db.text">
+                                    <layout>
+                                        @child
+                                    </layout>
+                                    <face filter="TypeID=250">
+                                        <p>
+                                           @text 
+                                        </p>
+                                    </face>
+                                </basis>
+                            </div>
+                            <div class="text-2 hidden">
+                                <basis core="print" datamembername="db.text">
+                                    <layout>
+                                        @child
+                                    </layout>
+                                    <face filter="TypeID=250">
+                                        <p>
+                                           @largetext 
+                                        </p>
+                                    </face>
+                                </basis>
+                            </div>
+
+                              </div>
+                             <!-- <div class="text w-full flex-col flex justify-start items-start 
+                             font-Montserrat300 font-light text-[13px] leading-[20px] gap-1 text-left text-graylight">
+                             
+                                 <p>
+                                     Our concern is   <span class="font-medium font-Montserrat500">
+                                         Spaces
+                                     </span>
+                                 </p>
+                                 <p>
+                                     Our language is <span class="font-medium font-Montserrat500">
+                                         Architecture
+                                     </span>
+                                 </p>
+                                 <p>
+                                     Our Tool is <span class="font-medium font-Montserrat500">
+                                         Design
+                                     </span>
+                                 </p>
+                                 <p>
+                                     Our product is <span class="font-medium font-Montserrat500">
+                                         Furniture
+                                     </span>
+                                 </p>
+                                 <p>
+                                     Our habit is <span class="font-medium font-Montserrat500">
+                                         Quality
+                                     </span>
+                                 </p>       
+                               </div> -->
+                               <basis core="print" datamembername="db.text">
+                                <layout>
+                                    @child
+                                </layout>
+                                <face filter="TypeID=128">
+                                    <div class="sign font-Saint400 text-xl leading-[29.89px] font-normal text-white">
+                                     @text
+                                      </div> 
+                                  </face>
+                              </basis>
+                         </div>
+                 </div>
+          </div>
+          </div>
+          <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+    <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    <script src="[##cms.cms.cdn##]/js/about-mobile.js"></script>
+</body>
+</html>

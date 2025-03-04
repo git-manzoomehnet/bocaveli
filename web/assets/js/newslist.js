@@ -100,22 +100,36 @@ $('.Newslist-Sec').imagesLoaded( {
           },
         })
       })
+      let hasThreeOrMoreline = (el)=>{
+        const lineHeight = parseFloat(getComputedStyle(el).lineHeight)
+        const numberOfLines = el.scrollHeight / lineHeight
+        return numberOfLines >= 3
+      }
       let blogs = document.querySelectorAll('.Item-blog')
       blogs.forEach(blog=>{
-        // blog.querySelector('.toggleButton').addEventListener('click',()=>{
-        //     let text = blog.querySelector(".textContent");
-        //     let imageContainer = blog.querySelector(".imageContainer");
-    
-        //     if (text.classList.contains("line-clamp-3")) {
-        //         text.classList.remove("line-clamp-3", "overflow-hidden");
-        //         imageContainer.classList.add("!h-70p"); // کاهش ارتفاع عکس
-        //         blog.querySelector('.toggleButton').textContent = "show less";
-        //     } else {
-        //         text.classList.add("line-clamp-3", "overflow-hidden");
-        //         imageContainer.classList.remove("!h-70p");
-        //         blog.querySelector('.toggleButton').textContent = "+read more";
-        //     }
-        // })
+       let IsMoreThanThree= hasThreeOrMoreline(blog.querySelector(".textContent"))
+       console.log(IsMoreThanThree);
+       if(IsMoreThanThree){
+        blog.querySelector('.toggleButton').addEventListener('click',()=>{
+          let text = blog.querySelector(".textContent");
+          let imageContainer = blog.querySelector(".imageContainer");
+  
+          if (text.classList.contains("line-clamp-3")) {
+              text.classList.remove("line-clamp-3", "overflow-hidden");
+              imageContainer.classList.add("!h-70p"); // کاهش ارتفاع عکس
+              blog.querySelector('.toggleButton').textContent = "show less";
+          } else {
+              text.classList.add("line-clamp-3", "overflow-hidden");
+              imageContainer.classList.remove("!h-70p");
+              blog.querySelector('.toggleButton').textContent = "+read more";
+          }
+      })
+       }
+       else{
+        blog.querySelector('.toggleButton').remove()
+        document.querySelector('.hidden-span').remove()
+       }
+ 
       })
       let openMenu = true;
       let isScrolling = false; // برای تشخیص اولین اسکرول

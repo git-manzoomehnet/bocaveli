@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{let e=[...document.querySelectorAll(".textBox")];e[0].classList.add("appear"),e[1].classList.add("appear"),document.addEventListener("scroll",(t=>{e.map((e=>{animate(e)}))}))}));const animate=e=>{let t=e;t.getBoundingClientRect().top+200<window.innerHeight&&t.classList.add("appear")};

@@ -224,6 +224,7 @@ body {
     direction: ltr;
     margin: 0;
     padding: 0;
+    user-select: none;
   }
   body.horizontal{
     transition: 0.3s ease-out;
@@ -453,6 +454,27 @@ footer{
 .searchContainer .Results {
   margin-top: 5em;
 }
-.pin-spacer.goRight{
-transform: translate(450px,0) !important;
+
+.TextPer,.TextPer p{
+  direction: rtl;
+}
+.Collection-c .Item:nth-child(3n+1) .IMG-proj {
+  order: 3; /* عکس پایین */
+}
+
+.Collection-c .Item:nth-child(3n+2) .IMG-proj,
+.Collection-c .Item:nth-child(3n+3) .IMG-proj {
+  order: 1 !important; /* دو عکس بالا */
+}
+
+.Collection-c .Item:nth-child(3n+1) .Title,
+.Collection-c .Item:nth-child(3n+1) .Text {
+  order: 1;
+}
+
+.Collection-c .Item:nth-child(3n+2) .Title,
+.Collection-c .Item:nth-child(3n+2) .Text,
+.Collection-c .Item:nth-child(3n+3) .Title,
+.Collection-c .Item:nth-child(3n+3) .Text {
+  order: 2;
 }

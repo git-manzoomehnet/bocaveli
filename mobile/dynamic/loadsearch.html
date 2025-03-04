@@ -1,0 +1,101 @@
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" catid="213358" q="[##cms.query.q##]">
+    <member name="projectList" type="list" size="350x446" link="project.bc" propertyid="3087500"/> 
+</basis>	
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" catid="213359" q="[##cms.query.q##]"> 
+   <member name="blogList" type="list" size="350x446" link="blog.bc" propertyid="7244,7245"/> 
+</basis>
+
+<basis core="group" if="'[##db.projectList.RowNumber##]' = '' and
+'[##db.blogList.RowNumber##]' = ''"> 
+<div class="Noresult w-[265px] mx-auto font-Montserrat300 font-light text-xl leading-[35px] text-white text-center">
+    <p>
+        Sorry, nothing was found . Search for another word 
+    </p>
+   </div>
+   <script>
+    setTimeout(() => {
+        document.querySelector('.inputBox').classList.remove('goTop')
+    }, 200);
+
+   </script>
+</basis>
+<basis core="group" if="'[##db.projectList.RowNumber##]' <> '' or
+'[##db.blogList.RowNumber##]' <> ''"> 
+<div class="Results mt-[2em] w-90p mx-auto flex flex-col">
+    <basis core="print" datamembername="db.projectList">
+        <layout>
+            <div class="Box w-full flex flex-col">
+                <div class="title font-Montserrat400 capitalize font-normal text-xl leading-[35px] text-white">
+                    <p>
+                        search result in project
+                    </p>
+                </div>
+                <div class="res Projects w-full gap-4 flex flex-col pb-[1em] ">
+            @child
+                </div>
+            </div>
+        </layout>
+        <face>
+            <a href="@link" alt="@title" title="@title" class="Project flex-col pt-[1em] pb-[1.5em] border-b-[1px] border-white flex gap-3">
+                <div class="Image w-full flex">
+                    <img src="[##cms.cms.cdn##]/@00350x00446prp" alt="@title" title="@title" class="w-full object-cover">
+                </div>
+                <div class="Title-proj w-auto uppercase flex font-Montserrat700 font-bold text-base leading-[19.05px]
+                 text-white">
+                    <p>
+                        @title
+                    </p>
+                </div>
+                <div class="Text-proj w-full flex-col flex font-Montserrat300 font-light text-[13px] leading-[17.07px]
+                text-white">
+                   <p>
+                 @prp_3087500
+                   </p>
+               </div>
+             </a>
+          
+        </face>
+    </basis>
+    <basis core="print" datamembername="db.blogList">
+        <layout>
+            <div class="Box w-full flex flex-col">
+                <div class="title font-Montserrat400 capitalize font-normal text-xl leading-[35px] text-white">
+                    <p>
+                        search result in news 
+                    </p>
+                </div>
+                <div class="res newsList w-full gap-4 flex flex-col pb-[1em] ">
+            @child
+                </div>
+            </div>
+        </layout>
+        <face>
+            <a href="@link" alt="@title" title="@title" class="News flex-col pt-[1em] pb-[1.5em] border-b-[1px] border-white flex gap-3">
+                <div class="Image w-full flex">
+                    <img src="[##cms.cms.cdn##]/@00350x00446prp" alt="@title" title="@title" class="w-full object-cover">
+                </div>
+                <div class="Title-news w-auto uppercase flex font-Montserrat700 font-bold text-base leading-[19.05px]
+                 text-white">
+                    <p>
+                        @title
+                    </p>
+                </div>
+                <div class="Text-news w-full flex-col flex font-Montserrat300 font-light text-[13px] leading-[17.07px]
+                text-white">
+                   <p>
+                 @prp_7244
+                   </p>
+               </div>
+             </a>
+          
+        </face>
+    </basis>
+
+    
+   </div>
+   <script>
+  setTimeout(() => {
+        document.querySelector('.inputBox').classList.add('goTop')
+    }, 200);
+   </script>
+</basis>

@@ -1,0 +1,162 @@
+<basis core="dbsource" source="media" name="db" lid="2" catid="2317" >
+    <member type="list" name="projecst-sec1" perpage="10" pageno="1" />
+</basis>
+<basis core="dbsource" source="basiscore" mid="19" name="db" lid="2">
+    <member name="projectDescription" type="tree" request="cat" parentid="213358"/>
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" catid="213358"> 
+   <member name="projectList" type="list" size="350x446" propertyid="3087500" link="project.bc"
+   postsql=" select *, SUBSTR(prp_3087500, 1,230-CHARINDEX(' ', REVERSE(SUBSTR(prp_3087500, 1, 230)))) || '...' as substr from [db.projectList]"/> 
+</basis>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <meta name="description" content="Projects">
+    <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+</head>
+<body>
+    <main class="Projectlist-mobile overflow-hidden flex flex-col pb-8">
+        <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+        <div class="Section-1 sec pt-[7em] w-full flex flex-col justify-center items-center">
+            <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+            opacity-0  flex flex-col gap-4">
+            <basis core="print" datamembername="db.projecst-sec1">
+                <layout>
+                    <div class="Title w-auto flex justify-start items-start text-left">
+                        <h1 class="font-Montserrat700 text-xl leading-[24.38px] text-black flex flex-col">
+                    @child
+                        </h1>
+                    </div>
+                </layout>
+                <face>            
+                        @name
+                </face>
+            </basis>
+            <basis core="print" datamembername="db.projecst-sec1">
+                <layout>
+                    <div class="Text font-OpenSans300 font-light text-justify text-[13px] text-gray leading-[17.07px]">
+                        <p class="font-OpenSans300 font-light  text-justify text-[13px] leading-[17.07px]">
+                    @child
+                        </p>
+                    </div>
+                </layout>
+                <face>               
+                        @description
+                </face>
+            </basis>
+            <div class="Logo flex flex-col gap-6">
+                <span class="w-[146px] h-[24px]">
+                    <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full object-cover"
+                     alt="Bocavoli" title="Bocavoli">
+                </span>
+                <span class="det font-KozGoPr6N400 uppercase font-normal text-xs leading-24 text-gray ">
+                    proudly made in iran
+                </span>
+            </div>
+            </div>
+         </div>
+         <basis core="print" datamembername="db.projecst-sec1">
+            <layout>
+                <div class="Section-2 w-full mb-12 mt-4  sec  flex flex-col justify-center items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                </div>
+            </layout>
+            <face>
+                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class=" w-full
+                object-cover">
+            </face>
+        </basis>
+          <div class="BlackSec bg-black pt-[1em] pb-[2em] flex w-full flex-col">
+            <div class="Section-3 w-full sec flex justify-center items-center">
+                <div class="Box w-90p mx-auto textBox border-b-[1px]
+               border-white justify-center pb-[2em]
+                  gap-[1em] translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                  opacity-0 flex flex-col ">
+                  <basis core="print" datamembername="db.projectDescription">
+                    <layout>
+                        <div class="Title mt-[1em] w-auto flex-col flex justify-start items-start text-left">
+                            <h2 class="font-Montserrat700 font-bold text-xl 
+                            leading-[24.38px] flex flex-col text-left text-white">
+                        @child
+                            </h2>
+                        </div>
+
+                    </layout>
+                    <face>
+                        @urltitle
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.projectDescription">
+                    <layout>
+                        <div class="text w-full flex-col flex justify-start items-start 
+                        font-OpenSans300 font-light text-[15px]  text-justify leading-[20.43px] gap-3 text-justify text-grayMatn">  
+                        @child
+                          
+                        </div>
+
+                    </layout>
+                    <face>
+                        <p>
+                        @urldescription
+                        </p>
+                    </face>
+                </basis>
+
+                 </div>
+              </div>
+              <div class="Section-4 mt-[1.5em] w-full sec flex justify-start items-center">
+                <div class="projects w-90p mx-auto flex-col flex justify-start gap-[1.5em] items-start">
+                    <basis core="print" datamembername="db.projectList">
+                        <layout>
+                            @child
+                        </layout>
+                        <face>
+                            <div class="project w-full group/item 
+                            h-full gap-[1em] border-b-[1px]
+                            [&:first-child]:border-l-white pb-[2em]
+                              my-auto border-white flex flex-col justify-center items-center">
+                              <div class=" 
+                              group-odd/item:translate-y-[-5rem] 
+                              group-even/item:translate-y-[5rem] 
+                              opacity-0
+                              [&.appear]:!translate-y-[0] [&.appear]:opacity-[1] w-full flex justify-center 
+                              fadeEO items-center my-auto ">
+                              <a href="@link" alt="@title" title="@title" class="w-full">
+                                <img src="[##cms.cms.cdn##]/@00350X00446prp" alt="@title" title="@title" class="w-full object-cover">
+                                </a>
+                                 </div>
+                                 <div class="Title w-full 
+                         textBox delay-[.2s] duration-[.8s]
+                         flex justify-start text-left text-white
+                         font-Montserrat700 uppercase font-bold text-base leading-[19.5px]">
+                                 <a href="@link" alt="@title" title="@title" >
+                                    @title	
+
+                                   </a>
+                                 </div>
+                                 <div class="Text w-full 
+                                 textBox delay-[.2s] duration-[.8s]
+                                 flex-col flex justify-start items-start 
+                                font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-grayMatn">
+                                 <p>
+                                    @substr
+                                    </p>
+                                 </div>
+                             </div>
+                        </face>
+                    </basis>
+                </div>
+                </div>
+          </div>
+          <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+    <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    <script src="[##cms.cms.cdn##]/js/projectList-mobile.js"></script>
+</body>
+</html>

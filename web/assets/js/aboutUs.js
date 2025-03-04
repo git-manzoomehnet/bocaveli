@@ -100,28 +100,32 @@ $('.AboutUsHistory-Sec').imagesLoaded( {
           },
         })
       })
-    let texts1 =[...document.querySelectorAll('.Section-4 .text-1 p')]
-    texts1 = texts1.map(t=>{
-     return t.innerHTML
-    })
-    let texts2 =[...document.querySelectorAll('.Section-4 .text-2 p')]
-    texts2 = texts2.map(t=>{
-      return t.innerHTML
-     })
-    let parent = document.querySelector('.Section-4 .textSec')
-    for(let i = 0 ; i < texts1.length ; i++){
-      let newP = document.createElement('p')
-      let span1 = document.createElement('span')
-      let span2 = document.createElement('span')
-      span2.className +='font-medium font-Montserrat500'
-      console.log(texts1[i]);
+      let texts1 = [...document.querySelectorAll('.Section-4 .text-1 p')]
+      .filter(t => t.textContent.trim() !== '') // حذف pهای خالی
+      .map(t => t.innerHTML);
+    
+    let texts2 = [...document.querySelectorAll('.Section-4 .text-2 p')]
+      .filter(t => t.textContent.trim() !== '') // حذف pهای خالی
+      .map(t => t.innerHTML);
+    
+    console.log(texts2);
+    
+    let parent = document.querySelector('.Section-4 .textSec');
+    for (let i = 0; i < texts1.length; i++) {
+      let newP = document.createElement('p');
+      let span1 = document.createElement('span');
+      let span2 = document.createElement('span');
+      span2.className += 'font-medium font-Montserrat500';
       
-      span1.innerHTML = texts1[i]
-      span2.innerHTML = texts2[i]
-      newP.appendChild(span1)
-      newP.appendChild(span2)
-      parent.appendChild(newP)
+      span1.innerHTML = texts1[i];
+      span2.innerHTML = `${texts2[i]},` || ''; // جلوگیری از undefined
+      
+      newP.appendChild(span1);
+      newP.appendChild(span2);
+      parent.appendChild(newP);
     }
+    
+    
     let openMenu = true;
 let isScrolling = false; // برای تشخیص اولین اسکرول
 let header = document.querySelector('header');

@@ -1,0 +1,320 @@
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="project" type="view"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="architect" type="view" postsql="select * from [db.architect] where ord=840"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="location" type="view" postsql="select * from [db.location] where ord=740"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="style" type="view" postsql="select * from [db.style] where prpID=3087499"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="description" type="view" postsql="select * from [db.description] where TypeID=144"/> 
+</basis>
+<basis core="dbsource" name="db" source="media" lid="2" sourcemid="19" usedforid="[##cms.query.id##]"> 
+    <member name="projectGallery" type="list" format="4"/> 
+</basis>	
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="title" type="view" postsql="select * from [db.title] where TypeID=150"/> 
+ </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="Subtitle" type="view" postsql="select * from [db.Subtitle] where TypeID=128"/> 
+ </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="2" mid="19" usedforid="[##cms.query.id##]"> 
+    <member name="text" type="view" postsql="select * from [db.text] where TypeID=250"/> 
+ </basis>
+ <basis core="dbsource" source="basiscore" name="json" lid="1" usedforid="[##cms.query.id##]" > 
+    <member request="json-ld" type="scalar" name="fq" /> 
+</basis>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[##cms.seo.title##]</title>
+    <meta name="description" content="[##cms.seo.description##]">
+    <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+</head>
+<body>
+    <main class="Project-mobile overflow-hidden flex flex-col pb-8">
+        <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+        <basis core="print" datamembername="db.projectGallery">
+            <layout>
+                <div class="Section-1 w-full sec pt-[9em] flex flex-col justify-center items-center">
+                    <div class="Banner w-full overflow-hidden flex ">
+                        <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                        [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                </div>
+                </div>
+            </layout>
+            <face filter="ord=1">
+                    <img src="@largeIMG" alt="@name" title="@name"
+                    class="object-cover w-full">
+            </face>
+        </basis>
+      
+         <div class="Section-2 sec w-full flex  flex-col justify-between items-center">
+            <div class="DetailBox gap-3 mt-[1em] w-90p mx-auto flex-col flex justify-between">
+                <div class="left textBox translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                opacity-0  gap-3 w-auto flex flex-col">
+                    <div class="Title w-full flex justify-start items-start text-left">
+                        <h1 class="font-Montserrat700 text-xl leading-[24.38px] text-black flex flex-col">
+                            [##db.title.Answer##]
+                        </h1>
+                    </div>
+                    <div class="schamas w-full  flex flex-col">
+                        <div class="schemabox gap-2 flex font-KozGoPr6N400 text-xs leading-24 text-gray">
+                            <span class="name w-[60px]">
+                                Architect: 
+                            </span>
+                            <span class="answer">
+                                [##db.architect.text##]
+                            </span>
+                        </div>
+                        <div class="schemabox gap-2 flex font-KozGoPr6N400 text-xs leading-24 text-gray">
+                            <span class="name w-[60px]">
+                                Location: 
+                            </span>
+                            <span class="answer">
+                                [##db.location.text##]
+                            </span>
+                        </div>
+                        <div class="schemabox gap-2 flex font-KozGoPr6N400 text-xs leading-24 text-gray">
+                            <span class="name w-[60px]">
+                                Style: 
+                            </span>
+                            <span class="answer">
+                                [##db.style.text##]
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right w-full flex gap-2 justify-center items-end">
+                    <basis core="print" datamembername="db.projectGallery">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="ord=2">
+                            <div class="IMG userIMG translate-y-[2.5rem] opacity-0
+                            [&.appear]:translate-y-[0] [&.appear]:opacity-[1]">
+                                <img src="@largeIMG" alt="@name" title="@name"
+                                class="w-full h-full object-cover">
+                            </div>
+                        </face>
+                    </basis>
+                    <div class="sign w-[120px] flex-wrap textBox translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                    opacity-0  font-Saint400 text-[13px] 
+                    leading-[19.43px] font-normal text-black">
+                    [##db.architect.text##]
+                      </div>
+                </div>
+            </div>
+            <basis core="print" datamembername="db.description">
+                <layout>
+                    <div class="textBox mt-4 Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                    opacity-0 
+                    flex flex-col gap-6 ">
+                
+                     <div class="Text font-OpenSans300 text-justify font-light text-[15px] leading-[20.43px] text-grayMatn">
+                         <p class="font-OpenSans300 font-light text-[15px] leading-[20.43px] text-justify text-grayMatn">
+                    @child
+                         </p>
+                     </div>
+                    </div>
+                </layout>
+                <face filter="RowNumber=1">
+                        @largetext
+                </face>
+            </basis>
+         </div>
+         <basis core="print" datamembername="db.projectGallery">
+            <layout>
+                <div class="Section-3 mt-4 w-full flex flex-col justify-center items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                </div>
+            </layout>
+            <face filter="ord=3">
+                    <img src="@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover">
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.projectGallery">
+            <layout>
+                <div class="Section-4  sec mt-4 flex flex-col justify-start items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                </div>
+            </layout>
+            <face filter="ord=4">
+                    <img src="@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover">
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.description">
+            <layout>
+                <div class="textBox mt-4 Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                opacity-0 
+                flex flex-col gap-6 ">
+            
+                 <div class="Text font-OpenSans300 font-light text-[15px] text-justify leading-[20.43px] text-grayMatn">
+                     <p class="font-OpenSans300 font-light text-[15px] leading-[20.43px] text-justify text-grayMatn">
+                @child
+                     </p>
+                 </div>
+                </div>
+            </layout>
+            <face filter="RowNumber=2">
+                    @largetext
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.projectGallery">
+            <layout>
+                <div class="Section-5 mt-4 se flex flex-col justify-center items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                </div>
+            </layout>
+            <face filter="ord=5">
+                    <img src="@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover">
+            </face>
+        </basis>
+  
+         <div class="Section-6 mt-3 gap-4 sec  flex flex-col justify-start items-start">      
+            <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+            opacity-0 
+            flex flex-col gap-3 ">
+            <div class="Title w-auto flex justify-start items-start text-left">
+                <h2 class="font-Montserrat700 font-bold text-xl leading-[24.38px] text-black justify-center items-center gap-2">
+                   <span class="font-Montserrat700 font-bold text-xl leading-[24.38px] text-black">
+                    Design 
+                   </span>
+                   <span class="font-Inter400 text-base leading-[19.36px] text-black">
+                     Story
+                   </span>
+                </h2>
+            </div>
+            <basis core="print" datamembername="db.description">
+                <layout>
+                    <div class="Text font-OpenSans300 font-light text-justify text-[15px] text-grayMatn leading-[20.43px]">
+                        <p class="font-OpenSans300 font-light text-[15px] text-grayMatn text-justify leading-[20.43px]">
+                    @child
+                        </p>
+                     </div>
+             
+                </layout>
+                <face filter="RowNumber=3">              
+                        @largetext
+                </face>
+            </basis>
+            </div>
+            <basis core="print" datamembername="db.projectGallery">
+                <layout>
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                    @child
+                        </div>
+                </layout>
+                <face filter="ord=6">
+                        <img src="@largeIMG" alt="@name" title="@name"
+                        class="w-full object-cover">
+                </face>
+            </basis>
+         </div>
+         <basis core="print" datamembername="db.projectGallery">
+            <layout>
+                <div class="Section-7 mt-4  w-full sec flex flex-col justify-center items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                    </div>
+            </layout>
+            <face filter="ord=7">
+                    <img src="@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover">
+            </face>
+        </basis>
+    
+         <div class="Section-8  mt-4  gap-4 sec w-full flex flex-col justify-center items-center">      
+      
+            <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+            opacity-0 
+            flex flex-col gap-3 ">
+            <div class="Title w-full flex justify-start items-start flex-col text-left">
+                <h2 class="font-Montserrat700 font-bold flex text-xl leading-[20px] text-black  flex-col justify-start
+                 items-center">
+                   <span class="font-Montserrat700 font-bold text-xl leading-[20px] text-black">
+                    Architecture
+
+                   </span>
+                   <span class="font-Inter400 translate-x-[-8px] text-base leading-[20px] text-black">
+                    Characteristics 
+                   </span>
+                </h2>
+            </div>
+            <basis core="print" datamembername="db.description">
+                <layout>
+                    <div class="Text w-full font-OpenSans300 text-justify font-light text-[15px] text-grayMatn leading-20.43">
+                        <p class="font-OpenSans300 font-light text-justify text-[15px] text-grayMatn leading-20.43">
+                    @child
+                        </p>
+                     </div>
+             
+                </layout>
+                <face filter="RowNumber not in (1,2,3)">
+                        @largetext
+                </face>
+            </basis>
+         
+            </div>
+    
+         </div>
+         <basis core="print" datamembername="db.projectGallery">
+            <layout>
+                <div class="Section-9 mb-2 mt-4 sec w-full flex flex-col justify-center items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                    </div>
+            </layout>
+            <face filter="ord=8">
+                    <img src="@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover">
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.projectGallery">
+            <layout>
+                <div class="Section-9 mb-[2em] mt-4 sec w-full flex flex-col justify-center items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                    </div>
+            </layout>
+            <face filter="ord=9">
+                    <img src="@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover">
+            </face>
+        </basis>
+        <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+    <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    <script src="[##cms.cms.cdn##]/js/project-mobile.js"></script>
+    <script type="application/ld+json">
+     [##json.fq.column1##]
+    </script>
+</body>
+</html>

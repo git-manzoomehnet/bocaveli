@@ -1,0 +1,214 @@
+<basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="[##cms.query.id##]"> 
+    <member name="news" type="view"/> 
+ </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="[##cms.query.id##]"> 
+    <member name="title" type="view" postsql="select * from [db.title] where TypeID=150"/> 
+ </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="[##cms.query.id##]"> 
+    <member name="Subtitle" type="view" postsql="select * from [db.Subtitle] where TypeID=128"/> 
+ </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="2" mid="1" usedforid="[##cms.query.id##]"> 
+    <member name="text" type="view" postsql="select * from [db.text] where TypeID=250"/> 
+ </basis>
+ <basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="[##cms.query.id##]"> 
+    <member name="newsGallery" type="list" format="4"/> 
+</basis>	
+<basis core="dbsource" source="basiscore" name="json" lid="1" usedforid="[##cms.query.id##]" > 
+    <member request="json-ld" type="scalar" name="fq" /> 
+</basis>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[##cms.seo.title##]</title>
+    <meta name="description" content="[##cms.seo.description##]">
+    <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+</head>
+<body>
+    <main class="NewsShow-mobile overflow-hidden flex flex-col pb-8">
+        <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+        <div class="Section-1 sec pt-[7em] w-full flex flex-col justify-center items-center">
+            <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+            opacity-0 flex flex-col gap-4">
+                <div class="Title w-full flex justify-start items-start text-left">
+                    <h1 class="font-Montserrat700 text-lg leading-21.94 text-black flex flex-col">
+                       <span class="font-Montserrat700 font-bold">
+                        [##db.title.Answer##]
+                       </span>
+                       <span class="font-Montserrat400 font-normal">
+                        [##db.Subtitle.Answer##]
+                       </span>
+                    </h1>
+                </div>
+                <basis core="print" datamembername="db.newsGallery">
+                    <layout>
+                        <div class="Section-2 w-full  sec  flex flex-col justify-center items-center">
+                            <div class="IMG w-full mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                            [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                        @child
+                            </div>
+                        </div>
+                    </layout>
+                    <face filter="ord=1">
+                            <img src="@largeIMG" alt="@name" title="@name"
+                            class="w-full 
+                        object-cover">
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.news">
+                    <layout>
+                        <div class="Text font-OpenSans300 text-justify font-light text-[13px] text-gray leading-17.07">
+                            <p class="font-OpenSans300 font-light text-justify text-[13px] leading-17.07">
+                        @child
+                            </p>
+                       </div>
+                    </layout>
+                    <face filter="TypeID=129">
+                        @Answer
+                    </face>
+                </basis>
+               </div>
+       
+           </div>
+       
+         <div class="Section-3 w-full mt-4 gap-4 sec flex flex-col justify-start items-center">
+            <basis core="print" datamembername="db.text">
+                <layout>
+                    <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                    opacity-0  flex flex-col gap-4">
+                     <div class="Text font-OpenSans300 font-light text-[13px] text-justify text-gray leading-17.07">
+                         <p class="font-OpenSans300 font-light text-[13px] text-justify leading-17.07">
+                    @child
+                         </p>
+                     </div>
+                    </div>
+                </layout>
+                <face filter="RowNumber=1">                
+                       @largetext
+                </face>
+            </basis>
+            <basis core="print" datamembername="db.newsGallery">
+            <layout>
+                @child
+            </layout>
+            <face filter="ord=2"> 
+                <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+            [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                </div>
+            </face>
+        </basis>
+         </div>
+         <basis core="print" datamembername="db.text">
+            <layout>
+                <div class="Section-4 w-full mt-4 gap-4 sec flex flex-col justify-start items-center">
+                    <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                    opacity-0  flex flex-col gap-4">
+                     <div class="Text font-OpenSans300 font-light text-justify text-[13px] text-gray leading-17.07">
+                         <p class="font-OpenSans300 font-light text-justify text-[13px] leading-17.07">
+                @child
+                         </p>
+                     </div>
+                 </div>
+                </div>
+            </layout>
+            <face filter="RowNumber=2">
+                 @largetext
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.newsGallery">
+            <layout>
+                <div class="Section-5 sec w-full mt-4 flex flex-col justify-start items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                </div>
+            </layout>
+            <face filter="ord=3"> 
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.text">
+            <layout>
+                <div class="Section-6 w-full mt-4 gap-4 sec flex flex-col justify-start items-center">
+                    <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                    opacity-0  flex flex-col gap-4">
+                     <div class="Text font-OpenSans300 font-light text-justify text-[13px] text-gray leading-17.07">
+                         <p class="font-OpenSans300 font-light text-justify text-[13px] leading-17.07">
+                @child
+                         </p>
+                     </div>
+                 </div>
+                </div>
+            </layout>
+            <face filter="RowNumber=3">
+                 @largetext
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.newsGallery">
+            <layout>
+                <div class="Section-7 sec w-full mt-4 flex flex-col justify-start items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                </div>
+            </layout>
+            <face filter="ord=4"> 
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.newsGallery">
+            <layout>
+                <div class="Section-8 sec w-full mt-4 flex flex-col justify-start items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                </div>
+            </layout>
+            <face filter="ord=5"> 
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.text">
+            <layout>
+                <div class="Section-9 w-full mt-4 gap-4 sec flex flex-col justify-start items-center">
+                    <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                    opacity-0  flex flex-col gap-4">
+                     <div class="Text font-OpenSans300 font-light text-justify text-[13px] text-gray leading-17.07">
+                         <p class="font-OpenSans300 font-light text-justify text-[13px] leading-17.07">
+                @child
+                         </p>
+                     </div>
+                 </div>
+                </div>
+            </layout>
+            <face filter="RowNumber not in (1,2,3)">
+                 @largetext
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.newsGallery">
+            <layout>
+                <div class="Section-10 sec w-full mt-4 flex gap-5 flex-col justify-start items-center"> 
+                @child
+                </div>
+            </layout>
+            <face filter="ord=6"> 
+                <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                </div>
+            </face>
+        </basis>
+         <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    </main>
+    <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    <script src="[##cms.cms.cdn##]/js/news-mobile.js"></script>
+    <script type="application/ld+json">
+        [##json.fq.column1##]
+      </script>
+</body>
+</html>

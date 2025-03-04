@@ -434,8 +434,7 @@ We prioritize precision, creativity, and attention to detail, ensuring that each
     </div>
     </main>
   
- 
-    <div class="searchContainer overflow-y-auto flex-col fixed z-[98] top-0 left-0 w-screen 
+    <div class="searchContainer-mobile overflow-y-auto flex-col fixed z-[98] top-0 left-0 w-screen 
     translate-x-[-100%] opacity-0 pointer-events-none duration-[.8s] [&.OpenSearch]:opacity-[1]
     [&.OpenSearch]:translate-x-[0] [&.OpenSearch]:pointer-events-auto
     h-screen bg-black flex justify-start items-start">
@@ -445,8 +444,9 @@ We prioritize precision, creativity, and attention to detail, ensuring that each
            </svg>
            
        </span>
-       <div class="inputBox mt-[44vh] relative w-80p mx-auto flex justify-center  items-center">
-         <input class="w-full bg-black h-[74px] py-[.5em]  outline-none px-[.5em] placeholder:font-Montserrat400 placeholder:font-normal
+       <div class="inputBox mt-[44vh] [&.goTop]:mt-[5em] goTop relative w-90p mx-auto flex justify-center  items-center">
+         <input class="w-full bg-black h-[74px] py-[.5em]  outline-none px-[.5em] 
+         placeholder:font-Montserrat400 placeholder:font-normal
          placeholder:text-lg placeholder:leading-21.94 placeholder:text-white
           font-Montserrat400 text-lg font-normal leading-21.94 text-white
           border-b-[1px] border-white" type="search" name="q" id="search" placeholder="Search ... ">
@@ -458,58 +458,105 @@ We prioritize precision, creativity, and attention to detail, ensuring that each
       </div>
       <div class="ResultC flex-col w-full flex justify-center items-center 
         mt-[4em]">
-      <div class="Noresult font-Montserrat300 font-light text-xl leading-[35px] text-white text-center">
+      <!-- <div class="Noresult w-[265px] mx-auto font-Montserrat300 font-light text-xl leading-[35px] text-white text-center">
        <p>
            Sorry, nothing was found . Search for another word 
        </p>
-      </div>
-           <div class="Results mt-[4em] w-80p mx-auto flex flex-col">
+      </div> -->
+           <div class="Results mt-[2em] w-90p mx-auto flex flex-col">
                <div class="Box w-full flex flex-col">
                    <div class="title font-Montserrat400 capitalize font-normal text-xl leading-[35px] text-white">
                        <p>
                            search result in project
                        </p>
                    </div>
-                   <div class="res Projects w-full flex flex-col pb-[1em] ">
-                        <a href="" class="Project py-[3em] border-b-[1px] border-white flex gap-3">
-                           <div class="Image w-[475px] h-[605px] flex">
-                               <img src="/web/assets/images/22.png" alt="" class="w-full h-full object-cover">
+                   <div class="res Projects w-full gap-4 flex flex-col pb-[1em] ">
+                        <a href="" class="Project flex-col pt-[1em] pb-[1.5em] border-b-[1px] border-white flex gap-3">
+                           <div class="Image w-full flex">
+                               <img src="/web/assets/images/22.png" alt="" class="w-full object-cover">
                            </div>
-                           <div class="Title-proj w-auto uppercase flex font-Montserrat700 font-bold text-lg leading-21.94 text-white">
+                           <div class="Title-proj w-auto uppercase flex font-Montserrat700 font-bold text-base leading-[19.05px]
+                            text-white">
                                <p>
                                    SAAD ABAD
                                </p>
                            </div>
+                           <div class="Text-proj w-full flex-col flex font-Montserrat300 font-light text-[13px] leading-[17.07px]
+                           text-white">
+                              <p>
+                                Design is the art of transforming abstract ideas into tangible solutions that are both functional and visually appealing, enhancing the way we interact with the world around us.
+                                D
+                              </p>
+                          </div>
                         </a>
+                        <a href="" class="Project flex-col pt-[1em] pb-[1.5em] border-b-[1px] border-white flex gap-3">
+                            <div class="Image w-full flex">
+                                <img src="/web/assets/images/22.png" alt="" class="w-full object-cover">
+                            </div>
+                            <div class="Title-proj w-auto uppercase flex font-Montserrat700 font-bold text-base leading-[19.05px]
+                             text-white">
+                                <p>
+                                    SAAD ABAD
+                                </p>
+                            </div>
+                            <div class="Text-proj w-full flex-col flex font-Montserrat300 font-light text-[13px] leading-[17.07px]
+                            text-white">
+                               <p>
+                                 Design is the art of transforming abstract ideas into tangible solutions that are both functional and visually appealing, enhancing the way we interact with the world around us.
+                                 D
+                               </p>
+                           </div>
+                         </a>
                    </div>
                </div>
                <div class="Box w-full flex flex-col">
-                   <div class="title font-Montserrat400 capitalize font-normal text-xl leading-[35px] text-white">
-                       <p>
-                           search result in news
-                       </p>
-                   </div>
-                   <div class="res News w-full flex flex-col pb-[1em] ">
-                        <a href="" class="Project py-[3em] border-b-[1px] border-white flex gap-3">
-                           <div class="Image w-[475px] h-[605px] flex">
-                               <img src="/web/assets/images/22.png" alt="" class="w-full h-full object-cover">
-                           </div>
-                           <div class="Title-news flex-col w-auto uppercase flex font-Montserrat700 font-bold text-lg leading-21.94 text-white">
-                               <p class="font-Montserrat700 font-bold text-lg leading-21.94">
-                                   DUZZI 
-                                 
-                               </p>
-                               <p class="font-Montserrat400 font-normal text-lg leading-21.94">
-                                   COLABORATION WITH MANDUZZI HOME
-                               </p>
-                           </div>
-                        </a>
-                   </div>
-               </div>
+                <div class="title font-Montserrat400 capitalize font-normal text-xl leading-[35px] text-white">
+                    <p>
+                        search result in news 
+                    </p>
+                </div>
+                <div class="res newsList w-full gap-4 flex flex-col pb-[1em] ">
+                     <a href="" class="news flex-col pt-[1em] pb-[1.5em] border-b-[1px] border-white flex gap-3">
+                        <div class="Image w-full flex">
+                            <img src="/web/assets/images/22.png" alt="" class="w-full object-cover">
+                        </div>
+                        <div class="Title-proj w-auto uppercase flex font-Montserrat700 font-bold text-base leading-[19.05px]
+                         text-white">
+                            <p>
+                                SAAD ABAD
+                            </p>
+                        </div>
+                        <div class="Text-proj w-full flex-col flex font-Montserrat300 font-light text-[13px] leading-[17.07px]
+                        text-white">
+                           <p>
+                            Naam Gallery, located in the heart of Tehran, is a vibrant hub for contemporary art, showcasing a diverse range of works from both emerging and established artists. The gallery is dedicated to promoting innovative artistic expressions that reflect the dynamic culture and creativity of Iran. With thoughtfully curated exhibitions, Naam Gallery provides a platform for dialogue and appreciation of art in various forms. Bocaveli, as a proud sponsor of Naam Gallery, supports its mission to enrich the local art scene and foster connections between artists and the community. Together, they aim to enhance cultural engagement and inspire a new generation of art enthusiasts.
+
+                           </p>
+                       </div>
+                     </a>
+                     <a href="" class="news flex-col pt-[1em] pb-[1.5em] border-b-[1px] border-white flex gap-3">
+                        <div class="Image w-full flex">
+                            <img src="/web/assets/images/22.png" alt="" class="w-full object-cover">
+                        </div>
+                        <div class="Title-proj w-auto uppercase flex font-Montserrat700 font-bold text-base leading-[19.05px]
+                         text-white">
+                            <p>
+                                SAAD ABAD
+                            </p>
+                        </div>
+                        <div class="Text-proj w-full flex-col flex font-Montserrat300 font-light text-[13px] leading-[17.07px]
+                        text-white">
+                           <p>
+                            Naam Gallery, located in the heart of Tehran, is a vibrant hub for contemporary art, showcasing a diverse range of works from both emerging and established artists. The gallery is dedicated to promoting innovative artistic expressions that reflect the dynamic culture and creativity of Iran. With thoughtfully curated exhibitions, Naam Gallery provides a platform for dialogue and appreciation of art in various forms. Bocaveli, as a proud sponsor of Naam Gallery, supports its mission to enrich the local art scene and foster connections between artists and the community. Together, they aim to enhance cultural engagement and inspire a new generation of art enthusiasts.
+
+                           </p>
+                       </div>
+                     </a>
+                </div>
+            </div>
            </div>
       </div>
       </div>
-    <!-- MAIN CONTAINER -->
     <script src="/mobile/assets/js/lenisScroll.js"></script>
     <script src="/mobile/assets/js/config-mobile.js"></script>
     <script src="/mobile/assets/js/default-mobile.js"></script>

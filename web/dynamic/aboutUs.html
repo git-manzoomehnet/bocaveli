@@ -28,7 +28,7 @@
       <div class="AboutUsHistory-Sec container-Sec" >
         <section id="PinSection">
             <div class="Pin-Wrapp">
-                <div class="Section-1 ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
+                <div class="Section-1 [&.goRight]:translate-x-[423px] duration-[.5s] ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
                    <div class="textBox Box w-auto translate-x-[1.5em] duration-[.8s] opacity-0 flex flex-col gap-6
                     max-w-[492px] ">
                     <basis core="print" datamembername="db.about">
@@ -69,7 +69,7 @@
                 </div>
                 <basis core="print" datamembername="db.aboutGallery">
                     <layout>
-                        <div class="Section-2 mr-[6em] ml-[1em] w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
+                        <div class="Section-2 [&.goRight]:translate-x-[423px] duration-[.5s] mr-[6em] ml-[1em] w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
                             <div class="IMG w-max max-h-[90%] h-full flex justify-center items-center [&.appear]:translate-x-[0]
                              [&.appear]:opacity-[1]  
                              translate-x-[-1.5em] opacity-0 my-auto">
@@ -159,7 +159,7 @@
                                 ARCHITECTURE 
                                </span>
                                <span class="font-Montserrat300 font-light">
-                                 IS OUR 
+                                IS OUR 
                                </span>
                                <span class="font-Montserrat300 font-light">
                                 LANGUAGE
@@ -205,7 +205,7 @@
                                 DESIGN 
                               </span>
                               <span class="font-Montserrat300 font-light">
-                                IS OUR 
+                               IS OUR 
                               </span>
                               <span class="font-Montserrat300 font-light">
                                 TOOL
@@ -247,13 +247,13 @@
                           <h3 class="font-Montserrat700 flex flex-col text-[38px] 
                           leading-[46.32px] text-left text-white">
                              <span class="font-Montserrat700 font-bold">
-                               DESIGN 
+                                FURNITURE 
                              </span>
                              <span class="font-Montserrat300 font-light">
-                               IS OUR 
+                              IS OUR 
                              </span>
                              <span class="font-Montserrat300 font-light">
-                               TOOL
+                                PRODUCT
                              </span>
                           </h3>
                        
@@ -287,6 +287,52 @@
                    </basis>
                     
                      </div>
+                     <div class="Box textBox  pl-[5em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
+                     duration-[.8s] opacity-0 flex flex-col ">
+                     <div class="Title w-auto flex-col flex justify-start items-start text-left">
+                         <h3 class="font-Montserrat700 flex flex-col text-[38px] 
+                         leading-[46.32px] text-left text-white">
+                            <span class="font-Montserrat700 font-bold">
+                                QUALITY 
+                            </span>
+                            <span class="font-Montserrat300 font-light">
+                             IS OUR 
+                            </span>
+                            <span class="font-Montserrat300 font-light">
+                                HABIT
+                            </span>
+                         </h3>
+                      
+                     </div>
+                     <basis core="print" datamembername="db.aboutText">
+                       <layout>
+                          <div class="text w-[492px] flex-col flex justify-start items-start 
+                          font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-white">
+                          
+                           @child
+                          </div>
+                       </layout>
+                       <face filter="RowNumber=9">
+                          <p>
+                              @largetext
+                          </p> 
+                       </face>
+                   </basis>
+                   <basis core="print" datamembername="db.aboutText">
+                      <layout>
+                          <div class="TextPer w-[492px] flex-col flex justify-start items-start 
+                          font-MyriadArabic400 font-normal text-[13px] leading-14.86 gap-3 text-justify text-white">
+                          @child
+                         </div>
+                      </layout>
+                      <face filter="RowNumber=10">
+                         <p>
+                             @largetext
+                         </p> 
+                      </face>
+                  </basis>
+                   
+                    </div>
                      </div>
                      <div class="Section-4 h-90p max-h-[750px] my-auto sec flex justify-start items-center pr-[8em]">
                         <div class="aboutUS flex gap-[5em]">
@@ -324,7 +370,7 @@
                                      
                                     </div> -->
                                     <div class="textSec w-[492px] flex-col flex justify-start items-start 
-                                    font-Montserrat300 font-light text-[30px] leading-[36.57px] gap-1 text-left text-graylight">
+                                    font-Montserrat300 font-light text-[30px] leading-[36.57px] text-left text-graylight">
           
                                     <div class="text-1 hidden">
                                         <basis core="print" datamembername="db.text">
@@ -357,7 +403,7 @@
                                             @child
                                         </layout>
                                         <face filter="TypeID=128">
-                                            <div class="sign font-Saint400 text-2xl leading-35.87 font-normal text-white">
+                                            <div class="sign mt-[1.5em] font-Saint400 text-2xl leading-35.87 font-normal text-white">
                                              @text
                                               </div> 
                                           </face>
