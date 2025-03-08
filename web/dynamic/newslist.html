@@ -14,6 +14,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsList</title>
+   <basis core="print" datamembername="db.blogBanner">
+        <face>      
+            <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+        </face>
+    </basis>
     <meta name="description" content="NewsList">
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
@@ -53,7 +58,7 @@
                    <div class="Logo flex flex-col gap-6">
                     <span class="w-[202px] h-[32px]">
                         <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full h-full object-cover"
-                         alt="Bocavoli" title="Bocavoli">
+                         alt="Bocavoli" title="Bocavoli" loading="lazy">
                     </span>
                     <span class="det font-KozGoPr6N400 uppercase font-normal text-sm leading-28 text-gray ">
                         proudly made in iran
@@ -72,8 +77,8 @@
                         </div>
                     </layout>
                     <face>
-                        <img src="@largeIMG" alt="@name" title="@name" class=" h-auto max-h-[90%] 
-                        object-cover">
+                        <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class=" h-auto max-h-[90%] 
+                        object-cover" loading="lazy">
                     </face>
                 </basis>
              
@@ -93,17 +98,17 @@
                                   px-[5em] last:pr-[5em] gap-[1.5em] translate-x-[1.5em] delay-[.2s]
                                 duration-[.8s] opacity-0 flex flex-col ">
                                  <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
-                                     <h2 class="font-Montserrat700 text-[32px] w-[150px]
+                                     <h2 class="font-Montserrat700 text-[32px] 
                                      leading-[39.01px] flex flex-col text-left text-white">
-                                     @urltitle
-                                    <!-- <span>
+                                     <!-- @urltitle -->
+                                    <span>
                                         NEWS 
                                        
                                     </span>
                                     <span>
                                      
                                         & ARTICLES 
-                                    </span> -->
+                                    </span>
                                      </h2>
                                   
                                  </div>
@@ -134,7 +139,7 @@
                                      hover:cursor-pointer duration-[.4s] w-[440px] max-w-[440px]">
                                     <a href="@link"  alt="@title" title="@title" class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
                                         <img src="[##cms.cms.cdn##]/@00440X00560prp" alt="@title" title="@title"
-                                         class="w-full h-full object-cover">
+                                         class="w-full h-full object-cover" loading="lazy">
                                     </a>
                                 </div>
                             

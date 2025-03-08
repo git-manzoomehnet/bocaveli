@@ -116,11 +116,11 @@ $('.Newslist-Sec').imagesLoaded( {
   
           if (text.classList.contains("line-clamp-3")) {
               text.classList.remove("line-clamp-3", "overflow-hidden");
-              imageContainer.classList.add("!h-70p"); // کاهش ارتفاع عکس
+              imageContainer.classList.add("!h-65p"); // کاهش ارتفاع عکس
               blog.querySelector('.toggleButton').textContent = "show less";
           } else {
               text.classList.add("line-clamp-3", "overflow-hidden");
-              imageContainer.classList.remove("!h-70p");
+              imageContainer.classList.remove("!h-65p");
               blog.querySelector('.toggleButton').textContent = "+read more";
           }
       })

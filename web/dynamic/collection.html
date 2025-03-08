@@ -15,6 +15,11 @@
    <title>Collection</title>
    <meta name="description" content="Collection">
    <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+   <basis core="print" datamembername="db.collectionGallery">
+    <face filter="ord in (1000)">      
+        <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+    </face>
+</basis>
 </head>
 <body class="Collection-c horizontal">
    <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
@@ -57,7 +62,7 @@
                    <div class="Logo flex flex-col gap-6">
                        <span class="w-[202px] h-[32px]">
                            <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full h-full object-cover"
-                            alt="Bocavoli" title="Bocavoli">
+                            alt="Bocavoli" title="Bocavoli" loading="lazy">
                        </span>
                        <span class="det font-KozGoPr6N400 uppercase font-normal text-sm leading-28 text-gray ">
                            proudly made in iran
@@ -76,12 +81,12 @@
                        </div>
                    </layout>
                    <face filter="ord=1000">
-                       <img src="@largeIMG" alt="@name" title="@name" class=" h-auto max-h-[90%] 
-                       object-cover">
+                       <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class=" h-auto max-h-[90%] 
+                       object-cover" loading="lazy">
                    </face>
                </basis>
                 <div class="BlackSec pr-[3em] bg-black flex h-screen">
-                   <div class="Section-3  px-[8em] max-h-[750px] h-90p my-auto border-x-[1px] border-white sec 
+                   <div class="Section-3 pl-[120px] pr-[8em] max-h-[750px] h-90p my-auto border-x-[1px] border-white sec 
                     flex flex-col justify-center items-center">
                        <div class="Box textBox gap-[1.3em] w-auto translate-x-[1.5em]
                         delay-[.2s] duration-[.8s] opacity-0 flex flex-col 
@@ -131,7 +136,7 @@
                                      [&.appear]:!opacity-[1] group-odd/item:translate-y-[3em] group-even/item:translate-y-[-3em]  opacity-0
                                    hover:cursor-pointer duration-[.4s] w-[410px] max-w-[410px]">
                                           <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"
-                                           class="w-full h-full object-cover">
+                                           class="w-full h-full object-cover" loading="lazy">
                                      
                                       </div>
                                       <div class="Title  textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]
@@ -163,6 +168,6 @@
 
    <!-- MAIN CONTAINER -->
    <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-   <script src="[##cms.cms.cdn##]/js/Collection.js"></script>
+   <script src="[##cms.cms.cdn##]/js/Collection.js" defer></script>
 </body>
 </html>

@@ -15,6 +15,11 @@
     <title>Collection</title>
    <meta name="description" content="Collection">
    <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+   <basis core="print" datamembername="db.collectionGallery">
+    <face filter="ord in (50)">      
+        <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+    </face>
+</basis>
 </head>
 <body >
     <main class="Collection-mobile flex flex-col pb-8">
@@ -48,10 +53,10 @@
                    
                 </face>
             </basis>
-            <div class="Logo flex flex-col gap-6">
+            <div class="Logo flex flex-col gap-[1.1em]">
                 <span class="w-[146px] h-[24px]">
                     <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full object-cover"
-                     alt="Bocavoli" title="Bocavoli">
+                     alt="Bocavoli" title="Bocavoli" loading="lazy">
                 </span>
                 <span class="det font-KozGoPr6N400 uppercase font-normal text-xs leading-24 text-gray ">
                     proudly made in iran
@@ -70,7 +75,7 @@
             </layout>
             <face filter="ord=50">
                 <img src="[##cms.cms.cdn3##]/@largeIMG" alt="@name" title="@name" class="w-full 
-                object-cover">
+                object-cover" loading="lazy">
             </face>
         </basis>
           <div class="BlackSec bg-black pt-[3em] pb-[2em] flex w-full flex-col">
@@ -124,7 +129,7 @@
                               opacity-0
                               [&.appear]:!translate-y-[0] [&.appear]:opacity-[1] w-full flex justify-center 
                               fadeEO items-center my-auto ">
-                                     <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                                     <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" loading="lazy" title="@name" class="w-full object-cover">
                                  </div>
                                  <div class="Title w-full 
                                 

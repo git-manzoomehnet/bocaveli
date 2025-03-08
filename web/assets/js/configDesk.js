@@ -1,27 +1,5 @@
-// let header = document.querySelector('header')
-// let menuC = document.querySelector('.Menu-Container')
-// let menuToggle = document.querySelector('.toggleItems')
-// menuToggle.addEventListener('click',()=>{
-//     console.log('click menu');
-    
-//     menuC.classList.toggle('Open')
-//     header.classList.toggle('Open')
-//     if(header.classList.contains('Open')){
-//       console.log('click menu');
-//       document.querySelector('.Section-1').classList.add('goRight')
-//       document.querySelector('.Section-2').classList.add('goRight')
-//       if(document.querySelector('.Project-c') || document.querySelector('.NewsShow-c')){
-//         document.querySelector('.Section-3').classList.add('goRight')
-//       }
-//    }
-//    else{
-//        document.querySelector('.Section-1').classList.remove('goRight')
-//          document.querySelector('.Section-2').classList.remove('goRight')
-//          if(document.querySelector('.Project-c') || document.querySelector('.NewsShow-c')){
-//           document.querySelector('.Section-3').classList.remove('goRight')
-//         }
-//    }
-// })
+
+
 
 const host = {
   debug: !1,
@@ -64,6 +42,18 @@ searchBTN.addEventListener('click',()=>{
 })
 closeSearch.addEventListener('click',()=>{
   search.classList.remove('OpenSearch')
+  setTimeout(() => {
+    document.querySelector('.searchContainer .inputBox input#search').value = ''
+    document.querySelector('.inputBox').classList.remove('goTop')
+    if(document.querySelectorAll('.ResultC .Results')){
+      document.querySelectorAll('.ResultC .Results').forEach(p=>{
+        p.remove()
+      })
+    }
+    if(document.querySelector('.Noresult ')){
+      document.querySelector('.Noresult ').remove()
+    }
+  }, 500);
 })
 
 searchIcon.addEventListener('click',()=>{

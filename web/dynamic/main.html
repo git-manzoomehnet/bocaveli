@@ -18,6 +18,12 @@
     <title>Bocavoli</title>
     <meta name="description" content="Bocavoli">
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+    <basis core="print" datamembername="db.banner">
+        <face filter="ord=1000">      
+            <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+        </face>
+    </basis>
+   
 </head>
 <body class="Home horizontal">
     <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
@@ -39,17 +45,11 @@
                                 @largetext
                             </face>
                         </basis>
-                        <!-- <h1 class="font-Montserrat300 font-light text-[48px] leading-58.51 text-black">
-                           THE
-                        </h1>
-                        <h2 class="font-Montserrat300 font-normal text-[48px] leading-58.51 text-black">
-                            KITCHEN
-                        </h2> -->
                         <basis core="print" datamembername="db.defContent">
                             <layout>
-                                <h3 class="font-Montserrat600 font-semibold text-[48px] leading-58.51 text-black">
+                                <h2 class="font-Montserrat600 font-semibold text-[48px] leading-58.51 text-black">
                                 @child
-                                </h3>
+                                </h2>
                             </layout>
                             <face filter="TypeID=128">
                                 @text
@@ -71,7 +71,7 @@
                         </layout>
                         <face filter="ord=1000">             
                             <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class=" h-auto max-h-[90%] 
-                             object-cover">
+                             object-cover" loading="lazy">
                         </face>
                     </basis>
                   
@@ -80,9 +80,9 @@
                  <div class="Section-3 ml-[5em] px-[7.5em] h-90p max-h-[780px] my-auto border-x-[1px] border-black sec  flex flex-col justify-center items-center">
                     <div class="Box textBox gap-[1.3em] w-auto translate-x-[1.5em] delay-[.2s] duration-[.8s] opacity-0 flex flex-col 
                     max-w-[474px] min-w-[474px]">
-                     <div class="Title w-[237px] flex-col flex justify-start items-start text-left">
-                         <h4 class="font-Montserrat400 flex flex-col font-normal text-base leading-19.5 text-left text-black">
-                            <basis core="print" datamembername="db.defContent">
+                     <div class="Title flex-col flex justify-start items-start text-left">
+                         <h3 class="font-Montserrat400 flex flex-col font-normal text-base leading-19.5 text-left text-black">
+                            <!-- <basis core="print" datamembername="db.defContent">
                                 <layout>
                                     @child
                                 </layout>
@@ -91,8 +91,8 @@
                                         @text	
                                     </span>
                                 </face>
-                            </basis>
-                            <!-- <span>
+                            </basis> -->
+                            <span>
                                 BEGAN WITH A DREAM 
                             </span>
                             <span>
@@ -100,8 +100,8 @@
                             </span>
                             <span>
                                 INTO A WORD OF ART.
-                            </span> -->
-                         </h4>
+                            </span>
+                         </h3>
                       
                      </div>
                      <basis core="print" datamembername="db.defContent">
@@ -137,7 +137,7 @@
                              hover:cursor-pointer] duration-[.4s] w-[454px] max-w-[567px]">
                                     <a href="[##db.link.largetext##]" alt="@name" title="@name"
                                     class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
-                                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full  h-full object-cover">
+                                    <img src="[##cms.cms.cdn##]/@largeIMG" loading="lazy" alt="@name" title="@name" class="w-full  h-full object-cover">
                                     </a>
                                 </div>
                                 <div class="Title mt-[.5em]   
@@ -169,7 +169,7 @@
  
     <!-- MAIN CONTAINER -->
     <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-    <script src="[##cms.cms.cdn##]/js/defaultDesk.js"></script>
+    <script src="[##cms.cms.cdn##]/js/defaultDesk.js" defer></script>
 </body>
 
 </html>

@@ -15,6 +15,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsList</title>
     <meta name="description" content="NewsList">
+    <basis core="print" datamembername="db.blogBanner">
+        <face>      
+            <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+        </face>
+    </basis>
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
 <body>
@@ -47,10 +52,10 @@
                     @description
                </face>
            </basis>
-           <div class="Logo flex flex-col gap-6">
+               <div class="Logo flex flex-col gap-[.8em]">
             <span class="w-[146px] h-[24px]">
                 <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full object-cover"
-                 alt="Bocavoli" title="Bocavoli">
+                 alt="Bocavoli" title="Bocavoli" loading="lazy">
             </span>
             <span class="det font-KozGoPr6N400 uppercase font-normal text-xs leading-24 text-gray ">
                 proudly made in iran
@@ -69,7 +74,7 @@
             </layout>
             <face>
                 <img src="@largeIMG" alt="@name" title="@name" class=" w-full
-                object-cover">
+                object-cover" loading="lazy">
             </face>
         </basis>
           <div class="BlackSec bg-black pt-[1em] pb-[2em] flex w-full flex-col">
@@ -88,9 +93,17 @@
                        gap-[1em] translate-y-[2.5rem] delay-[.2s] duration-[.8s]
                        opacity-0  flex flex-col ">
                       <div class="Title mt-[2em] w-auto flex-col flex justify-start items-start text-left">
-                          <h2 class="w-[100px] font-Montserrat700 font-bold text-xl 
+                          <h2 class=" font-Montserrat700 font-bold text-xl 
                           leading-[24.38px] flex flex-col text-left text-white">
-                          @urltitle
+                          <!-- @urltitle -->
+                                    <span>
+                                        NEWS 
+                                       
+                                    </span>
+                                    <span>
+                                     
+                                        & ARTICLES 
+                                    </span>
                           </h2>
                        
                       </div>
@@ -120,7 +133,8 @@
                 <div class="imageContainer w-full IMG  group/img 
                      hover:cursor-pointer duration-[.4s]">
                     <a href="@link"  alt="@title" title="@title" class="w-full mt-[.3em] group-hover/img:opacity-[.7] duration-[.4s]">
-                        <img src="[##cms.cms.cdn##]/@00440X00560prp" alt="@title" title="@title" class="w-full h-full object-cover">
+                        <img src="[##cms.cms.cdn##]/@00440X00560prp" loading="lazy"
+                         alt="@title" title="@title" class="w-full h-full object-cover">
                     </a>
                 </div>
                 <div class="Title w-full flex justify-start text-left text-white
@@ -133,7 +147,7 @@
                 </div>
                 <div class="Text w-full flex flex-col justify-start items-start 
                      font-OpenSans300 font-light text-[13px] leading-17.07 text-left text-white relative">
-                     @substr
+                     @prp_7244
                 </div>
                     </div>
                 </face>

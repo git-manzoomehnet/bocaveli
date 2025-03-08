@@ -30,6 +30,11 @@
             <meta name="description" content="[##cms.seo.description|db.seolist.description##]" />
         </face>
     </basis>
+    <basis core="print" datamembername="db.newsGallery">
+        <face filter="ord in (1,2,3)">      
+            <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+        </face>
+    </basis>
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
 <body class="NewsShow-c horizontal">
@@ -51,8 +56,8 @@
                         <div class="IMG-first [&.appear]:translate-x-[0]
                         [&.appear]:opacity-[1]  
                         translate-x-[-2.5rem] opacity-0  my-auto">
-                            <img src="@largeIMG" alt="@name" title="@name"
-                            class="object-cover ">
+                            <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"
+                            class="object-cover " loading="lazy">
                         </div>
                     </face>
                 </basis>
@@ -86,7 +91,7 @@
                    
                     </div>
                  </div>
-                 <div class="Section-3 pl-[8em] max-h-[600px] sec h-90p flex flex-col gap-[2em] justify-end items-center">
+                 <div class="Section-3 [&.goRight]:translate-x-[500px] duration-[.5s] pl-[8em] max-h-[600px] sec h-90p flex flex-col gap-[2em] justify-end items-center">
                     <div class="textBox Box w-full translate-x-[1.5em]  duration-[.8s] opacity-0 flex 
                     flex-col gap-6 max-w-[472px] min-w-[472px]">
                     <basis core="print" datamembername="db.text">
@@ -110,7 +115,7 @@
                             <div class="IMG [&.appear]:translate-x-[0]
                             [&.appear]:opacity-[1]  max-w-[472px] min-w-[472px]
                             translate-x-[-2.5rem] opacity-0 ">
-                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
                             </div>
                         </face>
                     </basis>
@@ -125,7 +130,7 @@
                             <div class="IMG [&.appear]:translate-x-[0]
                             [&.appear]:opacity-[1]  max-w-[476px] min-w-[476px]
                             translate-x-[-2.5rem] opacity-0 ">
-                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
                             </div>
                         </face>
                     </basis>
@@ -140,7 +145,7 @@
                             <div class="IMG [&.appear]:translate-x-[0]
                             [&.appear]:opacity-[1]  max-w-[472px] min-w-[472px]
                             translate-x-[-2.5rem] opacity-0">
-                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
                             </div>
                         </face>
                     </basis>    
@@ -170,7 +175,7 @@
                             <div class="IMG [&.appear]:translate-x-[0]
                     [&.appear]:opacity-[1]  max-w-[920px] min-w-[920px]
                     translate-x-[-2.5rem] opacity-0 my-auto">
-                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy"> 
                             </div>
                         </face>
                     </basis>    
@@ -203,7 +208,7 @@
                             <div class="IMG [&.appear]:translate-x-[0]
                             [&.appear]:opacity-[1]  max-w-[467px] min-w-[476px]
                             translate-x-[-2.5rem] opacity-0 mt-auto my-auto">
-                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
                             </div>
                         </face>
                     </basis>

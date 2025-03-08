@@ -109,11 +109,9 @@ $('.Home-Sec').imagesLoaded( {
         let scrollTop =e.scroll.y 
         if (scrollTop == 0) {
           isScrolling = false;
-          console.log("بازگشت به بالای صفحه");
         } else {
           if (!isScrolling) {
             isScrolling = true;
-            console.log("اولین اسکرول انجام شد، دیگر اجرا نمی‌شود.");
           }
         }
       });

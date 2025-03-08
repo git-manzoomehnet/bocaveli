@@ -92,7 +92,11 @@
   
 @font-face {
     font-family: "OpenSans300";
-    src: url("../fonts/OpenSans_Condensed-Light.ttf") format("truetype");
+    /* src: url("../fonts/OpenSans_Condensed-Light.ttf") format("truetype"); */
+    src: url("../fonts/OpenSans-Light.woff") format("woff"),
+    url("../fonts/OpenSans-Light.eot") format("eot"),
+    url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -291,15 +295,9 @@ transform: translate(0);
   font-weight: 300;
   line-height: 16.25px;
   font-family: "OpenSans500";
-  text-align: justify;
+  text-align: left;
 }
-.Items .Item .Text p{
-  text-align: justify;
-    display: -webkit-box !important;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
+
 footer{
   padding-right: 5em;
 }
@@ -423,9 +421,14 @@ footer{
 .searchContainer .Results {
   margin-top: 5em;
 }
+
 .TextPer,.TextPer p{
   direction: rtl;
+  text-align: right !important;
 }
 .fadeEO{
   transition:all 1.75s cubic-bezier(.215,.61,.355,1);
+}
+.text-justify{
+  text-align: left !important;
 }

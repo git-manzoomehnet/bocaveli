@@ -10,6 +10,9 @@
 <basis core="dbsource" name="db" source="media" lid="2" sourcemid="1" usedforid="2373860"> 
     <member name="contactGallery" type="list" format="4"/> 
 </basis>
+<basis core="dbsource" name="db" source="media" lid="2" sourcemid="1" usedforid="2373860"> 
+    <member name="qr" type="list" format="4" postsql="select * from [db.qr] where ord=10"/> 
+</basis>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +20,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact US</title>
     <meta name="description" content="Contact US">
+    <basis core="print" datamembername="db.contact-section2">
+        <face filter="ord in (1000)">      
+            <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+        </face>
+    </basis>
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
 <body>
@@ -50,10 +58,10 @@
                     @description
                 </face>
             </basis>
-            <div class="Logo flex flex-col gap-6">
+               <div class="Logo flex flex-col gap-[.8em]">
                 <span class="w-[146px] h-[24px]">
                     <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full object-cover"
-                     alt="Bocavoli" title="Bocavoli">
+                     alt="Bocavoli" title="Bocavoli" loading="lazy">
                 </span>
                 <span class="det font-KozGoPr6N400 uppercase font-normal text-xs leading-24 text-gray ">
                     proudly made in iran
@@ -71,7 +79,7 @@
                </div>
             </layout>
             <face>
-               <img src="@largeIMG" alt="@name" title="@name" class="w-full 
+               <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full  loading="lazy"
                object-cover">
             </face>
         </basis>
@@ -124,7 +132,7 @@
                           <span>
                             DOWNLOAD
                           </span>
-                          <span class=" font-Montserrat400 uppercase font-bold text-[15px] leading-[18.29px]">
+                          <span class=" font-Montserrat400 uppercase font-normal text-[15px] leading-[18.29px]">
                             BOCAVELI CATALOGES
                           </span>
 
@@ -151,7 +159,7 @@
                          </div>
                         </layout>
                         <face filter="ord=1">
-                         <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" 
+                         <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"  loading="lazy"
                          class="w-full object-cover">
                         </face>
                     </basis>
@@ -186,7 +194,7 @@
                         </div>
                     </layout>
                     <face filter="ord=2">
-                     <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" 
+                     <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"  loading="lazy"
                      class="w-full object-cover">
                     </face>
                 </basis>
@@ -196,7 +204,7 @@
                        <span>
                         UPLOAD
                        </span>
-                       <span class=" font-Montserrat400 uppercase font-bold text-[15px] leading-[18.29px]">
+                       <span class=" font-Montserrat400 uppercase font-normal text-[15px] leading-[18.29px]">
                         YOUR PROJECT DETAILS
                        </span>
 
@@ -233,7 +241,8 @@
                     </div>
                 </layout>
                 <face filter="ord=3">
-                 <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                 <img src="[##cms.cms.cdn##]/@largeIMG" 
+                 loading="lazy" alt="@name" title="@name" class="w-full object-cover">
                 </face>
             </basis>
             <basis core="print" datamembername="db.text">
@@ -264,14 +273,59 @@
                 </face>
             </basis>
                 <div class="QRboxes mt-[1em] w-full flex justify-between items-center">
-                    <basis core="print" datamembername="db.contactGallery">
+                    <basis core="print" datamembername="db.qr">
                         <layout>
                             @child
                         </layout>
-                        <face filter="ord=10">
+                        <face filter="RowNumber=3">
                             <span class="QR w-auto max-w-[84px] flex flex-col gap-[3em]">
                                 <div class="IMG w-[84px] h-[84px]">
-                                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full h-full object-cover">
+                                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" loading="lazy"
+                                     title="@name" class="w-full h-full object-cover">
+                                </div>
+                                <div class="Title  w-full flex-wrap flex justify-start text-left text-white
+                                font-Montserrat700 flex-col  uppercase font-bold text-[13px] leading-[15.85px]">
+                                   <span>
+                                   @name
+                                   </span>
+                                   <span class=" font-Montserrat700 uppercase font-bold text-[11px] leading-[13.41px]">
+                                  @description	
+                                   </span>                 
+                                </div>
+                            </span>
+                        </face>
+                    </basis>  
+                    <basis core="print" datamembername="db.qr">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="RowNumber=2">
+                            <span class="QR w-auto max-w-[84px] flex flex-col gap-[3em]">
+                                <div class="IMG w-[84px] h-[84px]">
+                                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" loading="lazy"
+                                     title="@name" class="w-full h-full object-cover">
+                                </div>
+                                <div class="Title  w-full flex-wrap flex justify-start text-left text-white
+                                font-Montserrat700 flex-col  uppercase font-bold text-[13px] leading-[15.85px]">
+                                   <span>
+                                   @name
+                                   </span>
+                                   <span class=" font-Montserrat700 uppercase font-bold text-[11px] leading-[13.41px]">
+                                  @description	
+                                   </span>                 
+                                </div>
+                            </span>
+                        </face>
+                    </basis>  
+                    <basis core="print" datamembername="db.qr">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="RowNumber=1">
+                            <span class="QR w-auto max-w-[84px] flex flex-col gap-[3em]">
+                                <div class="IMG w-[84px] h-[84px]">
+                                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" loading="lazy"
+                                    title="@name" class="w-full h-full object-cover">
                                 </div>
                                 <div class="Title  w-full flex-wrap flex justify-start text-left text-white
                                 font-Montserrat700 flex-col  uppercase font-bold text-[13px] leading-[15.85px]">

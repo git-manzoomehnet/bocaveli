@@ -20,6 +20,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AboutUS & History</title>
     <meta name="description" content="AboutUS & History">
+    <basis core="print" datamembername="db.aboutGallery">
+        <face filter="ord in (50)">      
+            <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+        </face>
+    </basis>
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
 <body>
@@ -53,9 +58,9 @@
 
                 </face>
             </basis>
-            <div class="Logo flex flex-col gap-6">
+          <div class="Logo flex flex-col gap-[.8em]">
                 <span class="w-[146px] h-[24px]">
-                    <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full object-cover"
+                    <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full object-cover" loading="lazy"
                      alt="Bocavoli" title="Bocavoli">
                 </span>
                 <span class="det font-KozGoPr6N400 uppercase font-normal text-xs leading-24 text-gray ">
@@ -76,7 +81,7 @@
             </layout>
             <face filter="ord=50">
                 <img src="@largeIMG" alt="@name" title="@name" class="w-full 
-                object-cover">
+                object-cover" loading="lazy">
             </face>
         </basis>
    
@@ -318,7 +323,7 @@
               <div class="Section-4 w-full sec flex justify-start items-center">
                  <div class="aboutUS w-90p mt-[1.5em] mx-auto gap-2 flex">
                          <div class="ImageSec w-[50%] flex justify-center items-center">
-                             <img src="[##cms.cms.cdn##]/images/sadra.png" alt="Bocaveli" title="Bocaveli" class="w-full object-cover">
+                             <img src="[##cms.cms.cdn##]/images/sadra.png" alt="Bocaveli" loading="lazy" title="Bocaveli" class="w-full object-cover">
                          </div>
                          <div class="Texts w-[50%] flex flex-col justify-center items-start gap-[1.5em]">
                             <basis core="print" datamembername="db.text">

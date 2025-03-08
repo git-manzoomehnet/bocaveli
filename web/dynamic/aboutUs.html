@@ -20,6 +20,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AboutUS & History</title>
     <meta name="description" content="AboutUS & History">
+    <basis core="print" datamembername="db.aboutGallery">
+        <face filter="ord in (1000)">      
+            <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+        </face>
+    </basis>
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
 <body class="AboutUsHistory-c horizontal">
@@ -59,7 +64,7 @@
                     <div class="Logo flex flex-col gap-6">
                         <span class="w-[202px] h-[32px]">
                             <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full h-full object-cover"
-                             alt="Bocavoli" title="Bocavoli">
+                             alt="Bocavoli" title="Bocavoli" loading="lazy">
                         </span>
                         <span class="det font-KozGoPr6N400 uppercase font-normal text-sm leading-28 text-gray ">
                             proudly made in iran
@@ -78,7 +83,7 @@
                         </div>
                     </layout>
                     <face filter="ord=1000">
-                        <img src="@largeIMG" alt="@name" title="@name" class=" h-auto max-h-[90%] 
+                        <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" loading="lazy" title="@name" class=" h-auto max-h-[90%] 
                         object-cover">
                     </face>
                 </basis>
@@ -337,9 +342,10 @@
                      <div class="Section-4 h-90p max-h-[750px] my-auto sec flex justify-start items-center pr-[8em]">
                         <div class="aboutUS flex gap-[5em]">
                                 <div class="ImageSec w-max flex justify-center items-center max-h-90p">
-                                    <img src="[##cms.cms.cdn##]/images/sadra.png" alt="Bocaveli" title="Bocaveli" class="h-full object-cover">
+                                    <img src="[##cms.cms.cdn##]/images/sadra.png" loading="lazy" alt="Bocaveli" title="Bocaveli" class="h-full object-cover">
                                 </div>
-                                <div class="Texts w-auto flex flex-col justify-center items-start gap-[2.8em]">
+                                <div class="Texts textBox translate-x-[1.5em] delay-[.2s]
+                                duration-[.8s] opacity-0 w-auto flex flex-col justify-center items-start gap-[2.8em]">
                                     <basis core="print" datamembername="db.text">
                                         <layout>
                                             <div class="Title w-auto flex-col flex justify-start items-start text-left">

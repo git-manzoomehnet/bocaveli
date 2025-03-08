@@ -12,7 +12,6 @@
 </basis>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,9 +38,9 @@
                             </basis>
                             <basis core="print" datamembername="db.defContent">
                                 <layout>
-                                    <h3 class="font-Montserrat600 font-semibold text-[20px] leading-[24.38px] text-black">
+                                    <h2 class="font-Montserrat600 font-semibold text-[20px] leading-[24.38px] text-black">
                                     @child
-                                    </h3>
+                                    </h2>
                                 </layout>
                                 <face filter="TypeID=128">
                                     @text
@@ -62,25 +61,25 @@
         <div class="Section-2 mt-4 w-90p mx-auto sec flex flex-col justify-center items-center">
             <basis core="print" datamembername="db.banner">
                 <layout>
-                    <div class="IMG flex justify-center items-center my-auto translate-y-[2.5rem] opacity-0
+                    <div class="IMG w-full flex justify-center items-center my-auto translate-y-[2.5rem] opacity-0
                     [&.appear]:translate-y-[0] [&.appear]:opacity-[1]">
                     @child
                     </div>
                 </layout>
                 <face filter="ord=50">             
                     <img src="[##cms.cms.cdn3##]/@largeIMG" alt="@name" title="@name" class=" w-full
-                    object-cover">
+                     object-cover" loading="lazy">
                 </face>
             </basis>
    
         </div>
-        <div class="Section-3 mx-auto  mt-[2em] sec  flex flex-col justify-center items-center">
-                        <div class="Box textBox border-black border-b-[1px]  pb-[2em] 
-                        gap-[1em] mx-auto w-90p translate-y-[2.5rem] delay-[.2s]
+        <div class="Section-3 w-90p mx-auto mt-[2em] sec  flex flex-col justify-center items-center">
+                        <div class="Box w-full textBox border-black border-b-[1px]  pb-[2em] 
+                        gap-[1em] translate-y-[2.5rem] delay-[.2s]
                          duration-[.8s] opacity-0 flex flex-col ">
-                         <div class="Title w-auto flex-col flex justify-start items-start text-left">
-                             <h4 class="font-Montserrat400 flex w-[235px] flex-col font-normal text-base leading-19.5 text-left text-black">
-                                <basis core="print" datamembername="db.defContent">
+                         <div class="Title w-full flex-col flex justify-start items-start text-left">
+                             <h3 class="font-Montserrat400 flex flex-col font-normal text-base leading-19.5 text-left text-black">
+                                <!-- <basis core="print" datamembername="db.defContent">
                                     <layout>
                                         @child
                                     </layout>
@@ -89,14 +88,23 @@
                                             @text	
                                         </span>
                                     </face>
-                                </basis>
-                             </h4>
+                                </basis> -->
+                                <span>
+                                    BEGAN WITH A DREAM
+                                </span>
+                                <span>
+                                    TO TRANSFORM LIVING SPACES
+                                </span>
+                                <span>
+                                    INTO A WORD OF ART.
+                                </span>
+                             </h3>
                           
                          </div>
                          <basis core="print" datamembername="db.defContent">
                             <layout>
-                                <div class="text w-auto flex-col flex justify-start items-start 
-                         font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-black">
+                                <div class="text w-full flex-col flex justify-start items-start 
+                         font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-justify text-black" loading="lazy">
                                 @child
                                </div>
                             </layout>
@@ -129,7 +137,8 @@
                                   fadeEO items-center my-auto ">
                                         <a href="[##db.link.largetext##]" alt="@name" title="@name"
                                         class="w-full group-hover/img:opacity-[.7] duration-[.4s]">
-                                        <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full  h-full object-cover">
+                                        <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"  loading="lazy"
+                                        class="w-full  h-full object-cover">
                                         </a>
                                     </div>
                                     <div class="Title w-full flex justify-start text-left text-black

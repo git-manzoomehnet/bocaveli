@@ -30,6 +30,11 @@
             <meta name="description" content="[##cms.seo.description|db.seolist.description##]" />
         </face>
     </basis>
+    <basis core="print" datamembername="db.newsGallery">
+        <face filter="ord in (1,2,3)">      
+            <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+        </face>
+    </basis>
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
 <body>
@@ -58,9 +63,9 @@
                         </div>
                     </layout>
                     <face filter="ord=1">
-                            <img src="@largeIMG" alt="@name" title="@name"
+                            <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"
                             class="w-full 
-                        object-cover">
+                        object-cover" loading="lazy">
                     </face>
                 </basis>
                 <basis core="print" datamembername="db.news">
@@ -102,7 +107,7 @@
             <face filter="ord=2"> 
                 <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
             [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
-                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
                 </div>
             </face>
         </basis>
@@ -134,7 +139,7 @@
                 </div>
             </layout>
             <face filter="ord=3"> 
-                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
             </face>
         </basis>
         <basis core="print" datamembername="db.text">
@@ -164,7 +169,7 @@
                 </div>
             </layout>
             <face filter="ord=4"> 
-                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
             </face>
         </basis>
         <basis core="print" datamembername="db.newsGallery">
@@ -177,7 +182,7 @@
                 </div>
             </layout>
             <face filter="ord=5"> 
-                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
             </face>
         </basis>
         <basis core="print" datamembername="db.text">
@@ -206,7 +211,7 @@
             <face filter="ord=6"> 
                 <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
                 [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
-                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
                 </div>
             </face>
         </basis>

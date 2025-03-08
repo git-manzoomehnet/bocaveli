@@ -42,6 +42,11 @@
             <meta name="description" content="[##cms.seo.description|db.seolist.description##]" />
         </face>
     </basis>
+    <basis core="print" datamembername="db.projectGallery">
+        <face filter="ord in (1,2,3)">      
+            <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+        </face>
+    </basis>
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
 <body>
@@ -59,8 +64,8 @@
                 </div>
             </layout>
             <face filter="ord=1">
-                    <img src="@largeIMG" alt="@name" title="@name"
-                    class="object-cover w-full">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"
+                    class="object-cover w-full" loading="lazy">
             </face>
         </basis>
       
@@ -108,8 +113,8 @@
                         <face filter="ord=2">
                             <div class="IMG userIMG translate-y-[2.5rem] opacity-0
                             [&.appear]:translate-y-[0] [&.appear]:opacity-[1]">
-                                <img src="@largeIMG" alt="@name" title="@name"
-                                class="w-full h-full object-cover">
+                                <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"
+                                class="w-full h-full object-cover" loading="lazy">
                             </div>
                         </face>
                     </basis>
@@ -148,8 +153,8 @@
                 </div>
             </layout>
             <face filter="ord=3">
-                    <img src="@largeIMG" alt="@name" title="@name"
-                    class="w-full object-cover">
+                    <img src="[##cms.cms.cdn###]/@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover" loading="lazy">
             </face>
         </basis>
         <basis core="print" datamembername="db.projectGallery">
@@ -162,8 +167,8 @@
                 </div>
             </layout>
             <face filter="ord=4">
-                    <img src="@largeIMG" alt="@name" title="@name"
-                    class="w-full object-cover">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover" loading="lazy">
             </face>
         </basis>
         <basis core="print" datamembername="db.description">
@@ -193,8 +198,8 @@
                 </div>
             </layout>
             <face filter="ord=5">
-                    <img src="@largeIMG" alt="@name" title="@name"
-                    class="w-full object-cover">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover" loading="lazy">
             </face>
         </basis>
   
@@ -234,8 +239,8 @@
                         </div>
                 </layout>
                 <face filter="ord=6">
-                        <img src="@largeIMG" alt="@name" title="@name"
-                        class="w-full object-cover">
+                        <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"
+                        class="w-full object-cover" loading="lazy">
                 </face>
             </basis>
          </div>
@@ -249,8 +254,8 @@
                     </div>
             </layout>
             <face filter="ord=7">
-                    <img src="@largeIMG" alt="@name" title="@name"
-                    class="w-full object-cover">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover" loading="lazy">
             </face>
         </basis>
     
@@ -298,8 +303,8 @@
                     </div>
             </layout>
             <face filter="ord=8">
-                    <img src="@largeIMG" alt="@name" title="@name"
-                    class="w-full object-cover">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover" loading="lazy">
             </face>
         </basis>
         <basis core="print" datamembername="db.projectGallery">
@@ -312,8 +317,8 @@
                     </div>
             </layout>
             <face filter="ord=9">
-                    <img src="@largeIMG" alt="@name" title="@name"
-                    class="w-full object-cover">
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name"
+                    class="w-full object-cover" loading="lazy">
             </face>
         </basis>
         <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />

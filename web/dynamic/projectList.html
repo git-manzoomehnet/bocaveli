@@ -16,6 +16,12 @@
    <title>Projects</title>
    <meta name="description" content="Projects">
    <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
+   <basis core="print" datamembername="db.projecst-sec1">
+    <face>      
+        <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+    </face>
+</basis>
+
 </head>
 <body class="Projectlist-c horizontal">
    <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
@@ -23,7 +29,7 @@
      <div class="Projectlist-Sec container-Sec" >
        <section id="PinSection">
            <div class="Pin-Wrapp">
-               <div class="Section-1 ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
+               <div class="Section-1 [&.goRight]:translate-x-[423px] duration-[.5s] ml-[82px] pl-[10em] pr-[8em] sec h-full flex flex-col justify-center items-center">
                   <div class="textBox Box w-auto translate-x-[1.5em] duration-[.8s] opacity-0 flex flex-col gap-6
                    max-w-[500px] min-w-[500px]">
                    <basis core="print" datamembername="db.projecst-sec1">
@@ -54,7 +60,7 @@
                    <div class="Logo flex flex-col gap-6">
                     <span class="w-[202px] h-[32px]">
                         <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full h-full object-cover"
-                         alt="Bocavoli" title="Bocavoli">
+                         alt="Bocavoli" title="Bocavoli" loading="lazy">
                     </span>
                     <span class="det font-KozGoPr6N400 uppercase font-normal text-sm leading-28 text-gray ">
                         proudly made in iran
@@ -64,7 +70,7 @@
                </div>
                <basis core="print" datamembername="db.projecst-sec1">
                    <layout>
-                       <div class="Section-2 mr-[7em]  w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
+                       <div class="Section-2 [&.goRight]:translate-x-[423px] duration-[.5s] mr-[7em]  w-auto max-w-fit sec h-full flex flex-col justify-center items-center">
                            <div class="IMG w-max max-h-[90%] h-full flex justify-center items-center [&.appear]:translate-x-[0]
                             [&.appear]:opacity-[1]  
                             translate-x-[-1.5em] opacity-0 my-auto">
@@ -74,7 +80,7 @@
                    </layout>
                    <face>
                        <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class=" h-auto max-h-[90%] 
-                       object-cover">
+                       object-cover" loading="lazy">
                    </face>
                </basis>
 
@@ -130,7 +136,7 @@
                                      [&.appear]:!opacity-[1]  opacity-0
                                    hover:cursor-pointer duration-[.4s] w-[450px] max-w-[450px]">
                                           <a href="@link" alt="@title" title="@title" class="w-full">
-                                          <img src="[##cms.cms.cdn##]/@00450X00572prp" alt="@title" title="@title" class="w-full max-h-[572px]  h-full object-cover">
+                                          <img src="[##cms.cms.cdn##]/@00450X00572prp" loading="lazy" alt="@title" title="@title" class="w-full max-h-[572px]  h-full object-cover">
                                           </a>
                                       </div>
                                       <div class="Title group-even/item:order-2 group-odd/item:order-1 textBox  translate-x-[1.5em] delay-[.2s] duration-[.8s]

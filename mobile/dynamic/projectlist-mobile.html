@@ -15,6 +15,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <meta name="description" content="Projects">
+    <basis core="print" datamembername="db.projecst-sec1">
+        <face>      
+            <link rel="preload" as="image" href="[##cms.cms.cdn##]/@largeIMG" type="image/jpg">       
+        </face>
+    </basis>
     <basis core="call" file="styles.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
 </head>
 <body>
@@ -47,10 +52,10 @@
                         @description
                 </face>
             </basis>
-            <div class="Logo flex flex-col gap-6">
+         <div class="Logo flex flex-col gap-[.8em]">
                 <span class="w-[146px] h-[24px]">
                     <img src="[##cms.cms.cdn##]/images/bocaveli.png" class="w-full object-cover"
-                     alt="Bocavoli" title="Bocavoli">
+                     alt="Bocavoli" title="Bocavoli" loading="lazy">
                 </span>
                 <span class="det font-KozGoPr6N400 uppercase font-normal text-xs leading-24 text-gray ">
                     proudly made in iran
@@ -69,7 +74,7 @@
             </layout>
             <face>
                 <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class=" w-full
-                object-cover">
+                object-cover" loading="lazy">
             </face>
         </basis>
           <div class="BlackSec bg-black pt-[1em] pb-[2em] flex w-full flex-col">
@@ -128,7 +133,7 @@
                               [&.appear]:!translate-y-[0] [&.appear]:opacity-[1] w-full flex justify-center 
                               fadeEO items-center my-auto ">
                               <a href="@link" alt="@title" title="@title" class="w-full">
-                                <img src="[##cms.cms.cdn##]/@00350X00446prp" alt="@title" title="@title" class="w-full object-cover">
+                                <img src="[##cms.cms.cdn##]/@00350X00446prp" loading="lazy" alt="@title" title="@title" class="w-full object-cover">
                                 </a>
                                  </div>
                                  <div class="Title w-full 
@@ -145,7 +150,7 @@
                                  flex-col flex justify-start items-start 
                                 font-OpenSans300 font-light text-[13px] leading-17.07 gap-3 text-left text-grayMatn">
                                  <p>
-                                    @substr
+                                    @prp_3087500
                                     </p>
                                  </div>
                              </div>

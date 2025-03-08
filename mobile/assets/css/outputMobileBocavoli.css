@@ -1285,10 +1285,6 @@ video {
   width: 146px;
 }
 
-.w-\[150px\] {
-  width: 150px;
-}
-
 .w-\[188px\] {
   width: 188px;
 }
@@ -1307,14 +1303,6 @@ video {
 
 .w-\[224px\] {
   width: 224px;
-}
-
-.w-\[235px\] {
-  width: 235px;
-}
-
-.w-\[237px\] {
-  width: 237px;
 }
 
 .w-\[25px\] {
@@ -1343,6 +1331,10 @@ video {
 
 .w-\[410px\] {
   width: 410px;
+}
+
+.w-\[440px\] {
+  width: 440px;
 }
 
 .w-\[450px\] {
@@ -1438,6 +1430,10 @@ video {
   min-width: 410px;
 }
 
+.min-w-\[440px\] {
+  min-width: 440px;
+}
+
 .min-w-\[450px\] {
   min-width: 450px;
 }
@@ -1500,6 +1496,10 @@ video {
 
 .max-w-\[410px\] {
   max-width: 410px;
+}
+
+.max-w-\[440px\] {
+  max-width: 440px;
 }
 
 .max-w-\[450px\] {
@@ -2379,10 +2379,6 @@ video {
 
 .gap-\[5px\] {
   gap: 5px;
-}
-
-.gap-\[8em\] {
-  gap: 8em;
 }
 
 .gap-x-20 {
@@ -4434,7 +4430,12 @@ video {
 @font-face {
   font-family: "OpenSans300";
 
-  src: url("../fonts/OpenSans_Condensed-Light.ttf") format("truetype");
+  /* src: url("../fonts/OpenSans_Condensed-Light.ttf") format("truetype"); */
+
+  src: url("../fonts/OpenSans-Light.woff") format("woff"),
+    url("../fonts/OpenSans-Light.eot") format("eot"),
+    url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.ttf") format("truetype");
 
   font-weight: 300;
 
@@ -4715,15 +4716,7 @@ img,
   font-weight: 300;
   line-height: 16.25px;
   font-family: "OpenSans500";
-  text-align: justify;
-}
-
-.Items .Item .Text p{
-  text-align: justify;
-  display: -webkit-box !important;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  text-align: left;
 }
 
 footer{
@@ -4866,10 +4859,15 @@ footer{
 
 .TextPer,.TextPer p{
   direction: rtl;
+  text-align: right !important;
 }
 
 .fadeEO{
   transition:all 1.75s cubic-bezier(.215,.61,.355,1);
+}
+
+.text-justify{
+  text-align: left !important;
 }
 
 @media (min-width: 480px) {
@@ -4964,6 +4962,11 @@ footer{
 .before\:left-0::before {
   content: var(--tw-content);
   left: 0px;
+}
+
+.before\:left-\[-1\%\]::before {
+  content: var(--tw-content);
+  left: -1%;
 }
 
 .before\:left-\[29\.2\%\]::before {
@@ -5161,10 +5164,6 @@ footer{
     height: 40%;
   }
 
-  .lg\:h-\[45\%\] {
-    height: 45%;
-  }
-
   .lg\:h-\[50\%\] {
     height: 50%;
   }
@@ -5205,8 +5204,8 @@ footer{
     height: 80%;
   }
 
-  .xl\:h-\[42\%\] {
-    height: 42%;
+  .xl\:h-\[37\%\] {
+    height: 37%;
   }
 
   .xl\:h-\[75\%\] {
@@ -5231,12 +5230,12 @@ footer{
     height: 90%;
   }
 
-  .base\:h-\[49\%\] {
-    height: 49%;
+  .base\:h-\[43\%\] {
+    height: 43%;
   }
 
-  .base\:h-\[50\%\] {
-    height: 50%;
+  .base\:h-\[45\%\] {
+    height: 45%;
   }
 
   .base\:h-\[54\%\] {
@@ -5305,6 +5304,11 @@ footer{
 
 .\[\&\.goRight\]\:translate-x-\[423px\].goRight {
   --tw-translate-x: 423px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.\[\&\.goRight\]\:translate-x-\[500px\].goRight {
+  --tw-translate-x: 500px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
