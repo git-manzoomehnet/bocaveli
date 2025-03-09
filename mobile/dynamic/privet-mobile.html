@@ -30,7 +30,7 @@
             </basis>
             <basis core="print" datamembername="db.private">
                 <layout>
-                    <div class="Text font-OpenSans300 font-light text-[13px] text-gray leading-[17.07px]">
+                    <div class="Text font-OpenSans300 flex flex-col gap-3 font-light text-[13px] text-gray leading-[17.07px]">
                         <p class="font-OpenSans300 font-light text-[13px] leading-[17.07px]">
                      @child
                      </p>
@@ -708,6 +708,6 @@
           <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
     </main>
     <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-    <script src="[##cms.cms.cdn##]/js/privet-mobile.js"></script>
+    <script src="[##cms.cms.cdn##]/js/privet-mobile.js" defer></script>
 </body>
 </html>

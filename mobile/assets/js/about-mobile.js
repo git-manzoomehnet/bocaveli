@@ -35,7 +35,7 @@ for (let i = 0; i < texts1.length; i++) {
   let newP = document.createElement('p');
   let span1 = document.createElement('span');
   let span2 = document.createElement('span');
-  span2.className += 'font-medium font-Montserrat500';
+  span2.className += 'font-bold font-Montserrat500';
   
   span1.innerHTML = texts1[i];
   span2.innerHTML = `${texts2[i]},` || ''; // جلوگیری از undefined

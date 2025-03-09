@@ -47,14 +47,14 @@
             </basis>
             <basis core="print" datamembername="db.about">
                 <layout>
-                    <div class="Text font-OpenSans300 font-light text-[13px] text-gray text-justify leading-[17.07px]">
-                        <p class="font-OpenSans300 font-light text-[13px] text-justify leading-[17.07px]">
+                    <div class="Text font-OpenSans300 flex flex-col gap-3 font-light text-[13px] text-gray text-left leading-[17.07px]">
+                        <p class="font-OpenSans300 flex flex-col gap-3 font-light text-[13px] text-left leading-[17.07px]">
                     @child
                         </p>
                     </div>
                 </layout>
                 <face filter="TypeID=129">
-                       @Answer
+                       @largetext
 
                 </face>
             </basis>
@@ -414,6 +414,6 @@
           <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
     </main>
     <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-    <script src="[##cms.cms.cdn##]/js/about-mobile.js"></script>
+    <script src="[##cms.cms.cdn##]/js/about-mobile.js" defer></script>
 </body>
 </html>
