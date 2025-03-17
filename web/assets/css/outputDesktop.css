@@ -745,6 +745,14 @@ video {
   z-index: 98;
 }
 
+.z-\[99999\] {
+  z-index: 99999;
+}
+
+.z-\[9999\] {
+  z-index: 9999;
+}
+
 .z-\[99\] {
   z-index: 99;
 }
@@ -865,6 +873,10 @@ video {
 
 .mb-\[3em\] {
   margin-bottom: 3em;
+}
+
+.mb-\[7em\] {
+  margin-bottom: 7em;
 }
 
 .mb-auto {
@@ -993,6 +1005,14 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mt-\[30px\] {
+  margin-top: 30px;
 }
 
 .box-border {
@@ -1201,6 +1221,10 @@ video {
   height: 100vh;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
 .max-h-\[340px\] {
   max-height: 340px;
 }
@@ -1283,6 +1307,10 @@ video {
 
 .w-\[146px\] {
   width: 146px;
+}
+
+.w-\[152px\] {
+  width: 152px;
 }
 
 .w-\[188px\] {
@@ -1424,6 +1452,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[107px\] {
+  width: 107px;
 }
 
 .min-w-\[410px\] {
@@ -2732,6 +2764,11 @@ video {
   border-top-right-radius: 0.25rem;
 }
 
+.rounded-l-\[50px\] {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
 .rounded-bl {
   border-bottom-left-radius: 0.25rem;
 }
@@ -2765,6 +2802,10 @@ video {
 }
 
 .border {
+  border-width: 1px;
+}
+
+.border-\[1px\] {
   border-width: 1px;
 }
 
@@ -3084,6 +3125,18 @@ video {
 .object-top {
   -o-object-position: top;
      object-position: top;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-\[10px\] {
+  padding: 10px;
+}
+
+.p-\[9px\] {
+  padding: 9px;
 }
 
 .px-1 {
@@ -4523,9 +4576,8 @@ video {
 @font-face {
   font-family: "KozGoPr6N400";
 
-  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
-
-  /* src: url("../fonts/KozGoPr6NRegular.ttf") format("truetype"), */
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype"),
+     url("../fonts/KozGoPr6NRegular.ttf") format("truetype");
 
   /* url("../fonts/KozGoPr6NRegular.otf") format("otf"); */
 
@@ -5243,6 +5295,10 @@ footer{
     height: 50%;
   }
 
+  .lg\:h-\[53\%\] {
+    height: 53%;
+  }
+
   .lg\:h-\[55\%\] {
     height: 55%;
   }
@@ -5316,6 +5372,10 @@ footer{
   .base\:h-\[54\%\] {
     height: 54%;
   }
+
+  .base\:h-\[60\%\] {
+    height: 60%;
+  }
 }
 
 @media (min-width: 2000px) {
@@ -5325,6 +5385,10 @@ footer{
 
   .xxl\:h-\[60\%\] {
     height: 60%;
+  }
+
+  .xxl\:h-\[70\%\] {
+    height: 70%;
   }
 
   .xxl\:h-\[80\%\] {

@@ -85,21 +85,7 @@
            </div>
        
          <div class="Section-3 w-full mt-4 gap-4 sec flex flex-col justify-start items-center">
-            <basis core="print" datamembername="db.text">
-                <layout>
-                    <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
-                    opacity-0  flex flex-col gap-4">
-                     <div class="Text font-OpenSans300 font-light text-[13px] text-justify text-gray leading-17.07">
-                         <p class="font-OpenSans300 font-light text-[13px] text-justify leading-17.07">
-                    @child
-                         </p>
-                     </div>
-                    </div>
-                </layout>
-                <face filter="RowNumber=1">                
-                       @largetext
-                </face>
-            </basis>
+        
             <basis core="print" datamembername="db.newsGallery">
             <layout>
                 @child
@@ -111,7 +97,35 @@
                 </div>
             </face>
         </basis>
+        <basis core="print" datamembername="db.text">
+            <layout>
+                <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                opacity-0  flex flex-col gap-4">
+                 <div class="Text font-OpenSans300 font-light text-[13px] text-justify text-gray leading-17.07">
+                     <p class="font-OpenSans300 font-light text-[13px] text-justify leading-17.07">
+                @child
+                     </p>
+                 </div>
+                </div>
+            </layout>
+            <face filter="RowNumber=1">                
+                   @largetext
+            </face>
+        </basis>
          </div>
+         <basis core="print" datamembername="db.newsGallery">
+            <layout>
+                <div class="Section-5 sec w-full mt-4 flex flex-col justify-start items-center">
+                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
+                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
+                @child
+                    </div>
+                </div>
+            </layout>
+            <face filter="ord=3"> 
+                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
+            </face>
+        </basis>
          <basis core="print" datamembername="db.text">
             <layout>
                 <div class="Section-4 w-full mt-4 gap-4 sec flex flex-col justify-start items-center">
@@ -126,36 +140,6 @@
                 </div>
             </layout>
             <face filter="RowNumber=2">
-                 @largetext
-            </face>
-        </basis>
-        <basis core="print" datamembername="db.newsGallery">
-            <layout>
-                <div class="Section-5 sec w-full mt-4 flex flex-col justify-start items-center">
-                    <div class="IMG w-90p mx-auto flex justify-center items-center translate-y-[2.5rem] opacity-0
-                    [&.appear]:translate-y-[0] [&.appear]:opacity-[1] my-auto">
-                @child
-                    </div>
-                </div>
-            </layout>
-            <face filter="ord=3"> 
-                    <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
-            </face>
-        </basis>
-        <basis core="print" datamembername="db.text">
-            <layout>
-                <div class="Section-6 w-full mt-4 gap-4 sec flex flex-col justify-start items-center">
-                    <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
-                    opacity-0  flex flex-col gap-4">
-                     <div class="Text font-OpenSans300 font-light text-justify text-[13px] text-gray leading-17.07">
-                         <p class="font-OpenSans300 font-light text-justify text-[13px] leading-17.07">
-                @child
-                         </p>
-                     </div>
-                 </div>
-                </div>
-            </layout>
-            <face filter="RowNumber=3">
                  @largetext
             </face>
         </basis>
@@ -185,6 +169,25 @@
                     <img src="[##cms.cms.cdn##]/@largeIMG" alt="@name" title="@name" class="w-full object-cover" loading="lazy">
             </face>
         </basis>
+        <basis core="print" datamembername="db.text">
+            <layout>
+                <div class="Section-6 w-full mt-4 gap-4 sec flex flex-col justify-start items-center">
+                    <div class="textBox Box w-90p mx-auto translate-y-[2.5rem] delay-[.2s] duration-[.8s]
+                    opacity-0  flex flex-col gap-4">
+                     <div class="Text font-OpenSans300 font-light text-justify text-[13px] text-gray leading-17.07">
+                         <p class="font-OpenSans300 font-light text-justify text-[13px] leading-17.07">
+                @child
+                         </p>
+                     </div>
+                 </div>
+                </div>
+            </layout>
+            <face filter="RowNumber=3">
+                 @largetext
+            </face>
+        </basis>
+  
+    
         <basis core="print" datamembername="db.text">
             <layout>
                 <div class="Section-9 w-full mt-4 gap-4 sec flex flex-col justify-start items-center">
@@ -218,7 +221,7 @@
          <basis core="call" file="footer.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
     </main>
     <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-    <script src="[##cms.cms.cdn##]/js/news-mobile.js"></script>
+    <script src="[##cms.cms.cdn##]/js/news-mobile.js" defer></script>
     <script type="application/ld+json">
         [##json.fq.column1##]
       </script>

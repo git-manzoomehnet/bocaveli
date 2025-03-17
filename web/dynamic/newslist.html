@@ -130,10 +130,11 @@
                                     </div>
                                 </layout>
                                 <face>
-                                    <div class="Item-blog min-w-[440px] overflow-hidden h-full translate-x-[1.5em] delay-[.2s] duration-[.8s]
+                                    <div class="Item-blog min-w-[440px] overflow-hidden h-full 
+                                    translate-x-[1.5em] delay-[.2s] duration-[.8s]
                                     gap-5 [&:not(:last-child)]:border-r-[1px] opacity-0
                                     [&:first-child]:border-l-[1px] [&.appear]:translate-x-[0] [&.appear]:opacity-[1]
-                                    px-[8em] my-auto border-white flex flex-col justify-center items-center">
+                                    px-[8em] my-auto border-white flex flex-col justify-center items-start">
                       
                                 <div class="imageContainer IMG lg:h-75p  group/img 
                                      hover:cursor-pointer duration-[.4s] w-[440px] max-w-[440px]">
@@ -149,8 +150,8 @@
                                         <span class="font-Montserrat700 mr-auto font-bold text-lg leading-21.94 text-white">
                                             @title
                                         </span>
-                                        <!-- <span></span>
-                                        ABOUT & HISTORY -->
+                                        <span>  @prp_7245</span>
+                                      
                                     </a>
                                 </div>
                           
@@ -183,6 +184,6 @@
  
     <!-- MAIN CONTAINER -->
     <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-    <script src="[##cms.cms.cdn##]/js/newslist.js"></script>
+    <script src="[##cms.cms.cdn##]/js/newslist.js" defer></script>
 </body>
 </html>

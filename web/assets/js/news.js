@@ -75,7 +75,7 @@ $('.NewsShow-Sec').imagesLoaded( {
       })
 
     let IMGS = document.querySelectorAll('.IMG')
-    document.querySelector('.IMG-first').classList.add('appear')
+    document.querySelector('.IMG-first')?.classList.add('appear')
 
     IMGS.forEach((IMG)=>{
             gsap.to(IMG,{

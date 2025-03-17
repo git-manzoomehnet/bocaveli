@@ -43,14 +43,14 @@
       <div class="NewsShow-Sec container-Sec" >
         <section id="PinSection">
             <div class="Pin-Wrapp">
+                <div class="Section-1 [&.goRight]:translate-x-[500px] duration-[.5s] ml-[82px] pl-[6em] pr-[7em] sec max-h-[750px] 
+                h-90p flex flex-col justify-center items-center">
+                   <div class="Banner w-max overflow-hidden flex max-h-[90%]">
                 <basis core="print" datamembername="db.newsGallery">
                     <layout>
-                        <div class="Section-1 [&.goRight]:translate-x-[500px] duration-[.5s] ml-[82px] pl-[6em] pr-[7em] sec max-h-[750px] 
-                         h-90p flex flex-col justify-center items-center">
-                            <div class="Banner w-max overflow-hidden flex max-h-[90%]">
+                
                         @child
-                            </div>
-                        </div>
+                        
                     </layout>
                     <face filter="ord=1">
                         <div class="IMG-first [&.appear]:translate-x-[0]
@@ -61,7 +61,8 @@
                         </div>
                     </face>
                 </basis>
-         
+            </div>
+        </div>
                    <div class="Section-2 [&.goRight]:translate-x-[500px] duration-[.5s] sec h-90p max-h-[750px] flex flex-col justify-center items-center">
                     <div class="textBox Box w-auto translate-x-[1.5em] mt-[60%] duration-[.8s]
                      opacity-0 flex flex-col gap-6 max-w-[476px] min-w-[476px]">
@@ -219,7 +220,7 @@
     
     <!-- MAIN CONTAINER -->
     <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-    <script src="[##cms.cms.cdn##]/js/news.js"></script>
+    <script src="[##cms.cms.cdn##]/js/news.js" defer></script>
     <script type="application/ld+json">
         [##json.fq.column1##]
       </script>

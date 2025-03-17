@@ -33,7 +33,7 @@
       <div class="ContactUS-Sec container-Sec" >
         <section id="PinSection">
             <div class="Pin-Wrapp">
-                <div class="Section-1 [&.goRight]:translate-x-[423px] duration-[.5s] ml-[82px] pl-[10em] pr-[8em] sec max-h-[650px] h-80p flex flex-col justify-end items-end">
+                <div class="Section-1 mb-[7em] [&.goRight]:translate-x-[423px] duration-[.5s] ml-[82px] pl-[10em] pr-[8em] sec max-h-[650px] h-80p flex flex-col justify-end items-end">
                     <div class="textBox Box w-auto translate-x-[1.5em] duration-[.8s] opacity-0 flex flex-col gap-6 max-w-[492px] 
                     min-w-[492px]">
                     <basis core="print" datamembername="db.contact-section2">
@@ -190,7 +190,7 @@
                          <basis core="print" datamembername="db.contactGallery">
                             <layout>
                                 <div class="IMG 
-                                lg:h-[50%]  group/img
+                                lg:h-[53%] base:h-[60%] xxl:h-[70%]  group/img
                                hover:cursor-pointer duration-[.4s] w-[470px] max-w-[470px]">
                        <div class="w-full h-full  group-hover/img:opacity-[.7] duration-[.4s]">
                                 @child
@@ -353,6 +353,6 @@
   
     <!-- MAIN CONTAINER -->
     <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-    <script src="[##cms.cms.cdn##]/js/contactUS.js"></script>
+    <script src="[##cms.cms.cdn##]/js/contactUS.js" defer></script>
 </body>
 </html>

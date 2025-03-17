@@ -1,0 +1,48 @@
+<basis core="dbsource" source="trust_login" name="db" lid="1"  run="atclient"  rkey="[##cms.cookie.rkey|()##]">
+    <member request="userid" type="scalar" name="userid" />
+  </basis> 
+
+
+
+<div id="all_comments" class="w-full">
+      <basis core="dbsource" source="userbehavior" name="db" run="atclient" 
+      triggers="db.sendcomment" if="{##db.sendcomment##}"
+      parentid="0" usedforid="[##cms.query.id##]" userid="{##db.userid.userid##}"
+       title="{##db.userName.value|('')##}" mid="1" comment="{##db.sendcomment.value|()##}" >
+          <member request="comment" type="scalar" name="comment" />
+      </basis>
+      <form  class="mt-[30px] border-[1px] border-solid border-lightblue p-4 Form comment-form"
+       id="send-comment"  bc-triggers="submit" name="db.form">
+       <p class="rkeysend" style="display: none;">[##cms.cookie.rkey##]</p>
+    
+        <input aria-label="nameUser" type="text" class="bg-lightblue namee w-full p-[10px]"
+         name="nameUser"  placeholder="نام و نام خانوادگی" />
+        <input type="hidden" name="productID" value="[##cms.query.id##]"/>
+        <input type="hidden" class="userID" name="userID" value="{##db.userid.userid##}"/>
+    </form>
+    <div id="captcha_wrapper" class=" flex  p-[9px] justify-end items-center" >
+        <button class="w-[107px] h-[40px] border-orange 
+        text-xs rounded-l-[50px] border-[1px] mr-2 sendcomment Send" 
+        type="submit" style="cursor: pointer;">ثبت نظر</button>
+    </div>
+    
+    
+    <div class="result-form">
+        <span class="close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.13268 23.0837L0.916016 20.867L9.78268 12.0003L0.916016 3.13366L3.13268 0.916992L11.9993 9.78366L20.866 0.916992L23.0827 3.13366L14.216 12.0003L23.0827 20.867L20.866 23.0837L11.9993 14.217L3.13268 23.0837Z" fill="#C1C1C1"></path>
+                </svg>
+                
+        </span>
+        <h4></h4>
+    </div>
+    
+</div>
+<basis core="callback" run="atclient" triggers="db.form"></basis>
+
+<basis core="callback" run="atclient" triggers="db.userName"></basis>
+<basis core="callback" run="atclient" triggers="db.sendcomment"></basis>
+
+<script>
+
+</script>

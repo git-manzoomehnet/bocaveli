@@ -56,13 +56,13 @@
       <div class="Project-Sec container-Sec" >
         <section id="PinSection">
             <div class="Pin-Wrapp">
+                <div class="Section-1 [&.goRight]:translate-x-[500px] duration-[.5s] ml-[82px] pl-[6em] pr-[6em] sec max-h-[750px]  h-90p flex flex-col justify-center items-center">
+                    <div class="Banner w-max overflow-hidden flex max-h-[90%]">
                 <basis core="print" datamembername="db.projectGallery">
                     <layout>
-                        <div class="Section-1 [&.goRight]:translate-x-[500px] duration-[.5s] ml-[82px] pl-[6em] pr-[6em] sec max-h-[750px]  h-90p flex flex-col justify-center items-center">
-                            <div class="Banner w-max overflow-hidden flex max-h-[90%]">
+                       
                         @child
-                            </div>
-                        </div>
+                         
                     </layout>
                     <face filter="ord=1">
                         <div class="IMG-first [&.appear]:translate-x-[0]
@@ -73,6 +73,8 @@
                         </div>
                     </face>
                 </basis>
+            </div>
+        </div>
                  <div class="Section-2 [&.goRight]:translate-x-[500px] duration-[.5s]
                   max-h-[750px] sec h-80p flex  flex-col justify-center gap-[4em] items-center">
                     <div class="DetailBox mt-8 min-w-[473px] flex justify-between">
@@ -340,7 +342,7 @@
   
     <!-- MAIN CONTAINER -->
 <basis core="call" file="scripts.inc" lid="2" pageindex="[##cms.cms.pageindex##]" />
-<script src="[##cms.cms.cdn##]/js/project.js"></script>
+<script src="[##cms.cms.cdn##]/js/project.js" defer></script>
 <script type="application/ld+json">
  [##json.fq.column1##]
 </script>
