@@ -107,7 +107,7 @@ $('.Home-Sec').imagesLoaded( {
       
       scroller.on('scroll', (e) => {
         let scrollTop =e.scroll.y 
-        if (scrollTop == 0) {
+        if (scrollTop < 40) {
           isScrolling = false;
         } else {
           if (!isScrolling) {

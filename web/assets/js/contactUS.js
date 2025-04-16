@@ -109,7 +109,7 @@ $('.ContactUS-Sec').imagesLoaded( {
     
     scroller.on('scroll', (e) => {
       let scrollTop =e.scroll.y 
-      if (scrollTop == 0) {
+      if (scrollTop < 40) {
         isScrolling = false;
         console.log("بازگشت به بالای صفحه");
       } else {
